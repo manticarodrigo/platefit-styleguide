@@ -1,0 +1,28 @@
+{
+  "name": "platefit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "webpack --watch --mode development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manticarodrigo/platefit-styleguide.git"
+  },
+  "author": "Rodrigo Mantica",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/manticarodrigo/platefit-styleguide/issues"
+  },
+  "homepage": "https://github.com/manticarodrigo/platefit-styleguide#readme",
+  "devDependencies": {
+    "css-loader": "^3.2.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "node-sass": "^4.12.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "sass-loader": "^7.2.0",
+    "webpack": "^4.39.2",
+    "webpack-cli": "^3.3.6"
+  }
+}

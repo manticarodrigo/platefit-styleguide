@@ -1,62 +1,53 @@
 .navbar {
-  position: relative;
 
   &__list {
     display: flex;
-    padding-left: 0;
-    list-style: none;
     float: right;
     margin-left: 90px;
     margin-right: 90px;
     margin-top: 0px;
-  }
 
-  &__logo {
-    width: 200px;
-    padding: 10px;
-    background-color: #FFF;
-    position: absolute;
-    top: 26.5px;
-    left: 40px;
-    box-sizing: border-box;
-  }
-  &__btn {
+    &__item {
+      float: left;
+      position: relative;
+      padding-top: 26px;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.071em;
+      font-family: "Lato",sans-serif;
 
-  
-    &--box {
-      border: 2px solid #fed710;
-      padding: 15px 20px;
-      margin-top: 10px;
-      font-weight: bold;
-      color: black !important;
-      &:hover {
-        background-color: #fed710;
+      &__link {
+        text-decoration: none;
+        line-height: 1;
+        color: #909090;
+        margin-right: .923em;
+        padding-bottom: 10px;
+
+        &:hover {
+          color: #f3cc4b;
+        }
+
+        &--btn {
+          border: 2px solid #fed710;
+          padding: 15px 20px;
+          margin-top: 10px;
+          font-weight: bold;
+          color: black;
+
+          &:hover {
+            color: black;
+            background-color: #fed710;
+          }
+        }
       }
     }
   }
 
-  a {
-    text-decoration: none;
-    line-height: 1;
-    color: #909090;
-    margin-right: .923em;
-    padding-bottom: 10px;
-
-    &:hover {
-      color: #f3cc4b;
-    }
-    
-  }
-
-  li {
-    float: left;
-    position: relative;
-    padding-top: 26px;
-    font-size: 13px;
-    text-transform: uppercase;
-    letter-spacing: 0.071em;
-    font-family: "Lato",sans-serif;
- 
+  &__logo {
+      width: 200px;
+      padding: 10px;
+      background-color: #fff;
+      transform: translate(40px, 40px);
   }
 }
 

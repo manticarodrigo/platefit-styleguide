@@ -1,0 +1,23 @@
+.grid {
+
+  &__2col {
+    display: flex;
+    flex-wrap: wrap;
+
+    &--invert-justify {
+
+      .grid__2col__column:nth-child(1) {
+        justify-content: flex-end;
+      }
+
+      .grid__2col__column:nth-child(2) {
+        justify-content: flex-start;
+      }
+    }
+
+    &__column {
+      display: flex;
+      width: 50%;
+    }
+  }
+}

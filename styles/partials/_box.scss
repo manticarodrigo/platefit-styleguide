@@ -1,0 +1,15 @@
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  padding: 20px;
+  height: 200px;
+  width: 200px;
+  background-color: $color-secondary;
+  text-align: center;
+
+  &--yellow {
+    background-color: $color-primary;
+  }
+}

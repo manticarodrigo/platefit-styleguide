@@ -3,7 +3,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 
 module.exports = {
-  entry: ['./app.scss'],
+  entry: ['./styles/app.scss'],
   module: {
     rules: [
       // compile all .scss files to plain old css

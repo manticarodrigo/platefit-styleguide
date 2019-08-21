@@ -10,8 +10,13 @@ module.exports = {
       {
         test: /\.(sass|scss)$/,
         use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
+      },
+      // load assets from urls in sass
+      {
+          test: /\.(png|woff|woff2|eot|ttf|otf|svg)$/,
+          loader: 'url-loader?limit=100000'
       }
-    ]
+    ],
   },
   plugins: [
     // extract css into dedicated file

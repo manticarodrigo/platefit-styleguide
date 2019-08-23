@@ -1,5 +1,6 @@
 .box {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 10px;
@@ -8,6 +9,21 @@
   width: 200px;
   background-color: $color-secondary;
   text-align: center;
+
+  &:hover {
+    background-color: #FFF;
+  }
+
+  &__text {
+    font-size: 28px;
+    font-weight: bold;
+    font-family: "MaisonNeue-Bold";
+    margin: 0 0 10px 0;
+  
+    &--small {
+      font-size: 12px;
+    }
+  }
 
   &--yellow {
     background-color: $color-primary;

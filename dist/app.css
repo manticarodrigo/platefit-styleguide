@@ -358,10 +358,23 @@ template {
 
 .u-pull-up {
   transform: translateY(-50%); }
+  .u-pull-up--big {
+    transform: translateY(-200%); }
+
+.u-pull-down {
+  transform: translateY(180%); }
 
 .u-list-unstyled {
   padding-left: 0;
   list-style: none; }
+
+.u-small-photo {
+  max-width: 30px; }
+
+.u-text-small {
+  font-size: 12px; }
+  .u-text-small--bold {
+    font-weight: bold; }
 
 body {
   font-family: 'MaisonNeue-Book', sans-serif; }
@@ -430,6 +443,7 @@ body {
 
 .box {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 10px;
@@ -438,6 +452,15 @@ body {
   width: 200px;
   background-color: #d6d6d6;
   text-align: center; }
+  .box:hover {
+    background-color: #FFF; }
+  .box__text {
+    font-size: 28px;
+    font-weight: bold;
+    font-family: "MaisonNeue-Bold";
+    margin: 0 0 10px 0; }
+    .box__text--small {
+      font-size: 12px; }
   .box--yellow {
     background-color: #fed610; }
 

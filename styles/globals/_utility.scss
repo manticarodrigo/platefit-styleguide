@@ -24,9 +24,29 @@
 
 .u-pull-up {
   transform: translateY(-50%);
-}
+
+    &--big {
+      transform: translateY(-200%);
+    }
+  }
+
+  .u-pull-down {
+    transform: translateY(180%);
+  }
 
 .u-list-unstyled {
   padding-left: 0;
   list-style: none;
+}
+
+.u-small-photo {
+  max-width: 30px;
+}
+
+.u-text-small {
+  font-size: 12px;
+
+  &--bold {
+    font-weight: bold;
+  }
 }

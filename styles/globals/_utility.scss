@@ -1,8 +1,16 @@
 .u-padding {
   padding: $spacing;
 
+  @media (max-width: 950px) {
+    padding: $spacing / 2;
+  }
+
   &--lg {
     padding: $spacing * 2;
+
+    @media (max-width: 950px) {
+      padding: $spacing;
+    }
   }
 
   &-left {
@@ -24,23 +32,19 @@
 
 .u-pull-up {
   transform: translateY(-50%);
-
-    &--big {
-      transform: translateY(-200%);
-    }
-  }
-
-  .u-pull-down {
-    transform: translateY(180%);
-  }
+}
 
 .u-list-unstyled {
   padding-left: 0;
   list-style: none;
 }
 
-.u-small-photo {
+.u-arrow {
   max-width: 30px;
+
+  &--small {
+    max-width: 25px;
+  }
 }
 
 .u-text-small {
@@ -49,8 +53,4 @@
   &--bold {
     font-weight: bold;
   }
-}
-
-.u-link-unstyled {
-  text-decoration: none;
 }

@@ -1,3 +1,33 @@
 body {
   font-family: 'MaisonNeue-Book', sans-serif;
 }
+
+.headline {
+  color: $color-grey;
+  font-size: 39px;
+  font-weight: 700;
+}
+
+.paragraph {
+  font-size: 16px;
+  color: #909090;
+  font-weight: 400;
+  background-color: #fff;
+  line-height: 1.8;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 13.5px;
+  border: 2px solid #fed710;
+  color:#333333;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 0;
+  text-decoration: none;
+
+  &:hover {
+    background-color: #fed710;
+  }
+}

@@ -366,47 +366,37 @@ template {
   padding-left: 0;
   list-style: none; }
 
-.u-text-small {
-  font-size: 12px; }
-  .u-text-small--bold {
-    font-weight: bold; }
-
 body {
+  font-size: 16px;
   font-family: "MaisonNeue-Book", sans-serif; }
 
-.paragraph {
-  font-size: 16px;
-  color: #909090;
-  line-height: 1.8; }
-
-.grid--pullup {
-  transform: translateY(-50%); }
-  @media (max-width: 950px) {
-    .grid--pullup {
-      transform: none; } }
-
-.grid__2col {
+.grid {
   display: flex;
   flex-direction: row; }
   @media (max-width: 950px) {
-    .grid__2col {
+    .grid {
       flex-direction: column; } }
-  .grid__2col--invert-justify .grid__2col__column {
+  .grid--pullup {
+    transform: translateY(-50%); }
+    @media (max-width: 950px) {
+      .grid--pullup {
+        transform: none; } }
+  .grid--invert-justify .grid__50-column {
     display: flex; }
-  .grid__2col--invert-justify .grid__2col__column:nth-child(1) {
+  .grid--invert-justify .grid__50-column:nth-child(1) {
     justify-content: flex-end; }
-  .grid__2col--invert-justify .grid__2col__column:nth-child(2) {
+  .grid--invert-justify .grid__50-column:nth-child(2) {
     justify-content: flex-start; }
-  .grid__2col__column {
+  .grid__50-column {
     box-sizing: border-box;
     width: 50%; }
     @media (max-width: 950px) {
-      .grid__2col__column {
+      .grid__50-column {
         width: 100%; } }
-    .grid__2col__column--align-right {
+    .grid__50-column--align-right {
       text-align: right; }
       @media (max-width: 950px) {
-        .grid__2col__column--align-right {
+        .grid__50-column--align-right {
           text-align: left; } }
 
 .container {
@@ -454,10 +444,12 @@ body {
     transform: translate(0, 50%); }
 
 .hero {
+  box-sizing: border-box;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 20px;
   height: 550px;
   background: url(78b71a40a429b63d7fc171d5986be625.jpg) no-repeat 50%;
   background-size: cover;
@@ -473,13 +465,15 @@ body {
     background-color: rgba(255, 255, 255, 0.5);
     content: ''; }
   .hero__title {
+    width: 100%;
     color: black;
     font-size: 6em;
     text-align: center;
-    font-family: "Knockout-HTF49-Liteweight", sans-serif; }
+    font-family: "Knockout-HTF49-Liteweight", sans-serif;
+    word-wrap: break-word; }
     @media (max-width: 950px) {
       .hero__title {
-        font-size: 3em;
+        font-size: 4em;
         letter-spacing: 0.05em; } }
 
 .box-column {
@@ -550,6 +544,10 @@ body {
       .headline--sm {
         font-size: 28px;
         margin: auto; } }
+
+.paragraph {
+  color: #909090;
+  line-height: 1.8; }
 
 .btn {
   border: 2px solid #fed710;

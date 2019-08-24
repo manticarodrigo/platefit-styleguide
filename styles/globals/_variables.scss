@@ -1,11 +1,27 @@
-$color-primary: hsl(50, 99%, 53%);
-$color-secondary: hsl(0, 0%, 84%);
-$color-grey: hsl(0,0%,39%);
+$color-primary: #fed710;
+$color-light: #fafafa;
+$color-secondary: #d6d6d6;
+$color-dark: #333333;
+$color-nav-link: #909090;
+$color-nav-link-hover: #f3cc4b;
+$color-overlay: rgba(255,255,255,.5);
+$color-headline: #636363;
+$color-text: #909090;
 
 $spacing: 20px;
+$duration: 500ms ease-in-out;
 
-$duration: 250ms ease-in-out;
+$site-width: 1440px;
 
-$breakpoint-lg: 800px;
+$breakpoint-lg: 950px;
+$breakpoint-md: 750px;
+$breakpoint-sm: 500px;
 
-$box-shadow: 0 30px 10px -20px rgba(0,0,0,0.3);
+$box-shadow: 0 30px 10px -20px rgba(0,0,0,.3);
+
+
+$font-book: 'MaisonNeue-Book', sans-serif;
+$font-light: 'MaisonNeue-Light', sans-serif;
+$font-bold: 'MaisonNeue-Bold', sans-serif;
+$font-knockout: 'Knockout-HTF49-Liteweight', sans-serif;
+$font-knockout-light: 'Knockout-HTF28-JuniorFeatherwt', sans-serif;

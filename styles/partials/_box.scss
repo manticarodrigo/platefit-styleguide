@@ -8,8 +8,8 @@
   height: 190px;
   width: 190px;
   background-color: $color-secondary;
-  text-align: center;
   box-shadow: $box-shadow;
+  text-align: center;
   transition: background-color $duration;
   cursor: pointer;
 
@@ -30,7 +30,7 @@
   &__text {
     font-size: 40px;
     font-weight: bold;
-    font-family: "Knockout-HTF28-JuniorFeatherwt", sans-serif ;
+    font-family: $font-knockout-light;
     margin: 0 0 10px 0;
     color:#333333;
     letter-spacing: 0.05em;
@@ -41,7 +41,7 @@
   
     &--small {
       font-size: 12px;
-      font-family: "MaisonNeue-Bold";
+      font-family: $font-bold;
     }
   }
 

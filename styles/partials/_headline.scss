@@ -1,23 +1,24 @@
 .headline {
-    text-align: center;
-    font-size: 48px;
-    font-family: "MaisonNeue-Light", sans-serif;
-    letter-spacing: 0.15cm;
-    color: hsl(0,0%,39%);
-    background-color: #ffffff;
-    font-weight: 100;
-    @media (max-width: $breakpoint-lg) {
-        font-size:42px;
-    }
+  text-align: center;
+  font-size: 48px;
+  font-family: $font-light;
+  letter-spacing: .25em;
+  color: $color-headline;
+  background-color: #fff;
+  font-weight: lighter;
 
-    &__column {
-        color: $color-grey;
-        font-size: 39px;
-        font-weight: bold;
-        letter-spacing: 0;
-        @media (max-width: $breakpoint-lg) {
-            font-size:28px;
-            margin:auto;
-        }
-      }
+  @media (max-width: $breakpoint-lg) {
+    font-size: 42px;
+  }
+
+  &--sm {
+    font-size: 39px;
+    font-weight: bold;
+    letter-spacing: 0;
+
+    @media (max-width: $breakpoint-lg) {
+      font-size: 28px;
+      margin: auto;
+    }
+  }
 }

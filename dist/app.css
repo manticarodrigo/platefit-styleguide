@@ -345,12 +345,12 @@ template {
 
 .u-padding {
   padding: 20px; }
-  @media (max-width: 800px) {
+  @media (max-width: 950px) {
     .u-padding {
       padding: 10px; } }
   .u-padding--lg {
     padding: 40px; }
-    @media (max-width: 800px) {
+    @media (max-width: 950px) {
       .u-padding--lg {
         padding: 20px; } }
   .u-padding-left {
@@ -372,46 +372,23 @@ template {
     font-weight: bold; }
 
 body {
-  font-family: 'MaisonNeue-Book', sans-serif; }
-
-.headline {
-  color: #636363;
-  font-size: 39px;
-  font-weight: 700; }
+  font-family: "MaisonNeue-Book", sans-serif; }
 
 .paragraph {
   font-size: 16px;
   color: #909090;
-  font-weight: 400;
-  background-color: #fff;
   line-height: 1.8; }
-
-.btn {
-  display: inline-flex;
-  align-items: center;
-  padding: 13.5px;
-  border: 2px solid #fed710;
-  color: #333333;
-  font-size: 12px;
-  font-weight: bold;
-  line-height: 0;
-  text-decoration: none;
-  transition: background-color 250ms ease-in-out; }
-  .btn:hover {
-    background-color: #fed710; }
-  .btn__arrow {
-    max-width: 25px; }
 
 .grid--pullup {
   transform: translateY(-50%); }
-  @media (max-width: 800px) {
+  @media (max-width: 950px) {
     .grid--pullup {
-      margin-top: -45%; } }
+      transform: none; } }
 
 .grid__2col {
   display: flex;
   flex-direction: row; }
-  @media (max-width: 800px) {
+  @media (max-width: 950px) {
     .grid__2col {
       flex-direction: column; } }
   .grid__2col--invert-justify .grid__2col__column {
@@ -423,69 +400,74 @@ body {
   .grid__2col__column {
     box-sizing: border-box;
     width: 50%; }
-    @media (max-width: 800px) {
+    @media (max-width: 950px) {
       .grid__2col__column {
         width: 100%; } }
     .grid__2col__column--align-right {
       text-align: right; }
-      @media (max-width: 800px) {
+      @media (max-width: 950px) {
         .grid__2col__column--align-right {
           text-align: left; } }
 
-.navbar__list {
+.navbar {
+  z-index: 999;
+  position: relative;
   display: flex;
-  float: right;
-  margin-left: 90px;
-  margin-right: 90px;
-  margin-top: 0px; }
-  .navbar__list__item {
-    float: left;
-    position: relative;
-    padding-top: 26px;
-    font-size: 13px;
-    text-transform: uppercase;
-    letter-spacing: 0.071em;
-    font-family: "Lato", sans-serif; }
-    .navbar__list__item__link {
-      text-decoration: none;
-      line-height: 1;
-      color: #909090;
-      margin-right: .923em;
-      padding-bottom: 10px; }
-      .navbar__list__item__link:hover {
-        color: #f3cc4b; }
-      .navbar__list__item__link--btn {
-        border: 2px solid #fed710;
-        padding: 15px 20px;
-        margin-top: 10px;
-        font-weight: bold;
-        color: black; }
-        .navbar__list__item__link--btn:hover {
-          color: black;
-          background-color: #fed710; }
-
-.navbar__logo {
-  width: 200px;
-  padding: 10px;
-  background-color: #fff;
-  transform: translate(40px, 40px); }
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px; }
+  .navbar__list {
+    display: flex; }
+    @media (max-width: 950px) {
+      .navbar__list {
+        display: none; } }
+    .navbar__list__item {
+      font-size: 13px;
+      text-transform: uppercase;
+      font-family: "MaisonNeue-Book", sans-serif; }
+      .navbar__list__item a {
+        margin-right: 10px;
+        text-decoration: none;
+        color: #909090; }
+        .navbar__list__item a:hover {
+          color: #f3cc4b; }
+      .navbar__list__item--btn a {
+        color: inherit; }
+        .navbar__list__item--btn a:hover {
+          color: inherit; }
+  .navbar__logo {
+    width: 200px;
+    padding: 10px;
+    background-color: #fff;
+    transform: translate(0, 50%); }
 
 .hero {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 550px;
-  background-color: #8fa4c1;
+  background: url(78b71a40a429b63d7fc171d5986be625.jpg) no-repeat 50%;
+  background-size: cover;
   width: 100%; }
+  .hero > * {
+    position: relative; }
+  .hero::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    content: ''; }
   .hero__title {
     color: black;
     font-size: 6em;
     text-align: center;
     font-family: "Knockout-HTF49-Liteweight", sans-serif; }
-    @media (max-width: 800px) {
+    @media (max-width: 950px) {
       .hero__title {
-        font-size: 2.5em;
-        margin: 60 0 auto;
+        font-size: 3em;
         letter-spacing: 0.05em; } }
 
 .box {
@@ -498,17 +480,17 @@ body {
   height: 190px;
   width: 190px;
   background-color: #d6d6d6;
-  text-align: center;
   box-shadow: 0 30px 10px -20px rgba(0, 0, 0, 0.3);
-  transition: background-color 250ms ease-in-out;
+  text-align: center;
+  transition: background-color 500ms ease-in-out;
   cursor: pointer; }
-  @media (max-width: 800px) {
+  @media (max-width: 950px) {
     .box {
       margin: 10px 20px;
       width: 100%;
       height: auto; } }
   .box--yellow {
-    background-color: #fed610; }
+    background-color: #fed710; }
   .box:hover {
     background-color: #fff; }
   .box__text {
@@ -522,7 +504,7 @@ body {
       font-size: 50px; }
     .box__text--small {
       font-size: 12px;
-      font-family: "MaisonNeue-Bold"; }
+      font-family: "MaisonNeue-Bold", sans-serif; }
   .box__arrow {
     max-width: 30px; }
 
@@ -530,20 +512,37 @@ body {
   text-align: center;
   font-size: 48px;
   font-family: "MaisonNeue-Light", sans-serif;
-  letter-spacing: 0.15cm;
+  letter-spacing: .25em;
   color: #636363;
-  background-color: #ffffff;
-  font-weight: 100; }
-  @media (max-width: 800px) {
+  background-color: #fff;
+  font-weight: lighter; }
+  @media (max-width: 950px) {
     .headline {
       font-size: 42px; } }
-  .headline__column {
-    color: #636363;
+  .headline--sm {
     font-size: 39px;
     font-weight: bold;
     letter-spacing: 0; }
-    @media (max-width: 800px) {
-      .headline__column {
+    @media (max-width: 950px) {
+      .headline--sm {
         font-size: 28px;
         margin: auto; } }
+
+.btn {
+  border: 2px solid #fed710;
+  padding: 12px;
+  color: #333333;
+  font-family: "MaisonNeue-Bold", sans-serif;
+  font-size: 12px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background-color 500ms ease-in-out; }
+  .btn:hover {
+    background-color: #fed710; }
+  .btn--arrow {
+    display: inline-flex;
+    align-items: center; }
+    .btn--arrow img {
+      margin-left: 10px;
+      max-width: 25px; }
 

@@ -1,20 +1,35 @@
 .hero {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 550px;
-  background-color: rgb(143, 164, 193);
+  background: url('../assets/hero.jpg') no-repeat 50%;
+  background-size: cover;
   width: 100%;
+
+  & > * {
+    position: relative;
+  }
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $color-overlay;
+    content: '';
+  }
 
   &__title {
     color: black;
     font-size: 6em;
     text-align: center;
-    font-family: "Knockout-HTF49-Liteweight", sans-serif;
+    font-family: $font-knockout;
 
     @media (max-width:$breakpoint-lg) {
-      font-size: 2.5em;
-      margin: 60 0 auto;
+      font-size: 3em;
       letter-spacing: 0.05em;
     }
   }

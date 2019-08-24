@@ -9,11 +9,12 @@
   width: 190px;
   background-color: $color-secondary;
   text-align: center;
+  box-shadow: 0 30px 10px -20px rgba(0,0,0,0.3);
 
   @media (max-width: 800px) {
-    height: 170px;
-    width: 450px;
-    margin: 10 auto 10;
+    height: auto;
+    width: 100%;
+    margin: 10 20;
     
   }
 

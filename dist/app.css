@@ -366,7 +366,7 @@ template {
   transform: translateY(-50%); }
   @media (max-width: 800px) {
     .u-pull-up {
-      transform: translateY(-115%); } }
+      margin-top: -45%; } }
 
 .u-list-unstyled {
   padding-left: 0;
@@ -500,12 +500,13 @@ body {
   height: 190px;
   width: 190px;
   background-color: #d6d6d6;
-  text-align: center; }
+  text-align: center;
+  box-shadow: 0 30px 10px -20px rgba(0, 0, 0, 0.3); }
   @media (max-width: 800px) {
     .box {
-      height: 170px;
-      width: 450px;
-      margin: 10 auto 10; } }
+      height: auto;
+      width: 100%;
+      margin: 10 20; } }
   .box:hover {
     background-color: #FFF; }
   .box__text {

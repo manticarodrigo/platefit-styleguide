@@ -6,7 +6,7 @@
     color: hsl(0,0%,39%);
     background-color: #ffffff;
     font-weight: 100;
-    @media (max-width: 800px) {
+    @media (max-width: $breakpoint-lg) {
         font-size:42px;
     }
 
@@ -15,7 +15,7 @@
         font-size: 39px;
         font-weight: bold;
         letter-spacing: 0;
-        @media (max-width: 800px) {
+        @media (max-width: $breakpoint-lg) {
             font-size:28px;
             margin:auto;
         }

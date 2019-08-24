@@ -26,8 +26,13 @@ body {
   font-weight: bold;
   line-height: 0;
   text-decoration: none;
+  transition: background-color $duration;
 
   &:hover {
     background-color: #fed710;
+  }
+
+  &__arrow {
+    max-width: 25px;
   }
 }

@@ -9,17 +9,22 @@
   width: 190px;
   background-color: $color-secondary;
   text-align: center;
-  box-shadow: 0 30px 10px -20px rgba(0,0,0,0.3);
+  box-shadow: $box-shadow;
+  transition: background-color $duration;
+  cursor: pointer;
 
-  @media (max-width: 800px) {
-    height: auto;
+  @media (max-width: $breakpoint-lg) {
+    margin: 10px 20px;
     width: 100%;
-    margin: 10 20;
-    
+    height: auto;
+  }
+
+  &--yellow {
+    background-color: $color-primary;
   }
 
   &:hover {
-    background-color: #FFF;
+    background-color: #fff;
   }
 
   &__text {
@@ -29,9 +34,6 @@
     margin: 0 0 10px 0;
     color:#333333;
     letter-spacing: 0.05em;
-    @media (max-width: 800px) {
-      margin: 0 130;
-    }
 
     &--lg {
       font-size: 50px;
@@ -43,7 +45,7 @@
     }
   }
 
-  &--yellow {
-    background-color: $color-primary;
+  &__arrow {
+    max-width: 30px;
   }
 }

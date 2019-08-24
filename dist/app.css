@@ -362,20 +362,9 @@ template {
     .u-padding-right--lg {
       padding-right: 40px; }
 
-.u-pull-up {
-  transform: translateY(-50%); }
-  @media (max-width: 800px) {
-    .u-pull-up {
-      margin-top: -45%; } }
-
 .u-list-unstyled {
   padding-left: 0;
   list-style: none; }
-
-.u-arrow {
-  max-width: 30px; }
-  .u-arrow--small {
-    max-width: 25px; }
 
 .u-text-small {
   font-size: 12px; }
@@ -406,13 +395,25 @@ body {
   font-size: 12px;
   font-weight: bold;
   line-height: 0;
-  text-decoration: none; }
+  text-decoration: none;
+  transition: background-color 250ms ease-in-out; }
   .btn:hover {
     background-color: #fed710; }
+  .btn__arrow {
+    max-width: 25px; }
+
+.grid--pullup {
+  transform: translateY(-50%); }
+  @media (max-width: 800px) {
+    .grid--pullup {
+      margin-top: -45%; } }
 
 .grid__2col {
   display: flex;
-  flex-wrap: wrap; }
+  flex-direction: row; }
+  @media (max-width: 800px) {
+    .grid__2col {
+      flex-direction: column; } }
   .grid__2col--invert-justify .grid__2col__column {
     display: flex; }
   .grid__2col--invert-justify .grid__2col__column:nth-child(1) {
@@ -476,9 +477,6 @@ body {
   height: 550px;
   background-color: #8fa4c1;
   width: 100%; }
-  @media (max-width: 800px) {
-    .hero {
-      height: 675px; } }
   .hero__title {
     color: black;
     font-size: 6em;
@@ -501,14 +499,18 @@ body {
   width: 190px;
   background-color: #d6d6d6;
   text-align: center;
-  box-shadow: 0 30px 10px -20px rgba(0, 0, 0, 0.3); }
+  box-shadow: 0 30px 10px -20px rgba(0, 0, 0, 0.3);
+  transition: background-color 250ms ease-in-out;
+  cursor: pointer; }
   @media (max-width: 800px) {
     .box {
-      height: auto;
+      margin: 10px 20px;
       width: 100%;
-      margin: 10 20; } }
+      height: auto; } }
+  .box--yellow {
+    background-color: #fed610; }
   .box:hover {
-    background-color: #FFF; }
+    background-color: #fff; }
   .box__text {
     font-size: 40px;
     font-weight: bold;
@@ -516,16 +518,13 @@ body {
     margin: 0 0 10px 0;
     color: #333333;
     letter-spacing: 0.05em; }
-    @media (max-width: 800px) {
-      .box__text {
-        margin: 0 130; } }
     .box__text--lg {
       font-size: 50px; }
     .box__text--small {
       font-size: 12px;
       font-family: "MaisonNeue-Bold"; }
-  .box--yellow {
-    background-color: #fed610; }
+  .box__arrow {
+    max-width: 30px; }
 
 .headline {
   text-align: center;

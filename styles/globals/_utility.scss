@@ -1,14 +1,14 @@
 .u-padding {
   padding: $spacing;
 
-  @media (max-width: 800px) {
+  @media (max-width: $breakpoint-lg) {
     padding: $spacing / 2;
   }
 
   &--lg {
     padding: $spacing * 2;
 
-    @media (max-width: 800px) {
+    @media (max-width: $breakpoint-lg) {
       padding: $spacing;
     }
   }
@@ -30,25 +30,9 @@
   }
 }
 
-.u-pull-up {
-  transform: translateY(-50%);
-  
-  @media (max-width: 800px) {
-    margin-top: -45%;
-  }
-}
-
 .u-list-unstyled {
   padding-left: 0;
   list-style: none;
-}
-
-.u-arrow {
-  max-width: 30px;
-
-  &--small {
-    max-width: 25px;
-  }
 }
 
 .u-text-small {

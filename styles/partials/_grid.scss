@@ -1,8 +1,20 @@
 .grid {
 
+  &--pullup {
+    transform: translateY(-50%);
+  
+    @media (max-width: $breakpoint-lg) {
+      margin-top: -45%;
+    }
+  }
+
   &__2col {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
+
+    @media (max-width: $breakpoint-lg) {
+      flex-direction: column;
+    }
 
     &--invert-justify {
       .grid__2col__column {
@@ -22,14 +34,14 @@
       box-sizing: border-box;
       width: 50%;
 
-      @media (max-width: 800px) {
+      @media (max-width: $breakpoint-lg) {
         width: 100%;
       }
 
       &--align-right {
         text-align: right;
   
-        @media (max-width: 800px) {
+        @media (max-width: $breakpoint-lg) {
           text-align: left;
         }
       }

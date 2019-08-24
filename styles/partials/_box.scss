@@ -5,23 +5,40 @@
   align-items: center;
   margin: 10px;
   padding: 20px;
-  height: 200px;
-  width: 200px;
+  height: 190px;
+  width: 190px;
   background-color: $color-secondary;
   text-align: center;
+
+  @media (max-width: 800px) {
+    height: 170px;
+    width: 450px;
+    margin: 10 auto 10;
+    
+  }
 
   &:hover {
     background-color: #FFF;
   }
 
   &__text {
-    font-size: 28px;
+    font-size: 40px;
     font-weight: bold;
-    font-family: "MaisonNeue-Bold";
+    font-family: "Knockout-HTF28-JuniorFeatherwt", sans-serif ;
     margin: 0 0 10px 0;
+    color:#333333;
+    letter-spacing: 0.05em;
+    @media (max-width: 800px) {
+      margin: 0 130;
+    }
+
+    &--lg {
+      font-size: 50px;
+    }
   
     &--small {
       font-size: 12px;
+      font-family: "MaisonNeue-Bold";
     }
   }
 

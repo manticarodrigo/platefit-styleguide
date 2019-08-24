@@ -22,15 +22,15 @@
       box-sizing: border-box;
       width: 50%;
 
-      @media (max-width: 950px) {
+      @media (max-width: 800px) {
         width: 100%;
       }
 
       &--align-right {
         text-align: right;
   
-        @media (max-width: 950px) {
-          text-align: center;
+        @media (max-width: 800px) {
+          text-align: left;
         }
       }
     }

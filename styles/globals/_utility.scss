@@ -1,14 +1,14 @@
 .u-padding {
   padding: $spacing;
 
-  @media (max-width: 950px) {
+  @media (max-width: 800px) {
     padding: $spacing / 2;
   }
 
   &--lg {
     padding: $spacing * 2;
 
-    @media (max-width: 950px) {
+    @media (max-width: 800px) {
       padding: $spacing;
     }
   }
@@ -32,6 +32,10 @@
 
 .u-pull-up {
   transform: translateY(-50%);
+  
+  @media (max-width: 800px) {
+    transform: translateY(-115%)
+  }
 }
 
 .u-list-unstyled {

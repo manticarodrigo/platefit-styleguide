@@ -1,10 +1,29 @@
+.box-column {
+  padding: $spacing / 2;
+
+  @media (max-width: $breakpoint-lg) {
+    padding: ($spacing * 2) ($spacing * 4);
+
+    &:nth-child(even) {
+      padding-top: 0;
+    }
+  }
+
+  @media (max-width: $breakpoint-md) {
+    padding: ($spacing * 2) ($spacing * 2);
+  }
+
+  @media (max-width: $breakpoint-sm) {
+    padding: $spacing 0;
+  }
+}
+
 .box {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin: 10px;
-  padding: 20px;
+  padding: $spacing;
   height: 190px;
   width: 190px;
   background-color: $color-secondary;
@@ -13,8 +32,11 @@
   transition: background-color $duration;
   cursor: pointer;
 
+  &:hover {
+    background-color: #fff;
+  }
+
   @media (max-width: $breakpoint-lg) {
-    margin: 10px 20px;
     width: 100%;
     height: auto;
   }
@@ -23,8 +45,9 @@
     background-color: $color-primary;
   }
 
-  &:hover {
-    background-color: #fff;
+  &__type {
+    font-size: 12px;
+    font-family: $font-bold;
   }
 
   &__text {
@@ -32,17 +55,9 @@
     font-weight: bold;
     font-family: $font-knockout-light;
     margin: 0 0 10px 0;
-    color:#333333;
+    color: $color-dark;
     letter-spacing: 0.05em;
-
-    &--lg {
-      font-size: 50px;
-    }
-  
-    &--small {
-      font-size: 12px;
-      font-family: $font-bold;
-    }
+    text-transform: uppercase;
   }
 
   &__arrow {

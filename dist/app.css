@@ -409,13 +409,23 @@ body {
         .grid__2col__column--align-right {
           text-align: left; } }
 
+.container {
+  margin: auto;
+  padding: 0 40px;
+  max-width: 1440px; }
+  @media (max-width: 750px) {
+    .container {
+      padding: 0 20px; } }
+  @media (max-width: 500px) {
+    .container {
+      padding: 0 10px; } }
+
 .navbar {
   z-index: 999;
   position: relative;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 0 40px; }
+  align-items: center; }
   .navbar__list {
     display: flex; }
     @media (max-width: 950px) {
@@ -426,9 +436,11 @@ body {
       text-transform: uppercase;
       font-family: "MaisonNeue-Book", sans-serif; }
       .navbar__list__item a {
-        margin-right: 10px;
+        margin-right: 1.5em;
+        color: #909090;
+        font-weight: bold;
         text-decoration: none;
-        color: #909090; }
+        letter-spacing: .02em; }
         .navbar__list__item a:hover {
           color: #f3cc4b; }
       .navbar__list__item--btn a {
@@ -470,12 +482,25 @@ body {
         font-size: 3em;
         letter-spacing: 0.05em; } }
 
+.box-column {
+  padding: 10px; }
+  @media (max-width: 950px) {
+    .box-column {
+      padding: 40px 80px; }
+      .box-column:nth-child(even) {
+        padding-top: 0; } }
+  @media (max-width: 750px) {
+    .box-column {
+      padding: 40px 40px; } }
+  @media (max-width: 500px) {
+    .box-column {
+      padding: 20px 0; } }
+
 .box {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin: 10px;
   padding: 20px;
   height: 190px;
   width: 190px;
@@ -484,27 +509,25 @@ body {
   text-align: center;
   transition: background-color 500ms ease-in-out;
   cursor: pointer; }
+  .box:hover {
+    background-color: #fff; }
   @media (max-width: 950px) {
     .box {
-      margin: 10px 20px;
       width: 100%;
       height: auto; } }
   .box--yellow {
     background-color: #fed710; }
-  .box:hover {
-    background-color: #fff; }
+  .box__type {
+    font-size: 12px;
+    font-family: "MaisonNeue-Bold", sans-serif; }
   .box__text {
     font-size: 40px;
     font-weight: bold;
     font-family: "Knockout-HTF28-JuniorFeatherwt", sans-serif;
     margin: 0 0 10px 0;
     color: #333333;
-    letter-spacing: 0.05em; }
-    .box__text--lg {
-      font-size: 50px; }
-    .box__text--small {
-      font-size: 12px;
-      font-family: "MaisonNeue-Bold", sans-serif; }
+    letter-spacing: 0.05em;
+    text-transform: uppercase; }
   .box__arrow {
     max-width: 30px; }
 
@@ -536,6 +559,7 @@ body {
   font-size: 12px;
   text-decoration: none;
   text-transform: uppercase;
+  line-height: 0;
   transition: background-color 500ms ease-in-out; }
   .btn:hover {
     background-color: #fed710; }

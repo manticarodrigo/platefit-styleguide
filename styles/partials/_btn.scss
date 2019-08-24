@@ -6,6 +6,7 @@
   font-size: 12px;
   text-decoration: none;
   text-transform: uppercase;
+  line-height: 0;
   transition: background-color $duration;
 
   &:hover {
@@ -17,7 +18,7 @@
     align-items: center;
 
     img {
-      margin-left: 10px;
+      margin-left: $spacing / 2;
       max-width: 25px;
     }
   }

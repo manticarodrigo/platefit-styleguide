@@ -28,7 +28,7 @@
     text-align: center;
     font-family: $font-knockout;
 
-    @media (max-width:$breakpoint-lg) {
+    @media (max-width: $breakpoint-lg) {
       font-size: 3em;
       letter-spacing: 0.05em;
     }

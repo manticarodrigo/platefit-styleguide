@@ -1,0 +1,13 @@
+.container {
+  margin: auto;
+  padding: 0 ($spacing * 2);
+  max-width: $site-width;
+
+  @media (max-width: $breakpoint-md) {
+    padding: 0 $spacing;
+  }
+
+  @media (max-width: $breakpoint-sm) {
+    padding: 0 $spacing / 2;
+  }
+}

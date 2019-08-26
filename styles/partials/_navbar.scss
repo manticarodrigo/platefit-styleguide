@@ -7,10 +7,9 @@
 
   &__list {
     display: flex;
-
-    @media (max-width: $breakpoint-lg) {
-      display: none;
-    }
+    justify-content: space-around;
+    margin: 40px 80px;
+    
 
     &__item {
       font-size: 13px;

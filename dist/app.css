@@ -417,10 +417,9 @@ body {
   justify-content: space-between;
   align-items: center; }
   .navbar__list {
-    display: flex; }
-    @media (max-width: 950px) {
-      .navbar__list {
-        display: none; } }
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 80px; }
     .navbar__list__item {
       font-size: 13px;
       text-transform: uppercase;
@@ -588,4 +587,6 @@ body {
   text-align: center; }
   .image__sm {
     max-width: 250px; }
+  .image__smaller {
+    max-width: 60%; }
 

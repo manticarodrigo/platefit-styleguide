@@ -13,9 +13,9 @@
     padding: ($spacing * 2) ($spacing * 2);
   }
 
-  @media (max-width: $breakpoint-sm) {
+  /*@media (max-width: $breakpoint-sm) {
     padding: $spacing 0;
-  }
+  }*/
 }
 
 .box {

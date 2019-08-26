@@ -1,0 +1,33 @@
+.quote {
+  display: flex;
+  
+  &__img {
+
+    img {
+      transform:translateY(50px);
+      border-radius: 50%;
+      max-width: 60px;
+      margin: 20px 10px 0 0;
+    }
+  }
+  
+  &__container {
+    width: 80%;
+  }
+
+  &__text {
+    font-family: MuseoSlab-500;
+    text-align: left;
+    font-size: 17px;
+    margin-right: 72px;
+    color: #bababa;
+    padding-top: 50px;
+
+    &--small {
+      font-size: 12px;
+      font-weight: 1000;
+    }
+  }
+
+
+}

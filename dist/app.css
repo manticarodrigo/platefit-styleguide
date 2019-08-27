@@ -635,7 +635,8 @@ body {
   font-family: Knockout-HTF28-JuniorFeatherwt;
   font-weight: 700;
   font-size: 55px;
-  margin: 15px 0 15px 0; }
+  margin: 15px 0 15px 0;
+  color: #373737; }
 
 .owner__role {
   margin-bottom: 0px;

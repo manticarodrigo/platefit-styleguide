@@ -366,6 +366,9 @@ template {
   padding-left: 0;
   list-style: none; }
 
+.u-text-uppercase {
+  text-transform: uppercase; }
+
 body {
   font-size: 16px;
   font-family: "MaisonNeue-Book", sans-serif; }
@@ -393,6 +396,9 @@ body {
     @media (max-width: 950px) {
       .grid__50-column {
         width: 100%; } }
+    .grid__50-column__33-column {
+      box-sizing: border-box;
+      width: 33.33%; }
     .grid__50-column--align-right {
       text-align: right; }
       @media (max-width: 950px) {
@@ -506,7 +512,7 @@ body {
   background-color: #d6d6d6;
   box-shadow: 0 30px 10px -20px rgba(0, 0, 0, 0.3);
   text-align: center;
-  transition: background-color 500ms ease-in-out;
+  transition: background-color 250ms ease-in-out;
   cursor: pointer; }
   .box:hover {
     background-color: #fff; }
@@ -573,7 +579,7 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   line-height: 0;
-  transition: background-color 500ms ease-in-out; }
+  transition: background-color 250ms ease-in-out; }
   .btn:hover {
     background-color: #fed710; }
   .btn--arrow {
@@ -589,4 +595,54 @@ body {
     max-width: 250px; }
   .image__smaller {
     max-width: 60%; }
+
+.quote {
+  display: flex; }
+  .quote__img img {
+    transform: translateY(50px);
+    border-radius: 50%;
+    max-width: 60px;
+    margin: 20px 10px 0 0; }
+  .quote__container {
+    width: 80%; }
+  .quote__text {
+    font-family: MuseoSlab-500;
+    text-align: left;
+    font-size: 17px;
+    margin-right: 72px;
+    color: #bababa;
+    padding-top: 50px; }
+    .quote__text--small {
+      font-size: 12px;
+      font-weight: 1000; }
+
+.video {
+  padding-top: 0px;
+  padding-left: 60px; }
+
+.owner__img {
+  max-width: 340px;
+  padding-left: 20px; }
+  .owner__img--small {
+    max-width: 250px;
+    padding-right: 135px;
+    padding-top: 70px; }
+
+.owner__text-box {
+  margin: 0 60px 0 60px; }
+
+.owner__headline {
+  font-family: Knockout-HTF28-JuniorFeatherwt;
+  font-weight: 700;
+  font-size: 55px;
+  margin: 15px 0 15px 0; }
+
+.owner__role {
+  margin-bottom: 0px;
+  font-size: 12px; }
+
+.owner__text {
+  font-family: MaisonNeue-Light;
+  color: #909090;
+  line-height: 1.8; }
 

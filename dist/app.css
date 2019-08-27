@@ -2220,7 +2220,8 @@ a,
     max-width: 60%; }
 
 .quote {
-  display: flex; }
+  display: flex;
+  justify-content: center; }
   .quote__img img {
     transform: translateY(50px);
     border-radius: 50%;

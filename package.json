@@ -18,12 +18,11 @@
   "homepage": "https://github.com/manticarodrigo/platefit-styleguide#readme",
   "devDependencies": {
     "css-loader": "^3.2.0",
-    "file-loader": "^4.2.0",
     "mini-css-extract-plugin": "^0.8.0",
     "node-sass": "^4.12.0",
     "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "resolve-url-loader": "^3.1.0",
     "sass-loader": "^7.2.0",
-    "url-loader": "^2.1.0",
     "webpack": "^4.39.2",
     "webpack-cli": "^3.3.6"
   }

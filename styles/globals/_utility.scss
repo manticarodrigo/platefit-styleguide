@@ -38,3 +38,17 @@
 .u-text-uppercase {
   text-transform: uppercase;
 }
+
+.u-text-underline {
+  text-decoration: underline;
+}
+
+.u-text-center {
+  text-align: center;
+}
+
+.u-bg-color {
+
+  &-primary { background-color: $color-primary; }
+  &-light { background-color: $color-light; }
+}

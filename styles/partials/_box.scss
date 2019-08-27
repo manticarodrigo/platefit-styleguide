@@ -1,5 +1,10 @@
 .box-column {
+  display: flex;
   padding: $spacing / 2;
+
+  &:nth-child(1) {
+    justify-content: flex-end;
+  }
 
   @media (max-width: $breakpoint-lg) {
     padding: ($spacing * 2) ($spacing * 4);
@@ -12,10 +17,6 @@
   @media (max-width: $breakpoint-md) {
     padding: ($spacing * 2) ($spacing * 2);
   }
-
-  /*@media (max-width: $breakpoint-sm) {
-    padding: $spacing 0;
-  }*/
 }
 
 .box {
@@ -51,11 +52,11 @@
   }
 
   &__text {
+    margin: 0 0 10px 0;
+    color: $color-dark;
     font-size: 40px;
     font-weight: bold;
     font-family: $font-knockout-light;
-    margin: 0 0 10px 0;
-    color: $color-dark;
     letter-spacing: 0.05em;
     text-transform: uppercase;
   }

@@ -9,13 +9,8 @@ module.exports = {
       // compile all .scss files to plain old css
       {
         test: /\.(sass|scss)$/,
-        use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
+        use: [MiniCssExtractPlugin.loader, 'css-loader?url=false', 'sass-loader']
       },
-      // load assets from urls in sass
-      {
-          test: /\.(png|jpg|woff|woff2|eot|ttf|otf|svg)$/,
-          loader: 'url-loader?limit=100000'
-      }
     ],
   },
   plugins: [

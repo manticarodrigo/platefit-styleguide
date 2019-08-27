@@ -1,4 +1,63 @@
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return #{$remSize}rem;
+}
+
+@mixin fontSize($size) {
+  font-size: $size; // px fallback
+  font-size: calculateRem($size);
+}
+
 body {
   font-size: 16px;
   font-family: $font-book;
+}
+
+h1,
+.h1 {
+  @include fontSize(50px);
+
+  color: $color-black;
+  font-family: $font-knockout;
+}
+
+h2,
+.h2 {
+  @include fontSize(48px);
+
+  font-family: $font-light;
+  font-weight: 100;
+}
+
+h3,
+.h3 {
+  @include fontSize(48px);
+
+  font-family: $font-knockout-light;
+  font-weight: 700;
+}
+
+h6,
+.h6 {
+  @include fontSize(12px);
+
+  color: $color-dark;
+  font-family: $font-book;
+}
+
+.paragraph {
+  color: $color-text;
+  line-height: 1.8;
+}
+
+a,
+.link {
+  color: $color-primary;
+  text-decoration: none;
+  transition: color $duration;
+
+  &:hover {
+    color: $color-link-hover;
+    text-decoration: underline;
+  }
 }

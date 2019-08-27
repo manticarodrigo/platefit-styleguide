@@ -1,0 +1,76 @@
+$size-map: (0: 0rem, 1: 0.25rem, 2: 0.5rem, 3: 1rem, 4: 2rem, 5: 4rem, 6: 8rem);
+$type-map: ('m': 'margin', 'p': 'padding');
+$direction-map: ('t': 'top', 'r': 'right', 'b': 'bottom', 'l': 'left');
+
+@mixin styles($index, $type-key, $direction-key) {
+  $size: map-get($size-map, $index);
+  $type: map-get($type-map, $type-key);
+  $direction: map-get($direction-map, $direction-key);
+
+  @if ($direction-key == 'x') {
+    #{$type}-right: $size;
+    #{$type}-left: $size;
+  } @else if ($direction-key == 'y') {
+    #{$type}-top: $size;
+    #{$type}-bottom: $size;
+  } @else if ($direction-key != '') {
+    #{$type}-#{$direction}: $size;
+  } @else {
+    #{$type}: $size;
+  }
+}
+
+@function className($index, $alias, $direction, $breakpoint: '') {
+  $prefix: #{$alias}#{$direction};
+  
+  @if ($breakpoint != '') {
+    $breakpoint: -#{$breakpoint};
+  }
+
+  @return #{$prefix}#{$breakpoint}-#{$index};
+}
+
+@mixin class($index, $alias, $direction: '', $breakpoint: '') {
+  $classname: className($index, $alias, $direction, $breakpoint); 
+  
+  @if $breakpoint == '' {
+    .#{$classname} {
+       @include styles($index, $alias, $direction);
+    }
+  } @else if $breakpoint == 'lg' {
+    @media (max-width: $breakpoint-lg) {
+      .#{$classname} {
+        @include styles($index, $alias, $direction);
+      }
+    }
+  } @else if $breakpoint == 'md' {
+    @media (max-width: $breakpoint-md) {
+      .#{$classname} {
+        @include styles($index, $alias, $direction);
+      }
+    }
+  } @else if $breakpoint == 'sm' {
+    @media (max-width: $breakpoint-sm) {
+      .#{$classname} {
+        @include styles($index, $alias, $direction);
+      }
+    }
+  }
+}
+
+@mixin spacing() {
+  $breakpoints: '', 'lg', 'md', 'sm';
+  $directions: '', 't', 'r', 'b', 'l', 'x', 'y';
+
+  @each $breakpoint in $breakpoints {
+    @each $alias, $type in $type-map {
+      @each $index, $size in $size-map {
+        @each $direction in $directions {
+          @include class($index, $alias, $direction, $breakpoint);
+        }
+      }
+    }
+  }
+}
+
+@include spacing();

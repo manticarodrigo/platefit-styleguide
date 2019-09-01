@@ -1,6 +1,7 @@
 .grid {
   display: flex;
   flex-direction: row;
+  /* margin: 0 80px; */
 
   @media (max-width: $breakpoint-lg) {
     flex-direction: column;

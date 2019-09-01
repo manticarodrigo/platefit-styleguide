@@ -366,7 +366,8 @@ h3,
   font-size: 48px;
   font-size: 3rem;
   font-family: "Knockout-HTF28-JuniorFeatherwt", sans-serif;
-  font-weight: 700; }
+  font-weight: 700;
+  color: #373737; }
 
 h6,
 .h6 {
@@ -375,6 +376,7 @@ h6,
   color: #333333;
   font-family: "MaisonNeue-Book", sans-serif; }
 
+p,
 .paragraph {
   color: #909090;
   line-height: 1.8; }
@@ -387,7 +389,7 @@ a,
   a:hover,
   .link:hover {
     color: #f3cc4b;
-    text-decoration: underline; }
+    /* text-decoration: underline; */ }
 
 .u-padding {
   padding: 20px; }
@@ -409,7 +411,7 @@ a,
       padding-right: 40px; }
 
 .u-list-unstyled {
-  padding-left: 0;
+  /* padding-left: 0; */
   list-style: none; }
 
 .u-text-uppercase {
@@ -2011,7 +2013,8 @@ a,
 
 .grid {
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  /* margin: 0 80px; */ }
   @media (max-width: 950px) {
     .grid {
       flex-direction: column; } }
@@ -2101,7 +2104,7 @@ a,
     content: ''; }
   .hero__title {
     width: 100%;
-    color: black;
+    color: #333333;
     font-size: 6em;
     text-align: center;
     font-family: "Knockout-HTF49-Liteweight", sans-serif;
@@ -2116,6 +2119,14 @@ a,
     background-size: cover;
     background-position: center;
     height: 400px; }
+  .hero--bottom {
+    background: url("../assets/studio4.jpg");
+    height: fit-content;
+    background-position: center; }
+    .hero--bottom::before {
+      transition: background-color 250ms ease-in-out; }
+    .hero--bottom:hover::before {
+      background-color: rgba(254, 215, 16, 0.75); }
 
 .box-column {
   display: flex;
@@ -2218,6 +2229,14 @@ a,
     max-width: 250px; }
   .image__smaller {
     max-width: 60%; }
+  .image__download {
+    max-width: 30%;
+    margin: 0 auto 20px 0;
+    display: flex;
+    flex-direction: column;
+    transition: background-color 250ms ease-in-out; }
+    .image__download:hover {
+      opacity: 0.75; }
 
 .quote {
   display: flex;
@@ -2261,10 +2280,6 @@ a,
   font-size: 55px;
   margin: 15px 0 15px 0;
   color: #373737; }
-
-.owner__role {
-  margin-bottom: 0px;
-  font-size: 12px; }
 
 .owner__text {
   font-family: MaisonNeue-Light;

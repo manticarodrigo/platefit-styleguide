@@ -2,24 +2,24 @@
   display: flex;
   justify-content: center;
 
+  &__container {
+    max-width: 400px;
+  }
+
   &__img {
 
     img {
-      border-radius: 50%;
-      max-width: 60px;
       margin: 20px 10px 0 0;
+      border-radius: 50%;
+      width: 60px;
+      box-shadow: $box-shadow-quote;
     }
-  }
-  
-  &__container {
-    width: 80%;
   }
 
   &__text {
     font-family: $font-quote;
     text-align: left;
     font-size: 17px;
-    margin-right: 72px;
     color: #bababa;
 
     &--small {

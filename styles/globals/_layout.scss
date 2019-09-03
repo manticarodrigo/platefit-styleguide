@@ -21,6 +21,13 @@
 
   &.center {
     justify-content: center;
+
+    &-xl {
+      @include breakpoint($breakpoint-xl) { justify-content: center; }
+    }
+  }
+
+  &.align-center {
     align-items: center;
   }
 }

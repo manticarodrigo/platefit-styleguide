@@ -22,13 +22,13 @@ $color-light: #fafafa;
 $color-dark: #333333;
 $color-headline: #636363;
 $color-text: #909090;
-$color-overlay: rgba(255,255,255,.5);
+$color-overlay-white: rgba(255,255,255,.5);
+$color-overlay-primary: rgba(254,215,16,.75);
 
 $spacing: 20px;
 $duration: 250ms ease-in-out;
 
-$site-width: 1200px;
-
+$breakpoint-xl: 1200px;
 $breakpoint-lg: 950px;
 $breakpoint-md: 750px;
 $breakpoint-sm: 500px;
@@ -39,12 +39,14 @@ $breakpoint-sm: 500px;
 
 $breakpoint-map: (
   '': '',
+  'xl': $breakpoint-xl,
   'lg': $breakpoint-lg,
   'md': $breakpoint-md,
   'sm': $breakpoint-sm,
 );
 
 $box-shadow: 0 30px 10px -20px rgba(0,0,0,.3);
+$box-shadow-quote: 0 12px 20px -10px rgba(0, 0, 0, 0.5);
 
 $font-book: 'MaisonNeue-Book', sans-serif;
 $font-light: 'MaisonNeue-Light', sans-serif;

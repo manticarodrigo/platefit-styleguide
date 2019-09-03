@@ -1,45 +1,31 @@
 .footer {
-margin: 0 80px 0 80px;
-padding: 64px 0;
-
-  &__col {
-    margin-right: 140px;
-  }
   
-  &__img {
-    width: 180px;
-  }
-
   &__slogan {
-    font-family: MaisonNeue-Bold;
+    @include fontSize(16px);
+
     color: $color-text;
-    font-size: 16px;
+    font-family: $font-bold;
     line-height: 1.8;
-    margin-top: 48px;
+  }
+
   
-    &--yellow {
-      color: $color-primary;
-    }
-  }
-
   &__headline {
-    font-family: MaisonNeue-Book;
-    color: $color-black;
-    font-size: 28px;
-    margin-bottom: 17.68px;
-    margin-top: 0px;
+    @include fontSize(28px);
+
+    color: $color-dark;
+    font-family: $font-book;
   }
 
-  &__list__item {
+  li {
+    @include fontSize(18px);
+
     font-family: $font-book;
-    font-size: 18px;
-    margin: 26px 0;
     list-style: none;
 
     a {
       color: $color-text;
       text-decoration: none;
-      letter-spacing: .02em;
+      letter-spacing: 0;
 
       &:hover {
         color: $color-primary-alt;
@@ -48,30 +34,28 @@ padding: 64px 0;
   
   }
 
-  &__media {
+  &__social-img {
+    margin-right: 15px;
+    max-width: 30px;
+    max-height: 20px;
+    color: $color-primary;
+  }
+
+  &__newsletter {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-  
-  &__img {
-    margin-right: 15px;
-    max-width: 15px;
-    max-height: 15px;
-    color: $color-primary;
-    padding-bottom: 80px;
 
-    &:hover {
+    input[type="email"] {
+      border: none;
+      padding: 10px;
+      color: $color-text;
+      background-color: $color-light;
+    }
+
+    input[type="submit"] {
+      border: none;
       color: $color-primary-alt;
+      background-color: $color-light;
     }
   }
-}
-&__email {
-  background-color: $color-light;
-  border: none;
-  padding: 10px 0;
-
-  &__btn {
-    color: $color-primary-alt;
-  }
-}
 }

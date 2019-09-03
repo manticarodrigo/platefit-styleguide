@@ -28,6 +28,7 @@
 
     &-xl { @include breakpoint($breakpoint-xl) { justify-content: center; } }
     &-lg { @include breakpoint($breakpoint-lg) { justify-content: center; } }
+    &-md { @include breakpoint($breakpoint-md) { justify-content: center; } }
   }
 
   &.align-center {

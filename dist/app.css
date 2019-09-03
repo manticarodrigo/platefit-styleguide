@@ -358,16 +358,18 @@ h2,
 .h2 {
   font-size: 48px;
   font-size: 3rem;
+  color: #636363;
   font-family: "MaisonNeue-Light", sans-serif;
-  font-weight: 100; }
+  font-weight: 100;
+  letter-spacing: .25em; }
 
 h3,
 .h3 {
   font-size: 48px;
   font-size: 3rem;
+  color: #373737;
   font-family: "Knockout-HTF28-JuniorFeatherwt", sans-serif;
-  font-weight: 700;
-  color: #373737; }
+  font-weight: 700; }
 
 h6,
 .h6 {
@@ -388,8 +390,7 @@ a,
   transition: color 250ms ease-in-out; }
   a:hover,
   .link:hover {
-    color: #f3cc4b;
-    /* text-decoration: underline; */ }
+    color: #f3cc4b; }
 
 .u-padding {
   padding: 20px; }
@@ -2171,7 +2172,8 @@ a,
     background-color: #fed710; }
   .box__type {
     font-size: 12px;
-    font-family: "MaisonNeue-Bold", sans-serif; }
+    font-family: "MaisonNeue-Bold", sans-serif;
+    color: #333333; }
   .box__text {
     margin: 0 0 10px 0;
     color: #333333;
@@ -2351,7 +2353,6 @@ a,
 
 .community {
   background-color: #fafafa;
-  margin: 0 40px;
   padding-top: 50px; }
   .community__slogan {
     margin-top: 0px;

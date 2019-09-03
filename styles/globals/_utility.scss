@@ -10,6 +10,10 @@
   width: 100%;
 }
 
+.max-width-full {
+  max-width: 100%;
+}
+
 .list-unstyled {
   list-style: none;
 }
@@ -52,8 +56,14 @@
   letter-spacing: .25em;
 }
 
+.color {
+
+  &-primary { color: $color-primary; }
+}
+
 .bg-color {
 
+  &-white { background-color: $color-white; }
   &-primary { background-color: $color-primary; }
   &-light { background-color: $color-light; }
 }

@@ -361,8 +361,12 @@ h2,
   font-size: 3rem;
   color: #636363;
   font-family: "MaisonNeue-Light", sans-serif;
-  font-weight: 100;
-  letter-spacing: .25em; }
+  font-weight: 100; }
+  h2--sm,
+  .h2--sm {
+    font-size: 40px;
+    font-size: 2.5rem;
+    font-family: "MaisonNeue-Book", sans-serif; }
 
 h3,
 .h3 {
@@ -398,7 +402,7 @@ a,
 .text-bold {
   font-family: "MaisonNeue-Bold", sans-serif; }
 
-.text-small {
+.text-sm {
   font-size: 12px;
   font-size: 0.75rem; }
 
@@ -408,14 +412,32 @@ a,
 .text-underline {
   text-decoration: underline; }
 
+.text-right {
+  text-align: right; }
+
+.text-left {
+  text-align: left; }
+  @media (max-width: 950px) {
+    .text-left-lg {
+      text-align: left; } }
+
 .text-center {
   text-align: center; }
+  @media (max-width: 950px) {
+    .text-center-lg {
+      text-align: center; } }
+
+.letter-spacing {
+  letter-spacing: .25em; }
 
 .bg-color-primary {
   background-color: #fed710; }
 
 .bg-color-light {
   background-color: #fafafa; }
+
+.shadow {
+  box-shadow: 0 30px 10px -20px rgba(0, 0, 0, 0.3); }
 
 .pull-up {
   transform: translateY(-50%); }
@@ -2013,6 +2035,9 @@ a,
     justify-content: space-between; }
   .row.end {
     justify-content: flex-end; }
+  .row.center {
+    justify-content: center;
+    align-items: center; }
 
 .col-1 {
   width: 100%; }
@@ -2129,8 +2154,9 @@ a,
 
 .container {
   box-sizing: border-box;
-  margin: auto;
-  max-width: 1440px; }
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1200px; }
 
 .navbar {
   z-index: 999;
@@ -2214,7 +2240,6 @@ a,
   height: 190px;
   width: 190px;
   background-color: #d6d6d6;
-  box-shadow: 0 30px 10px -20px rgba(0, 0, 0, 0.3);
   text-align: center;
   transition: background-color 250ms ease-in-out;
   cursor: pointer; }
@@ -2263,7 +2288,7 @@ a,
 
 .btn {
   border: 2px solid #fed710;
-  padding: 12px;
+  padding: 14px 12px 12px;
   color: #333333;
   font-family: "MaisonNeue-Bold", sans-serif;
   font-size: 12px;
@@ -2278,6 +2303,7 @@ a,
     display: inline-flex;
     align-items: center; }
     .btn--arrow img {
+      margin-top: -3px;
       margin-left: 10px;
       max-width: 25px; }
 
@@ -2300,22 +2326,20 @@ a,
   display: flex;
   justify-content: center; }
   .quote__img img {
-    transform: translateY(50px);
     border-radius: 50%;
     max-width: 60px;
     margin: 20px 10px 0 0; }
   .quote__container {
     width: 80%; }
   .quote__text {
-    font-family: MuseoSlab-500;
+    font-family: "MuseoSlab-300", sans-serif;
     text-align: left;
     font-size: 17px;
     margin-right: 72px;
-    color: #bababa;
-    padding-top: 50px; }
+    color: #bababa; }
     .quote__text--small {
       font-size: 12px;
-      font-weight: 1000; }
+      font-family: "MaisonNeue-Bold", sans-serif; }
 
 .video {
   padding-top: 0px;

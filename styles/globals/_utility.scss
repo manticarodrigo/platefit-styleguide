@@ -6,7 +6,7 @@
   font-family: $font-bold;
 }
 
-.text-small {
+.text-sm {
   @include fontSize(12px);
 }
 
@@ -18,14 +18,38 @@
   text-decoration: underline;
 }
 
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+
+  &-lg {
+    @include breakpoint($breakpoint-lg) { text-align: left; }
+  }
+}
+
 .text-center {
   text-align: center;
+
+  &-lg {
+    @include breakpoint($breakpoint-lg) { text-align: center; }
+  }
+}
+
+.letter-spacing {
+  letter-spacing: .25em;
 }
 
 .bg-color {
 
   &-primary { background-color: $color-primary; }
   &-light { background-color: $color-light; }
+}
+
+.shadow {
+  box-shadow: $box-shadow;
 }
 
 .pull-up {

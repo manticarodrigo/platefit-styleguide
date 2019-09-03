@@ -9,11 +9,14 @@
 
     <header>
       <nav class="px-4 px-md-3 px-sm-2 navbar">
+
         <!-- nav logo -->
 
-        <a href="home.html">
-          <img class="navbar__logo" src="../assets/logo.png">
-        </a>
+        <h1 class="my-0">
+          <a href="home.html">
+            <img class="navbar__logo" src="../assets/logo.png" alt="PLATEFIT Brand Logo">
+          </a>
+        </h1>
 
         <!-- nav menu -->
 
@@ -29,14 +32,14 @@
 
     <!-- main content -->
 
-    <main class="px-4 px-md-3 px-sm-2">
+    <main class="mx-4 mx-md-3 mx-sm-2 bg-color-light">
 
       <!-- hero -->
 
       <section class="hero">
-        <h1 class="hero__title">
+        <h2 class="h1 hero__title">
           #THISISWHEREIFIT
-        </h1>
+        </h2>
       </section>
 
       <!-- offer boxes -->
@@ -45,8 +48,8 @@
 
         <div class="col-2 col-1-lg">
           <div class="p-2 p-0-lg my-4-lg row end">
-            <div class="box box--yellow">
-              <p class="text-bold text-small">
+            <div class="box box--yellow shadow">
+              <p class="text-bold text-sm">
                 First Time
               </p>
               <h3 class="my-0 box__text">
@@ -59,8 +62,8 @@
 
         <div class="col-2 col-1-lg">
           <div class="p-2 p-0-lg row">
-            <div class="box">
-              <p class="text-bold text-small">
+            <div class="box shadow">
+              <p class="text-bold text-sm">
                 View Schedule
               </p>
               <h3 class="my-0 box__text">
@@ -73,63 +76,70 @@
 
       </section>
 
-      <!-- page headline -->
+      <!-- about -->
 
-      <section class="container">
-        <h2 class="text-uppercase headline">The Workout</h2>
-      </section>
-
-      <!-- page about -->
-
-      <section class="container grid">
-
-        <div class="padding--lg grid__50-column">
-          <h4 class="headline headline--sm">You are unstoppable.</h4>
-        </div>
-
-        <div class="padding--lg grid__50-column grid__50-column--align-right">
-          <p class="paragraph">
-            Platefit is a 27-minute high intensity interval training workout done on individual Power Plates with guided
-            instruction carefully curated music and a new dynamic experience built for efficiency. Platefit will challenge
-            you, strengthen you, and renew you. The results are strong, lean, powerful, resilient bodies.
-          </p>
-          <a class="btn btn--arrow" href="#">
-            Learn more
-            <img src="../assets\arrow.png">
-          </a>
-        </div>
-
-      </section>
-
-      <!-- page video / quote section -->
-
-      <section class="container grid">
-
-        <div class="padding--lg grid__50-column video">
-          <video width="500" height="300" poster="../assets/studio5.jpg" controls>
-            <source src="../assets/platefit.mp4" type="video/mp4">
-            Video Not Supported
-          </video>
-        </div>
-
-        <div class="padding--lg grid__50-column quote">
-          <div class="quote__img">
-            <img src="../assets/jennifer-p.png">
+      <section class="py-4 container">
+        <h3 class="h2 text-center text-uppercase letter-spacing">The Workout</h3>
+        
+        <div class="row">
+          <div class="col-2 col-1-md">
+            <div class="p-4 p-2-md">
+              <p class="h2 h2--sm text-center-lg">You are unstoppable.</p>
+            </div>
           </div>
-          <div class="quote__container">
-            <p class="quote__text">
-              Love love love PLATEFIT! This is hands down my favorite workout in LA. It's fast, challenging, and the
-              instructors don't waste a second... you are moving the entire 30 minutes.
-            </p>
-            <h4 class="text-uppercase quote__text--small">
-              /Jennifer P
-            </h4>
+  
+          <div class="col-2 col-1-md">
+            <div class="p-4 p-2-md text-right text-center-lg">
+              <p class="paragraph">
+                Platefit is a 27-minute high intensity interval training workout done on individual Power Plates with guided
+                instruction carefully curated music and a new dynamic experience built for efficiency. Platefit will challenge
+                you, strengthen you, and renew you. The results are strong, lean, powerful, resilient bodies.
+              </p>
+              <a class="btn btn--arrow" href="#">
+                Learn more
+                <img src="../assets\arrow.png">
+              </a>
+            </div>
           </div>
         </div>
 
       </section>
 
-      <!-- page the science -->
+      <!-- video / quote -->
+
+      <section class="container row">
+
+        <div class="col-2 col-1-md">
+          <div class="py-4 py-2-md">
+            <video class="shadow" width="500" height="300" poster="../assets/studio5.jpg" controls>
+              <source src="../assets/platefit.mp4" type="video/mp4">
+              Video Not Supported
+            </video>
+          </div>
+        </div>
+
+        <div class="col-2 col-1-md row center">
+          <div class="py-4 py-2-md">
+            <div class="row">
+              <div class="quote__img">
+                <img src="../assets/jennifer-p.png">
+              </div>
+              <div class="quote__container">
+                <p class="quote__text">
+                  Love love love PLATEFIT! This is hands down my favorite workout in LA. It's fast, challenging, and the
+                  instructors don't waste a second... you are moving the entire 30 minutes.
+                </p>
+                <h4 class="text-uppercase quote__text--small">
+                  /Jennifer P
+                </h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- the science -->
 
       <section class="container grid">
         <div class="padding--lg grid__50-column">
@@ -148,12 +158,12 @@
         </div>
       </section>
 
-      <!-- page banner -->
+      <!-- banner -->
 
       <section class="hero__banner">
       </section>
 
-      <!-- page links -->
+      <!-- press -->
 
       <section class="container">
         <nav>
@@ -192,7 +202,7 @@
         </nav>
       </section>
 
-      <!-- page owner section -->
+      <!-- owner -->
 
       <section class="container grid">
 
@@ -224,7 +234,7 @@
 
       </section>
 
-      <!-- community block -->
+      <!-- community -->
 
       <section class="container community">
         <h2 class="p-3 text-center text-uppercase">Platefit Community</h2>
@@ -252,7 +262,7 @@
 
       </section>
 
-      <!-- page fit on the go -->
+      <!-- mobile app -->
 
       <section class="container grid">
         <div class="padding--lg grid__50-column">
@@ -272,7 +282,7 @@
         </div>
       </section>
 
-      <!-- page bottom hero -->
+      <!-- cta -->
 
       <section>
         <a href="#banner" class="hero hero--bottom">

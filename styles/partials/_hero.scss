@@ -27,7 +27,7 @@
 
   &__title {
     width: 100%;
-    color: black;
+    color: #333333;
     font-size: 6em;
     text-align: center;
     font-family: $font-knockout;
@@ -45,5 +45,21 @@
     background-size: cover;
     background-position: center;
     height: 400px;
+  }
+
+  &--bottom {
+    background: url('../assets/studio4.jpg');
+    height: fit-content;
+    background-position: center;
+  
+    &::before {
+      transition:background-color $duration;
+    }
+    
+    &:hover {
+      &::before {
+        background-color: rgba(254,215,16,0.75);
+      }
+    }
   }
 }

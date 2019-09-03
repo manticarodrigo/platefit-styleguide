@@ -8,4 +8,16 @@
   &__smaller {
     max-width: 60%;
   }
+
+  &__download {
+    max-width: 30%;
+    margin: 0 auto 20px 0;
+    display: flex;
+    flex-direction: column;
+    transition:background-color $duration;
+
+    &:hover {
+      opacity: 0.75;
+    }
+  }
 }

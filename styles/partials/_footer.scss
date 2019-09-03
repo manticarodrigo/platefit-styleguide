@@ -1,0 +1,77 @@
+.footer {
+margin: 0 80px 0 80px;
+padding: 64px 0;
+
+  &__col {
+    margin-right: 140px;
+  }
+  
+  &__img {
+    width: 180px;
+  }
+
+  &__slogan {
+    font-family: MaisonNeue-Bold;
+    color: $color-text;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-top: 48px;
+  
+    &--yellow {
+      color: $color-primary;
+    }
+  }
+
+  &__headline {
+    font-family: MaisonNeue-Book;
+    color: $color-black;
+    font-size: 28px;
+    margin-bottom: 17.68px;
+    margin-top: 0px;
+  }
+
+  &__list__item {
+    font-family: $font-book;
+    font-size: 18px;
+    margin: 26px 0;
+    list-style: none;
+
+    a {
+      color: $color-text;
+      text-decoration: none;
+      letter-spacing: .02em;
+
+      &:hover {
+        color: $color-primary-alt;
+      }
+    }
+  
+  }
+
+  &__media {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  
+  &__img {
+    margin-right: 15px;
+    max-width: 15px;
+    max-height: 15px;
+    color: $color-primary;
+    padding-bottom: 80px;
+
+    &:hover {
+      color: $color-primary-alt;
+    }
+  }
+}
+&__email {
+  background-color: $color-light;
+  border: none;
+  padding: 10px 0;
+
+  &__btn {
+    color: $color-primary-alt;
+  }
+}
+}

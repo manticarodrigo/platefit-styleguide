@@ -1,6 +1,7 @@
 .grid {
   display: flex;
   flex-direction: row;
+  /* margin: 0 80px; */
 
   @media (max-width: $breakpoint-lg) {
     flex-direction: column;
@@ -32,6 +33,16 @@
       @media (max-width: $breakpoint-lg) {
         text-align: left;
       }
+    }
+
+    &__33-column {
+      box-sizing: border-box;
+      width: 33.33%;
+    }
+
+    &__25-column {
+      box-sizing: border-box;
+      width: 25%;
     }
   }
 

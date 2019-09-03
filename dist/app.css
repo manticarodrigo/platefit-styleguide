@@ -2849,13 +2849,17 @@ a,
 .footer__newsletter {
   display: flex;
   flex-direction: row; }
-  .footer__newsletter input[type="email"] {
-    border: none;
-    padding: 10px;
-    color: #909090;
-    background-color: #fafafa; }
+  .footer__newsletter input[type="email"],
   .footer__newsletter input[type="submit"] {
+    font-size: 13px;
+    font-size: 0.8125rem;
+    padding: 15px;
     border: none;
-    color: #f3cc4b;
     background-color: #fafafa; }
+  .footer__newsletter input[type="email"] {
+    color: #909090; }
+    .footer__newsletter input[type="email"]::placeholder {
+      color: #909090; }
+  .footer__newsletter input[type="submit"] {
+    color: #f3cc4b; }
 

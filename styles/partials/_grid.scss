@@ -34,6 +34,16 @@
         text-align: left;
       }
     }
+
+    &__33-column {
+      box-sizing: border-box;
+      width: 33.33%;
+    }
+
+    &__25-column {
+      box-sizing: border-box;
+      width: 25%;
+    }
   }
 
   &__33-column {

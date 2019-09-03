@@ -2036,6 +2036,12 @@ a,
       @media (max-width: 950px) {
         .grid__50-column--align-right {
           text-align: left; } }
+    .grid__50-column__33-column {
+      box-sizing: border-box;
+      width: 33.33%; }
+    .grid__50-column__25-column {
+      box-sizing: border-box;
+      width: 25%; }
   .grid__33-column {
     box-sizing: border-box;
     width: 33.33%; }
@@ -2277,7 +2283,7 @@ a,
 .owner__headline {
   font-family: Knockout-HTF28-JuniorFeatherwt;
   font-weight: 700;
-  font-size: 55px;
+  font-size: 50px;
   margin: 15px 0 15px 0;
   color: #373737; }
 
@@ -2285,4 +2291,91 @@ a,
   font-family: MaisonNeue-Light;
   color: #909090;
   line-height: 1.8; }
+
+.footer {
+  margin: 0 80px 0 80px;
+  padding: 64px 0; }
+  .footer__col {
+    margin-right: 140px; }
+  .footer__img {
+    width: 180px; }
+  .footer__slogan {
+    font-family: MaisonNeue-Bold;
+    color: #909090;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-top: 48px; }
+    .footer__slogan--yellow {
+      color: #fed710; }
+  .footer__headline {
+    font-family: MaisonNeue-Book;
+    color: #000;
+    font-size: 28px;
+    margin-bottom: 17.68px;
+    margin-top: 0px; }
+  .footer__list__item {
+    font-family: "MaisonNeue-Book", sans-serif;
+    font-size: 18px;
+    margin: 26px 0;
+    list-style: none; }
+    .footer__list__item a {
+      color: #909090;
+      text-decoration: none;
+      letter-spacing: .02em; }
+      .footer__list__item a:hover {
+        color: #f3cc4b; }
+  .footer__media {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    .footer__media__img {
+      margin-right: 15px;
+      max-width: 15px;
+      max-height: 15px;
+      color: #fed710;
+      padding-bottom: 80px; }
+      .footer__media__img:hover {
+        color: #f3cc4b; }
+  .footer__email {
+    background-color: #fafafa;
+    border: none;
+    padding: 10px 0; }
+    .footer__email__btn {
+      color: #f3cc4b; }
+
+.community-column {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-bottom: 180px; }
+
+.community {
+  background-color: #fafafa;
+  margin: 0 40px;
+  padding-top: 50px; }
+  .community__slogan {
+    margin-top: 0px;
+    margin-left: 70px; }
+    .community__slogan__text {
+      color: #373737;
+      font-weight: 700;
+      font-family: Knockout-HTF28-JuniorFeatherwt;
+      font-size: 48px;
+      letter-spacing: 1px;
+      text-align: left;
+      margin: 5px 0 10px 0; }
+  .community__social {
+    font-size: 10px;
+    font-weight: 700;
+    font-family: MaisonNeue-Book;
+    margin-left: 70px; }
+  .community__message {
+    color: #909090;
+    line-height: 1.8;
+    font-size: 16px;
+    margin-bottom: 10px; }
+  .community__img {
+    height: 169px;
+    width: 169px;
+    background-size: cover; }
 

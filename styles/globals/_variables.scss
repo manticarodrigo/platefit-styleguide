@@ -2,22 +2,27 @@
 //
 // Colors we use throughout the site.
 //
-// $color-primary - #fed710; Primary brand color
-// $color-secondary - #d6d6d6; Secondary brand color
+// $color-primary - #fed710; Primary
+// $color-primary-alt - #f3cc4b; Primary
+// $color-secondary - #d6d6d6; Secondary
+// $color-light - #fafafa; Light
+// $color-dark - #333333; Dark
+// $color-headline - #636363; Headline
+// $color-text - #909090; Text
+// $color-overlay - rgba(255,255,255,.5); Overlay
 //
 // Styleguide Colors
 
 $color-white: #fff;
 $color-black: #000;
 $color-primary: #fed710;
+$color-primary-alt: #f3cc4b;
 $color-secondary: #d6d6d6;
 $color-light: #fafafa;
 $color-dark: #333333;
-$color-nav-link: #909090;
-$color-link-hover: #f3cc4b;
-$color-overlay: rgba(255,255,255,.5);
 $color-headline: #636363;
 $color-text: #909090;
+$color-overlay: rgba(255,255,255,.5);
 
 $spacing: 20px;
 $duration: 250ms ease-in-out;

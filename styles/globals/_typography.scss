@@ -50,7 +50,7 @@ h3,
 .h3 {
   @include fontSize(48px);
 
-  color: #373737;
+  color: $color-dark;
   font-family: $font-knockout-light;
   font-weight: 700;
 }

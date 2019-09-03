@@ -5,17 +5,19 @@
   </head>
   <body>
 
-    <!-- page header -->
+    <!-- header -->
 
     <header>
       <nav class="px-4 px-md-3 px-sm-2 navbar">
+        <!-- nav logo -->
+
         <a href="home.html">
           <img class="navbar__logo" src="../assets/logo.png">
         </a>
 
-        <!-- menu list -->
+        <!-- nav menu -->
 
-        <ul class="pl-0 list-unstyled row space-between">
+        <ul class="pl-0 list-unstyled row between">
           <li><a href="../styleguide/index.html">Style Guide</a></li>
           <li><a href="#">The Team</a></li>
           <li><a href="#">Locations</a></li>
@@ -25,11 +27,11 @@
       </nav>
     </header>
 
-    <!-- page main content -->
+    <!-- main content -->
 
     <main class="px-4 px-md-3 px-sm-2">
 
-      <!-- page hero -->
+      <!-- hero -->
 
       <section class="hero">
         <h1 class="hero__title">
@@ -37,31 +39,35 @@
         </h1>
       </section>
 
-      <!-- page hero boxes -->
+      <!-- offer boxes -->
 
-      <section class="container container--max-width row grid--pullup">
+      <section class="container row pull-up">
 
-        <div class="grid__50-column box-column">
-          <div class="box box--yellow">
-            <p class="box__type">
-              First Time
-            </p>
-            <h2 class="box__text">
-              Try 2 weeks for &dollar;49
-            </h2>
-            <img src="../assets/arrow.png" class="box__arrow">
+        <div class="col-2 col-1-lg">
+          <div class="p-2 p-0-lg my-4-lg row end">
+            <div class="box box--yellow">
+              <p class="box__type">
+                First Time
+              </p>
+              <h3 class="my-0 box__text">
+                Try 2 weeks for &dollar;49
+              </h3>
+              <img src="../assets/arrow.png" class="box__arrow">
+            </div>
           </div>
         </div>
 
-        <div class="grid__50-column box-column">
-          <div class="box">
-            <p class="box__type">
-              View Schedule
-            </p>
-            <h2 class="box__text">
-              Reserve a class
-            </h2>
-            <img class="box__arrow" src="../assets/arrow.png">
+        <div class="col-2 col-1-lg">
+          <div class="p-2 p-0-lg row">
+            <div class="box">
+              <p class="box__type">
+                View Schedule
+              </p>
+              <h3 class="my-0 box__text">
+                Reserve a class
+              </h3>
+              <img class="box__arrow" src="../assets/arrow.png">
+            </div>
           </div>
         </div>
 
@@ -69,19 +75,19 @@
 
       <!-- page headline -->
 
-      <section class="container container--max-width">
-        <h2 class="u-text-uppercase headline">The Workout</h2>
+      <section class="container">
+        <h2 class="text-uppercase headline">The Workout</h2>
       </section>
 
       <!-- page about -->
 
-      <section class="container container--max-width grid">
+      <section class="container grid">
 
-        <div class="u-padding--lg grid__50-column">
+        <div class="padding--lg grid__50-column">
           <h4 class="headline headline--sm">You are unstoppable.</h4>
         </div>
 
-        <div class="u-padding--lg grid__50-column grid__50-column--align-right">
+        <div class="padding--lg grid__50-column grid__50-column--align-right">
           <p class="paragraph">
             Platefit is a 27-minute high intensity interval training workout done on individual Power Plates with guided
             instruction carefully curated music and a new dynamic experience built for efficiency. Platefit will challenge
@@ -97,16 +103,16 @@
 
       <!-- page video / quote section -->
 
-      <section class="container container--max-width grid">
+      <section class="container grid">
 
-        <div class="u-padding--lg grid__50-column video">
+        <div class="padding--lg grid__50-column video">
           <video width="500" height="300" poster="../assets/studio5.jpg" controls>
             <source src="../assets/platefit.mp4" type="video/mp4">
             Video Not Supported
           </video>
         </div>
 
-        <div class="u-padding--lg grid__50-column quote">
+        <div class="padding--lg grid__50-column quote">
           <div class="quote__img">
             <img src="../assets/jennifer-p.png">
           </div>
@@ -115,7 +121,7 @@
               Love love love PLATEFIT! This is hands down my favorite workout in LA. It's fast, challenging, and the
               instructors don't waste a second... you are moving the entire 30 minutes.
             </p>
-            <h4 class="u-text-uppercase quote__text--small">
+            <h4 class="text-uppercase quote__text--small">
               /Jennifer P
             </h4>
           </div>
@@ -125,8 +131,8 @@
 
       <!-- page the science -->
 
-      <section class="container container--max-width grid">
-        <div class="u-padding--lg grid__50-column">
+      <section class="container grid">
+        <div class="padding--lg grid__50-column">
             <p class="h6">What is a Power Plate?</p>
             <h4 class="headline headline__sm">THE SCIENCE.</h4>
             <p class="paragraph">
@@ -137,7 +143,7 @@
                 <img src="../assets/arrow.png">
               </a>
         </div>
-        <div class="u-padding--lg grid__50-column image">
+        <div class="padding--lg grid__50-column image">
           <img class="image__sm" src="../assets/power-plate.png">
         </div>
       </section>
@@ -149,9 +155,9 @@
 
       <!-- page links -->
 
-      <section class="container container--max-width">
+      <section class="container">
         <nav>
-          <ul class="u-list-unstyled py-4 px-6 grid grid--space-around">
+          <ul class="list-unstyled py-4 px-6 grid grid--space-around">
             <li>
               <a href="#">
                 <img class="image__smaller" src="../assets/la-times.png">
@@ -188,7 +194,7 @@
 
       <!-- page owner section -->
 
-      <section class="container container--max-width grid">
+      <section class="container grid">
 
         <div class="grid__33-column">
           <img class="owner__img" src="../assets/rachael-headshot.jpg">
@@ -197,7 +203,7 @@
         <div class="grid__33-column owner__text-box">
           <div>
             <p class="h6">Owner</p>
-            <h3 class="my-3 u-text-uppercase">Rachael Blumberg</h3>
+            <h3 class="my-3 text-uppercase">Rachael Blumberg</h3>
           </div>
           <div class="owner__text">
             <p>
@@ -220,13 +226,13 @@
 
       <!-- community block -->
 
-      <section class="container container--max-width community">
-        <h2 class="p-3 u-text-center u-text-uppercase">Platefit Community</h2>
+      <section class="container community">
+        <h2 class="p-3 text-center text-uppercase">Platefit Community</h2>
 
         <div class="grid">
           <div class="ml-5 grid__50-column">
             <p class="h6">Social</p>
-            <p class="u-text-uppercase community__slogan__text">#THISISWHEREI<span class="footer__slogan--yellow">FIT</span></p>
+            <p class="text-uppercase community__slogan__text">#THISISWHEREI<span class="footer__slogan--yellow">FIT</span></p>
             <p class="community__message">Get to know your PLATEFIT team, make new friends, learn from our special guests, and get more out of your PLATEFIT experience.</p>
             <a class="btn btn--arrow" href="#">
               Learn more
@@ -248,8 +254,8 @@
 
       <!-- page fit on the go -->
 
-      <section class="container container--max-width grid">
-        <div class="u-padding--lg grid__50-column">
+      <section class="container grid">
+        <div class="padding--lg grid__50-column">
           <h3>FIT ON THE GO</h3>
           <p>
             Download the FREE PLATEFIT iOS & Android app to sign-up for classes and stay up to date on promotions.
@@ -261,7 +267,7 @@
             <img class="image__download" src="../assets/play-store.png">
           </a>
         </div>
-        <div class="u-padding--lg grid__50-column image">
+        <div class="padding--lg grid__50-column image">
           <img class="image__smaller" src="../assets/app.png">
         </div>
       </section>
@@ -283,12 +289,12 @@
     <footer class="grid footer">
       <div class="grid__25-column footer__col">
        <img class ="footer__img" src="../assets/logo-grey-300x61.png">
-      <p class="u-text-uppercase footer__slogan">This <br>is <br>where <br> i <span class="footer__slogan footer__slogan--yellow">fit</span></span></p>
+      <p class="text-uppercase footer__slogan">This <br>is <br>where <br> i <span class="footer__slogan footer__slogan--yellow">fit</span></span></p>
       </div>
       <div class="grid__25-column footer__col">
-        <p class="u-text-uppercase footer__headline">Company</p>
+        <p class="text-uppercase footer__headline">Company</p>
         <nav>
-          <ul class="u-list-unstyled">
+          <ul class="list-unstyled">
             <li class="footer__list__item">
               <a>Our Story</a>
             </li>
@@ -311,9 +317,9 @@
         </nav>
       </div>
       <div class="grid__25-column footer__col">
-        <p class="u-text-uppercase footer__headline">Explore</p>
+        <p class="text-uppercase footer__headline">Explore</p>
       <nav>
-        <ul class="u-list-unstyled">
+        <ul class="list-unstyled">
         <li class="footer__list__item">
           <a>About</a>
         </li>
@@ -336,13 +342,13 @@
     </nav>
       </div>
       <div class="grid__25-column footer__col">
-        <p class="u-text-uppercase footer__headline">Follow</p>
+        <p class="text-uppercase footer__headline">Follow</p>
         <div class="footer__media">
           <img class="footer__media__img" src="../assets/facebook-logo.png">
           <img class="footer__media__img" src="../assets/twitter-logo.png">
           <img class="footer__media__img" src="../assets/instagram-logo.png">
         </div>
-        <p class="u-text-uppercase footer__headline">Subscribe</p>
+        <p class="text-uppercase footer__headline">Subscribe</p>
         <form class="grid" action="emails">
           <input class="footer__email" type="text" name="email" value="Your Email">
           <input class="footer__email footer__email__btn" type="submit" value="Subscribe">

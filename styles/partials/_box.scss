@@ -1,25 +1,9 @@
-.box-column {
-  display: flex;
-  padding: $spacing / 2;
-
-  &:nth-child(1) {
-    justify-content: flex-end;
-  }
-
-  @media (max-width: $breakpoint-lg) {
-    padding: ($spacing * 2) ($spacing * 4);
-
-    &:nth-child(even) {
-      padding-top: 0;
-    }
-  }
-
-  @media (max-width: $breakpoint-md) {
-    padding: ($spacing * 2) ($spacing * 2);
-  }
-}
-
 .box {
+  @include breakpoint($breakpoint-lg) {
+    width: 100%;
+    height: auto;
+  }
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -37,27 +21,22 @@
     background-color: #fff;
   }
 
-  @media (max-width: $breakpoint-lg) {
-    width: 100%;
-    height: auto;
-  }
-
   &--yellow {
     background-color: $color-primary;
   }
 
   &__type {
-    font-size: 12px;
+    @include fontSize(12px);
+
+    margin-top: 0;
+    margin-bottom: 0;
     font-family: $font-bold;
     color: $color-dark;
   }
 
   &__text {
-    margin: 0 0 10px 0;
-    color: $color-dark;
-    font-size: 40px;
-    font-weight: bold;
-    font-family: $font-knockout-light;
+    @include fontSize(40px);
+
     letter-spacing: 0.05em;
     text-transform: uppercase;
   }

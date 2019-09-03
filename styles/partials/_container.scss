@@ -1,8 +1,5 @@
 .container {
   box-sizing: border-box;
-
-  &--max-width {
-    margin: auto;
-    max-width: $site-width;
-  }
+  margin: auto;
+  max-width: $site-width;
 }

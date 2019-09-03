@@ -11,8 +11,12 @@
   flex-direction: row;
   flex-wrap: wrap;
 
-  &.space-between {
+  &.between {
     justify-content: space-between;
+  }
+
+  &.end {
+    justify-content: flex-end;
   }
 }
 

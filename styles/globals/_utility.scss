@@ -2,6 +2,14 @@
   list-style: none;
 }
 
+.text-bold {
+  font-family: $font-bold;
+}
+
+.text-small {
+  @include fontSize(12px);
+}
+
 .text-uppercase {
   text-transform: uppercase;
 }

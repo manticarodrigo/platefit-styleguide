@@ -26,6 +26,7 @@
 body {
   font-size: 16px;
   font-family: $font-book;
+  color: $color-dark;
 }
 
 h1,
@@ -63,7 +64,6 @@ h6,
   font-family: $font-book;
 }
 
-p,
 .paragraph {
   color: $color-text;
   line-height: 1.8;

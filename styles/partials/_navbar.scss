@@ -5,45 +5,38 @@
   justify-content: space-between;
   align-items: center;
 
-  &__list {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  li {
+    @include fontSize(13px);
 
-    &__item {
-      font-size: 13px;
-      text-transform: uppercase;
-      font-family: $font-book;
+    font-family: $font-book;
+    text-transform: uppercase;
 
-      a {
-        margin-right: 1.5em;
-        color: $color-text;
-        font-weight: bold;
-        text-decoration: none;
-        letter-spacing: .02em;
+    a {
+      margin-right: 1.5em;
+      color: $color-text;
+      font-weight: bold;
+      text-decoration: none;
+      letter-spacing: .02em;
 
-        &:hover {
-          color: $color-primary-alt;
-        }
+      &:hover {
+        color: $color-primary-alt;
       }
 
-      &--btn {
-
-        a {
+      &.btn {
+        color: inherit;
+  
+        &:hover {
           color: inherit;
-
-          &:hover {
-            color: inherit;
-          }
         }
       }
     }
+
   }
 
   &__logo {
     width: 200px;
     padding: 10px;
-    background-color: #fff;
+    background-color: $color-white;
     transform: translateY(50%);
   }
 }

@@ -86,6 +86,19 @@ class KssBuilderHandlebars extends KssBuilderBaseHandlebars {
     return super.prepare(styleGuide).then(styleGuide => {
       // Load this builder's extra Handlebars helpers.
 
+      this.Handlebars.registerHelper("math", function(lvalue, operator, rvalue, options) {
+        lvalue = parseFloat(lvalue);
+        rvalue = parseFloat(rvalue);
+
+        return {
+          "+": lvalue + rvalue,
+          "-": lvalue - rvalue,
+          "*": lvalue * rvalue,
+          "/": lvalue / rvalue,
+          "%": lvalue % rvalue
+        }[operator];
+      });
+
       // Allow a builder user to override the {{section [reference]}} helper
       // with the --extend setting. Since a user's handlebars helpers are
       // loaded first, we need to check if this helper already exists.

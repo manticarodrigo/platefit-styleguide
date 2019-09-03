@@ -1,9 +1,9 @@
 $size-map: (0: 0rem, 1: 0.25rem, 2: 0.5rem, 3: 1rem, 4: 2rem, 5: 4rem, 6: 8rem);
 $type-map: ('m': 'margin', 'p': 'padding');
-$direction-map: ('t': 'top', 'r': 'right', 'b': 'bottom', 'l': 'left');
+$direction-map: ('': '', 't': 'top', 'r': 'right', 'b': 'bottom', 'l': 'left');
 
-@mixin styles($index, $type-key, $direction-key) {
-  $size: map-get($size-map, $index);
+@mixin styles($size-key, $type-key, $direction-key) {
+  $size: map-get($size-map, $size-key);
   $type: map-get($type-map, $type-key);
   $direction: map-get($direction-map, $direction-key);
 
@@ -20,53 +20,24 @@ $direction-map: ('t': 'top', 'r': 'right', 'b': 'bottom', 'l': 'left');
   }
 }
 
-@function className($index, $alias, $direction, $breakpoint: '') {
-  $prefix: #{$alias}#{$direction};
-  
-  @if ($breakpoint != '') {
-    $breakpoint: -#{$breakpoint};
-  }
-
-  @return #{$prefix}#{$breakpoint}-#{$index};
-}
-
-@mixin class($index, $alias, $direction: '', $breakpoint: '') {
-  $classname: className($index, $alias, $direction, $breakpoint); 
-  
-  @if $breakpoint == '' {
-    .#{$classname} {
-       @include styles($index, $alias, $direction);
-    }
-  } @else if $breakpoint == 'lg' {
-    @media (max-width: $breakpoint-lg) {
-      .#{$classname} {
-        @include styles($index, $alias, $direction);
-      }
-    }
-  } @else if $breakpoint == 'md' {
-    @media (max-width: $breakpoint-md) {
-      .#{$classname} {
-        @include styles($index, $alias, $direction);
-      }
-    }
-  } @else if $breakpoint == 'sm' {
-    @media (max-width: $breakpoint-sm) {
-      .#{$classname} {
-        @include styles($index, $alias, $direction);
-      }
-    }
-  }
-}
-
 @mixin spacing() {
-  $breakpoints: '', 'lg', 'md', 'sm';
-  $directions: '', 't', 'r', 'b', 'l', 'x', 'y';
+  @each $breakpoint-key, $breakpoint in $breakpoint-map {
+    @each $type-key, $type in $type-map {
+      @each $size-key, $size in $size-map {
+        @each $direction-key, $direction in $direction-map {
+          $classname: #{$type-key}#{$direction-key}-#{$size-key};
 
-  @each $breakpoint in $breakpoints {
-    @each $alias, $type in $type-map {
-      @each $index, $size in $size-map {
-        @each $direction in $directions {
-          @include class($index, $alias, $direction, $breakpoint);
+          @if $breakpoint-key == '' {
+            .#{$classname} {
+               @include styles($size-key, $type-key, $direction-key);
+            }
+          } @else {
+            @media (max-width: #{$breakpoint}) {
+              .#{$classname}-#{$breakpoint-key} {
+                @include styles($size-key, $type-key, $direction-key);
+              }
+            }
+          }
         }
       }
     }

@@ -1,8 +1,9 @@
 {
-  "title": "PLATEFIT Style Guide",
+  "title": "PLATEFIT | Style Guide",
   "source": "styles/",
   "destination": "styleguide/",
-  "builder": "node_modules/michelangelo/kss_styleguide/custom-template/",
+  "builder": "styleguide/platefit",
+  "homepage": "../styleguide/index.md",
   "css": [
     "../dist/app.css"
   ],

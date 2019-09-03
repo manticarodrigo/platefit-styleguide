@@ -30,6 +30,7 @@
   &__title {
     @include breakpoint($breakpoint-lg) { font-size: 4rem; }
 
+    max-width: 100%;
     font-size: 6rem;
     word-wrap: break-word;
   }

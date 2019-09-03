@@ -22,10 +22,10 @@
 
         <ul class="pl-0 list-unstyled row between">
           <li><a href="../styleguide/index.html">Style Guide</a></li>
-          <li><a href="#">The Team</a></li>
-          <li><a href="#">Locations</a></li>
-          <li><a href="#">Press</a></li>
-          <li><a class="btn" href="#">Reserve a Class</a></li>
+          <li><a href="#team">The Team</a></li>
+          <li><a href="#locations">Locations</a></li>
+          <li><a href="#press">Press</a></li>
+          <li><a class="btn" href="#schedule">Reserve a Class</a></li>
         </ul>
       </nav>
     </header>
@@ -36,7 +36,7 @@
 
       <!-- hero -->
 
-      <section class="hero" style="background-image: url('../assets/hero.jpg');">
+      <section class="px-3-md hero" style="background-image: url('../assets/hero.jpg');">
         <h2 class="h1 hero__title">
           #THISISWHEREIFIT
         </h2>
@@ -44,7 +44,7 @@
 
       <!-- offer boxes -->
 
-      <section class="container row pull-up">
+      <section class="px-3-md container row pull-up">
 
         <div class="col-2 col-1-lg">
           <div class="p-2 p-0-lg my-4-lg row end">
@@ -78,7 +78,7 @@
 
       <!-- about -->
 
-      <section class="py-4 container">
+      <section class="py-4 px-3-md container">
         <h3 class="h2 text-center text-uppercase letter-spacing">The Workout</h3>
         
         <div class="row">
@@ -107,11 +107,11 @@
 
       <!-- video / quote -->
 
-      <section class="container row">
+      <section class="px-3-md container row">
 
         <div class="col-2 col-1-xl row center-xl">
           <div class="py-4 py-2-md">
-            <video class="shadow" width="500" height="300" controls>
+            <video class="video shadow" width="500" height="300" controls>
               <source src="../assets/platefit.mp4" type="video/mp4">
               Video Not Supported
             </video>
@@ -141,7 +141,7 @@
 
       <!-- the science -->
 
-      <section class="container grid">
+      <section class="py-6 px-3-md container row">
         <div class="col-2 col-1-lg">
           <div class="py-4 py-2-md pr-4 pr-0-md">
               <p class="h6">What is a Power Plate?</p>
@@ -157,7 +157,7 @@
         </div>
         <div class="col-2 col-1-lg row center">
           <div class="py-4 py-2-md">
-            <img class="image__sm" src="../assets/power-plate.png">
+            <img class="powerplate-img" src="../assets/power-plate.png">
           </div>
         </div>
       </section>
@@ -169,71 +169,47 @@
 
       <!-- press -->
 
-      <section class="container">
-        <nav>
-          <ul class="list-unstyled py-4 px-6 grid grid--space-around">
-            <li>
-              <a href="#">
-                <img class="image__smaller" src="../assets/la-times.png">
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img class="image__smaller" src="../assets/vogue.png">
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img class="image__smaller" src="../assets/e-news.png">
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img  class="image__smaller" src="../assets/elle.png">
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img class="image__smaller" src="../assets/people.png">
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img class="image__smaller" src="../assets/la-weekly.png">
-              </a>
-            </li>
-          </ul>
-        </nav>
+      <section class="container p-6">
+        <div class="row around">
+          <a class="col-6 col-3-lg col-1-md mb-4-md row center align-center" href="#press"><img class="press-img" src="../assets/la-times.png" /></a>
+          <a class="col-6 col-3-lg col-1-md mb-4-md row center align-center" href="#press"><img class="press-img" src="../assets/vogue.png" /></a>
+          <a class="col-6 col-3-lg col-1-md mb-4-md row center align-center" href="#press"><img class="press-img" src="../assets/e-news.png" /></a>
+          <a class="col-6 col-3-lg col-1-md mb-4-md row center align-center" href="#press"><img class="press-img" src="../assets/elle.png" /></a>
+          <a class="col-6 col-3-lg col-1-md mb-4-md row center align-center" href="#press"><img class="press-img" src="../assets/people.png" /></a>
+          <a class="col-6 col-3-lg col-1-md row center align-center" href="#press"><img class="press-img" src="../assets/la-weekly.png" /></a>
+        </div>
       </section>
 
       <!-- owner -->
 
-      <section class="container grid">
+      <section class="container row">
 
-        <div class="grid__33-column">
+        <div class="col-3 col-2-xl col-1-md text-center-md">
           <img class="owner__img" src="../assets/rachael-headshot.jpg">
         </div>
 
-        <div class="grid__33-column owner__text-box">
-          <div>
-            <p class="h6">Owner</p>
-            <h3 class="my-3 text-uppercase">Rachael Blumberg</h3>
+        <div class="col-3 col-2-xl col-1-md mt-5-md text-center-md">
+          <div class="owner__text-box">
+            <div>
+              <p class="h6">Owner</p>
+              <h3 class="my-3 text-uppercase">Rachael Blumberg</h3>
+            </div>
+            <div class="owner__text">
+              <p>
+                After ten years of training clients in her private Power Plate studio in West Hollywood, Rachael Blumberg
+                decided to open the doors to PLATEFIT and fulfill her dream of offering this full-body toning, no-nonsense,
+                revitalizing workout to the public. The workout is designed for efficiencies. This is what transformation
+                looks like.
+              </p>
+            </div>
+            <a class="btn btn--arrow">
+              Our Story <img src="../assets/arrow.png">
+            </a>
           </div>
-          <div class="owner__text">
-            <p>
-              After ten years of training clients in her private Power Plate studio in West Hollywood, Rachael Blumberg
-              decided to open the doors to PLATEFIT and fulfill her dream of offering this full-body toning, no-nonsense,
-              revitalizing workout to the public. The workout is designed for efficiencies. This is what transformation
-              looks like.
-            </p>
-          </div>
-          <a class="btn btn--arrow">
-            Our Story <img src="../assets/arrow.png">
-          </a>
         </div>
 
-        <div class="grid__33-column">
-          <img class="owner__img--small" src="../assets/rachael2.jpg">
+        <div class="col-3 col-1-xl text-center-xl mt-5-xl">
+          <img class="pt-4 pr-5 pt-0-xl pr-0-xl owner__img--small" src="../assets/rachael2.jpg">
         </div>
 
       </section>
@@ -275,14 +251,14 @@
             Download the FREE PLATEFIT iOS & Android app to sign-up for classes and stay up to date on promotions.
           </p>
           <a href="#">
-            <img class="image__download" src="../assets/app-store.png">
+            <img class="app-download-img" src="../assets/app-store.png">
           </a>
           <a href="#">
-            <img class="image__download" src="../assets/play-store.png">
+            <img class="app-download-img" src="../assets/play-store.png">
           </a>
         </div>
-        <div class="padding--lg grid__50-column image">
-          <img class="image__smaller" src="../assets/app.png">
+        <div class="padding--lg grid__50-column text-center">
+          <img class="app-img" src="../assets/app.png">
         </div>
       </section>
 

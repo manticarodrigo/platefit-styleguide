@@ -2,6 +2,14 @@
   position: relative;
 }
 
+.border-box {
+  box-sizing: border-box;
+}
+
+.width-full {
+  width: 100%;
+}
+
 .list-unstyled {
   list-style: none;
 }
@@ -29,17 +37,15 @@
 .text-left {
   text-align: left;
 
-  &-lg {
-    @include breakpoint($breakpoint-lg) { text-align: left; }
-  }
+  &-lg { @include breakpoint($breakpoint-lg) { text-align: left; } }
 }
 
 .text-center {
   text-align: center;
 
-  &-lg {
-    @include breakpoint($breakpoint-lg) { text-align: center; }
-  }
+  &-xl { @include breakpoint($breakpoint-xl) { text-align: center; } }
+  &-lg { @include breakpoint($breakpoint-lg) { text-align: center; } }
+  &-md { @include breakpoint($breakpoint-md) { text-align: center; } }
 }
 
 .letter-spacing {

@@ -37,15 +37,21 @@
       </h1>
       <ul class="kss-nav">
         <li class="kss-nav__item">
-          <a href="index.html">
+          <a href="../pages/home.html">
             <span class="kss-nav__ref">0</span>
+            <span class="kss-nav__name">Demo</span>
+          </a>
+        </li>
+        <li class="kss-nav__item">
+          <a href="index.html">
+            <span class="kss-nav__ref">1</span>
             <span class="kss-nav__name">Introduction</span>
           </a>
         </li>
         {{#each menu}}
           <li class="kss-nav__item">
             <a class="{{#if isActive}}kss-state-active{{/if}}" href="section-{{referenceURI}}.html">
-              <span class="kss-nav__ref">{{referenceNumber}}</span>
+              <span class="kss-nav__ref">{{math referenceNumber "+" 1}}</span>
               <span class="kss-nav__name">{{header}}</span>
             </a>
             {{#if isActive}}

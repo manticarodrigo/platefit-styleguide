@@ -1,123 +1,101 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>PLATEFIT | Style Guide</title>
+<html>
+  <head>
+    <title>PLATEFIT | Style Guide</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="generator" content="kss-node">
 
-  <meta name="description" content="">
-  <meta name="generator" content="kss-node">
-  <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,300">
+    <link rel="stylesheet" href="kss-assets/vendor/prism.css">
+    <link rel="stylesheet" href="kss-assets/css/kss.css">
+    <link rel="stylesheet" href="../dist/app.css">
 
-  <link rel="stylesheet" href="kss-assets/kss.css">
-  <link rel="stylesheet" href="../dist/app.css">
+  </head>
 
-</head>
-<body id="kss-node" class="kss-fullscreen-mode">
+  <body class="kss-body">
 
-<div class="kss-sidebar kss-style">
-  <header class="kss-header">
-    <a href="../pages/home.html">
-      <img class="mb-3" width="200px" src="../assets/logo.png" />
-    </a>
-    <h1 class="kss-doc-title">Style Guide</h1>
-  </header>
-  <nav class="kss-nav" aria-label="Style Guide">
-    <ul class="kss-nav__menu">
-      <li class="kss-nav__menu-item">
-        <a class="kss-nav__menu-link" href="../pages/home.html">
-          <span class="kss-nav__ref">0</span
-          ><span class="kss-nav__name">Demo</span>
+    <!-- header. -->
+    <header class="kss-header">
+      <section class="kss-header__inner">
+        <a class="kss-header__hamburger-trigger">
+          <div class="kss-header__hamburger"></div>
         </a>
-      </li>
-      <li class="kss-nav__menu-item">
-        <a class="kss-nav__menu-link" href="./index.html">
-          <span class="kss-nav__ref">1</span
-          ><span class="kss-nav__name">Overview</span>
-        </a>
-      </li>
-      <li class="kss-nav__menu-item">
-        <a class="kss-nav__menu-link" href="section-colors.html">
-          <span class="kss-nav__ref">2</span><span class="kss-nav__name">Colors</span>
-        </a>
-      </li>
-      <li class="kss-nav__menu-item">
-        <a class="kss-nav__menu-link" href="section-layout.html">
-          <span class="kss-nav__ref">3</span><span class="kss-nav__name">Layout</span>
-        </a>
-      </li>
-      <li class="kss-nav__menu-item">
-        <a class="kss-nav__menu-link" href="section-typography.html">
-          <span class="kss-nav__ref">4</span><span class="kss-nav__name">Typography</span>
-        </a>
-      </li>
-    </ul>
-  </nav>
-</div>
-<main class="kss-main" aria-label="Content">
-  <article>
+        <h1 class="kss-header__title kss-title">PLATEFIT | Style Guide</h1>
+      </section>
+    </header>
+    <!-- /header. -->
 
-    <div id="kssref-layout" class="kss-section kss-section--depth-1 is-fullscreen">
 
-      <div class="kss-style">
-        <h1 class="kss-title kss-title--level-1">
-          <a class="kss-title__permalink" href="#kssref-layout">
-            <span class="kss-title__ref">
-              2
-              <span class="kss-title__permalink-hash">
-                  #Layout
-              </span>
-            </span>
-            Layout
+    <!-- navigation. -->
+    <section class="kss-navigation">
+      <h1 class="kss-navigation__title kss-title">
+        <a href="../pages/home.html">
+          <img class="p-3" style="max-width: 200px" src="../assets/logo.png" />
+        </a>
+        Style Guide
+      </h1>
+      <ul class="kss-nav">
+        <li class="kss-nav__item">
+          <a href="index.html">
+            <span class="kss-nav__ref">0</span>
+            <span class="kss-nav__name">Introduction</span>
           </a>
-        </h1>
-
-          <p class="kss-toolbar">
-            <a href="#kssref-layout" data-kss-guides="true">
-              <span class="kss-toolbar__tooltip">Toggle example guides</span>
-              <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
-                <rect class="kss-toolbar__icon-fill" x="5" y="35" width="5" height="9"/>
-                <rect class="kss-toolbar__icon-fill" x="54" y="21" width="5" height="9"/>
-                <rect class="kss-toolbar__icon-fill" x="54" y="35" width="5" height="9"/>
-                <rect class="kss-toolbar__icon-fill" x="5" y="21" width="5" height="9"/>
-                <rect class="kss-toolbar__icon-fill" x="5" y="0" width="5" height="15"/>
-                <rect class="kss-toolbar__icon-fill" x="35" y="5" width="9" height="5"/>
-                <rect class="kss-toolbar__icon-fill" x="20" y="5" width="9" height="5"/>
-                <rect class="kss-toolbar__icon-fill" x="0" y="5" width="15" height="5"/>
-                <rect class="kss-toolbar__icon-fill" x="54" y="0" width="5" height="15"/>
-                <rect class="kss-toolbar__icon-fill" x="49" y="5" width="15" height="5"/>
-                <rect class="kss-toolbar__icon-fill" x="54" y="49" width="5" height="15"/>
-                <rect class="kss-toolbar__icon-fill" x="49" y="54" width="15" height="5"/>
-                <rect class="kss-toolbar__icon-fill" x="5" y="49" width="5" height="15"/>
-                <rect class="kss-toolbar__icon-fill" x="0" y="54" width="15" height="5"/>
-                <rect class="kss-toolbar__icon-fill" x="35" y="54" width="9" height="5"/>
-                <rect class="kss-toolbar__icon-fill" x="20" y="54" width="9" height="5"/>
-              </svg>
+        </li>
+          <li class="kss-nav__item">
+            <a class="" href="section-colors.html">
+              <span class="kss-nav__ref">1</span>
+              <span class="kss-nav__name">Colors</span>
             </a>
-            <a href="#kssref-layout" data-kss-markup="true">
-              <span class="kss-toolbar__tooltip">Toggle HTML markup</span>
-              <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
-                <path class="kss-toolbar__icon-fill" d="M37.555,46.239l6.103,6.103l20.342,-20.342l-20.342,-20.342l-6.103,6.103l14.24,14.239l-14.24,14.239Z"/>
-                <path class="kss-toolbar__icon-fill" d="M26.445,17.761l-6.103,-6.103l-20.342,20.342l20.342,20.342l6.103,-6.103l-14.24,-14.239l14.24,-14.239Z"/>
-              </svg>
+          </li>
+          <li class="kss-nav__item">
+            <a class="kss-state-active" href="section-layout.html">
+              <span class="kss-nav__ref">2</span>
+              <span class="kss-nav__name">Layout</span>
             </a>
-          </p>
-
-          <div class="kss-description">
-            <p>A multi-column grid class family and other utilites.</p>
-
-          </div>
-
-
-      </div>
-
-        <div class="kss-modifier__wrapper">
-          <div class="kss-modifier__heading kss-style">
-            Example
-          </div>
+          </li>
+          <li class="kss-nav__item">
+            <a class="" href="section-typography.html">
+              <span class="kss-nav__ref">3</span>
+              <span class="kss-nav__name">Typography</span>
+            </a>
+          </li>
+      </ul>
+    </section>
+    <!-- /navigation. -->
 
 
-          <div class="kss-modifier__example">
-            <div class="row">
+    <!-- documentation. -->
+    <section class="kss-documentation">
+
+        <!--
+          display each section, in order.
+          the "root" element comes first in this loop, and can be detected using
+          the "#if @first" block as seen below.
+        -->
+            <header class="kss-section kss-section--depth-1" id="kssref-layout">
+
+            <article class="kss-section__content">
+                <p class="kss-section__source">Source: <span>globals/_layout.scss</span>, line <span>1</span></p>
+
+              <a class="kss-section__permalink" href="#kssref-layout">
+                <h1 class="kss-section__item kss-section__item--depth-1">
+                  <span class="kss-section__ref">2</span>
+                  <span class="kss-section__name">Layout</span>
+                </h1>
+              </a>
+
+                <div class="kss-section__description"><p>A multi-column grid class family and other utilites.</p>
+</div>
+
+            </article>
+
+              <article class="kss-section__modifiers">
+                <h1 class="kss-modifiers__heading">Example</h1>
+
+
+                <div class="kss-modifiers__example"><div class="row">
   <div class="col-1">
     <div class="u-bg-color-primary m-2 p-2">
       One
@@ -153,89 +131,63 @@
       Six
     </div>
   </div>
-</div>
-            <div class="kss-modifier__example-footer"></div>
-          </div>
+</div></div>
 
-        </div>
+              </article>
 
-          <details class="kss-markup kss-style">
-            <summary>
-                Markup: <code>../styleguide/templates/layout.html</code>
-            </summary>
-            <pre class="hljs"><code class="language-handlebars"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-1"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-bg-color-primary m-2 p-2"</span>&gt;</span>
+                <article class="kss-section__markup">
+                  <pre><code class="language-markup">&lt;div class&#x3D;&quot;row&quot;&gt;
+  &lt;div class&#x3D;&quot;col-1&quot;&gt;
+    &lt;div class&#x3D;&quot;u-bg-color-primary m-2 p-2&quot;&gt;
       One
-    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    &lt;/div&gt;
+  &lt;/div&gt;
 
-  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-2 col-1-sm"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-bg-color-primary m-2 p-2"</span>&gt;</span>
+  &lt;div class&#x3D;&quot;col-2 col-1-sm&quot;&gt;
+    &lt;div class&#x3D;&quot;u-bg-color-primary m-2 p-2&quot;&gt;
       Two
-    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    &lt;/div&gt;
+  &lt;/div&gt;
 
-  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-2 col-1-sm"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-bg-color-primary m-2 p-2"</span>&gt;</span>
+  &lt;div class&#x3D;&quot;col-2 col-1-sm&quot;&gt;
+    &lt;div class&#x3D;&quot;u-bg-color-primary m-2 p-2&quot;&gt;
       Three
-    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    &lt;/div&gt;
+  &lt;/div&gt;
 
-  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-3 col-2-md col-1-sm"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-bg-color-primary m-2 p-2"</span>&gt;</span>
+  &lt;div class&#x3D;&quot;col-3 col-2-md col-1-sm&quot;&gt;
+    &lt;div class&#x3D;&quot;u-bg-color-primary m-2 p-2&quot;&gt;
       Four
-    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    &lt;/div&gt;
+  &lt;/div&gt;
 
-  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-3 col-2-md col-1-sm"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-bg-color-primary m-2 p-2"</span>&gt;</span>
+  &lt;div class&#x3D;&quot;col-3 col-2-md col-1-sm&quot;&gt;
+    &lt;div class&#x3D;&quot;u-bg-color-primary m-2 p-2&quot;&gt;
       Five
-    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    &lt;/div&gt;
+  &lt;/div&gt;
 
-  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-3 col-1-md"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-bg-color-primary m-2 p-2"</span>&gt;</span>
+  &lt;div class&#x3D;&quot;col-3 col-1-md&quot;&gt;
+    &lt;div class&#x3D;&quot;u-bg-color-primary m-2 p-2&quot;&gt;
       Six
-    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></code></pre>
-          </details>
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                </article>
 
-        <div class="kss-source kss-style">
-          Source: <code>globals/_layout.scss</code>, line 1
-        </div>
-
-    </div>
-</article>
-</main>
-
-<!-- SCRIPTS -->
-<script src="kss-assets/kss.js"></script>
-<script src="kss-assets/scrollspy.js"></script>
-<script src="kss-assets/kss-fullscreen.js"></script>
-<script src="kss-assets/kss-guides.js"></script>
-<script src="kss-assets/kss-markup.js"></script>
-<script>
-  var spy = new ScrollSpy('#kss-node', {
-    nav: '.kss-nav__menu-child > li > a',
-    className: 'is-in-viewport'
-  });
-  var kssFullScreen = new KssFullScreen({
-    idPrefix: 'kss-fullscreen-',
-    bodyClass: 'kss-fullscreen-mode',
-    elementClass: 'is-fullscreen'
-  });
-  var kssGuides = new KssGuides({
-    bodyClass: 'kss-guides-mode'
-  });
-  var kssMarkup = new KssMarkup({
-    bodyClass: 'kss-markup-mode',
-    detailsClass: 'kss-markup'
-  });
-</script>
-<script src="../dist/main.js"></script>
+            </header>
+    </section>
+    <!-- /documentation. -->
 
 
-</body>
+
+  <!-- scripts. -->
+  <script src="kss-assets/vendor/jquery.js"></script>
+  <script src="kss-assets/vendor/prism.js"></script>
+  <script src="kss-assets/js/kss.js"></script>
+  <script src="../dist/main.js"></script>
+
+  <!-- /scripts. -->
+
+  </body>
 </html>

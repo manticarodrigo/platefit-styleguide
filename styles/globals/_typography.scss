@@ -1,14 +1,17 @@
-// Headlines
+// Typography
 //
-// Global headline elements and classes. These can be used as HTML elements or CSS classes.
+// Global typographic elements and classes. These can be used as HTML elements or CSS classes.\
+// **NOTE**: The paragraph html tag will _not_ inherit the .paragraph class styles
 //
 // Markup:
 // <h1 class="h1">The quick brown fox jumps over the lazy dog</h1>
 // <h2 class="h2">The quick brown fox jumps over the lazy dog</h2>
 // <h3 class="h3">The quick brown fox jumps over the lazy dog</h3>
 // <h6 class="h6">The quick brown fox jumps over the lazy dog</h6>
+// <p class="paragraph">The quick brown fox jumps over the lazy dog</p>
+// <a class="link">The quick brown fox jumps over the lazy dog</a>
 //
-// Styleguide Typography.headlines
+// Styleguide Typography
 
 @function calculateRem($size) {
   $remSize: $size / 16px;
@@ -56,16 +59,6 @@ h6,
   color: $color-dark;
   font-family: $font-book;
 }
-
-// Miscellaneous
-//
-// Miscellaneous typographic elements and classes. The paragraph element will not inherit the class's styles
-//
-// Markup:
-// <p class="paragraph">The quick brown fox jumps over the lazy dog</p>
-// <a class="link">The quick brown fox jumps over the lazy dog</a>
-//
-// Styleguide Typography.miscellaneous
 
 .paragraph {
   color: $color-text;

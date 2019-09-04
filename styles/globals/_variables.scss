@@ -33,8 +33,12 @@ $breakpoint-lg: 950px;
 $breakpoint-md: 750px;
 $breakpoint-sm: 500px;
 
-@mixin breakpoint($breakpoint) {
+@mixin maxWidth($breakpoint) {
   @media (max-width: $breakpoint) { @content; }
+}
+
+@mixin minWidth($breakpoint) {
+  @media (min-width: $breakpoint) { @content; }
 }
 
 $breakpoint-map: (

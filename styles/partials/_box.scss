@@ -1,5 +1,5 @@
 .box {
-  @include breakpoint($breakpoint-lg) {
+  @include maxWidth($breakpoint-lg) {
     width: 100%;
     height: auto;
   }

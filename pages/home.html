@@ -12,21 +12,32 @@
 
         <!-- nav logo -->
 
-        <h1 class="my-0">
-          <a href="home.html">
-            <img class="navbar__logo" src="../assets/logo.png">
-          </a>
-        </h1>
+        <a class="py-3-lg navbar__logo" href="home.html">
+          <img src="../assets/logo.png">
+        </a>
+
+        <!-- mobile toggle -->
+
+        <input id="mobile-toggle" type="checkbox" />
+
+        <!-- hamburger icon -->
+
+        <div class="navbar__mobile-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
 
         <!-- nav menu -->
 
-        <ul class="pl-0 list-unstyled row between">
+        <ul class="pl-0 list-unstyled row between navbar__menu">
           <li><a href="../styleguide/index.html">Style Guide</a></li>
           <li><a href="#team">The Team</a></li>
           <li><a href="#locations">Locations</a></li>
           <li><a href="#press">Press</a></li>
           <li><a class="btn" href="#schedule">Reserve a Class</a></li>
         </ul>
+        
       </nav>
     </header>
 
@@ -142,6 +153,7 @@
       <!-- the science -->
 
       <section class="px-6 px-4-md py-6 row bg-color-light">
+
         <div class="col-2 col-1-lg">
           <div class="py-4 py-2-md pr-6 pr-0-md">
               <p class="h6">What is a Power Plate?</p>
@@ -160,11 +172,12 @@
             <img class="max-width-full" src="../assets/power-plate.png">
           </div>
         </div>
+
       </section>
 
       <!-- banner -->
 
-      <section class="banner bg-color-light" style="background-image: url('../assets/studio.jpg');">
+      <section class="bg-color-light banner" style="background-image: url('../assets/studio.jpg');">
       </section>
 
       <!-- press -->

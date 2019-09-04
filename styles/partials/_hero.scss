@@ -1,5 +1,5 @@
 .hero {
-  @include breakpoint($breakpoint-lg) { height: 550px; }
+  @include maxWidth($breakpoint-lg) { height: 550px; }
 
   box-sizing: border-box;
   position: relative;
@@ -28,7 +28,7 @@
   }
 
   &__title {
-    @include breakpoint($breakpoint-lg) { font-size: 4rem; }
+    @include maxWidth($breakpoint-lg) { font-size: 4rem; }
 
     max-width: 100%;
     font-size: 6rem;

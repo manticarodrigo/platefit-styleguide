@@ -26,9 +26,9 @@
   &.center {
     justify-content: center;
 
-    &-xl { @include breakpoint($breakpoint-xl) { justify-content: center; } }
-    &-lg { @include breakpoint($breakpoint-lg) { justify-content: center; } }
-    &-md { @include breakpoint($breakpoint-md) { justify-content: center; } }
+    &-xl { @include maxWidth($breakpoint-xl) { justify-content: center; } }
+    &-lg { @include maxWidth($breakpoint-lg) { justify-content: center; } }
+    &-md { @include maxWidth($breakpoint-md) { justify-content: center; } }
   }
 
   &.align-center {

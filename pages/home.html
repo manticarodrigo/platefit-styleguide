@@ -2,6 +2,7 @@
   <head>
     <title> PLATEFIT | This is where I fit.</title>
     <link rel="stylesheet" type="text/css" href="../dist/app.css">
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.1.0/dist/simpleParallax.min.js"></script>
   </head>
   <body>
 
@@ -45,9 +46,10 @@
 
     <main class="px-4 px-md-3 px-sm-2 container">
 
+
       <!-- hero -->
 
-      <section class="px-6 px-4-md hero" style="background-image: url('../assets/hero.jpg');">
+      <section id="parallax" class="px-6 px-4-md hero" style="background-image: url('../assets/hero.jpg');">
         <h2 class="h1 hero__title text-center">
           #THISISWHEREIFIT
         </h2>
@@ -122,10 +124,15 @@
 
         <div class="col-2 col-1-xl row center-xl">
           <div class="py-4 py-2-md">
-            <video class="video shadow" width="500" height="300" controls>
-              <source src="../assets/platefit.mp4" type="video/mp4">
-              Video Not Supported
-            </video>
+            <div class="video__container">
+              <video class="video shadow" preload="none" style="background-image: url('../assets/studio5.jpg')">
+                <source src="../assets/platefit.mp4" type="video/mp4">
+                Video Not Supported
+              </video>
+              <div class="video__button">
+                <img src="../assets/play-btn.png">
+              </div>
+            </div>
           </div>
         </div>
 
@@ -147,9 +154,24 @@
             </div>
           </div>
         </div>
-
       </section>
 
+      <script>
+      var video=document.querySelector('.video');
+      var videoButton=document.querySelector('.video__button');
+      var videoContainer=document.querySelector('.video__container');
+      console.log(videoContainer);  
+      videoContainer.addEventListener("click",function() {
+          if(video.paused == true) {
+            video.play();
+            videoButton.style.display='none';
+          }
+          else {
+            video.pause ();
+            videoButton.style.display='block';
+          }
+        });
+      </script>
       <!-- the science -->
 
       <section class="px-6 px-4-md py-6 row bg-color-light">
@@ -177,7 +199,7 @@
 
       <!-- banner -->
 
-      <section class="bg-color-light banner" style="background-image: url('../assets/studio.jpg');">
+      <section id="parallax" class="bg-color-light banner" style="background-image: url('../assets/studio.jpg');">
       </section>
 
       <!-- press -->
@@ -285,7 +307,6 @@
         </a>
       </section>
 
-    </main>
 
     <!-- footer -->
 

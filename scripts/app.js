@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const container = document.querySelector('[data-component="parallax-container"]') || window;
   const navbar = document.querySelector('[data-component="navbar"]');
 
-  const getIsScrolled = () => container.scrollTop > 10;
+  const getIsScrolled = () => container.scrollTop > 61;
 
   const setNavOpacity = () => {
     const opacity = getIsScrolled() ? 0.75 : 1;

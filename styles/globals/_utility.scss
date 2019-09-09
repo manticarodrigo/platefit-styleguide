@@ -54,6 +54,10 @@
 
 .letter-spacing {
   letter-spacing: .25em;
+
+  &--sm {
+    letter-spacing: .025em;
+  }
 }
 
 .color {
@@ -72,10 +76,10 @@
   box-shadow: $box-shadow;
 }
 
-.pull-up {
-  transform: translateY(-50%);
+.hover-translucent {
+  transition: opacity $duration;
 
-  @media (max-width: $breakpoint-lg) {
-    transform: none;
+  &:hover {
+    opacity: 0.5;
   }
 }

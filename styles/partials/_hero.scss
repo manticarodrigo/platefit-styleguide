@@ -4,11 +4,9 @@
   box-sizing: border-box;
   position: relative;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
   width: 100%;
   min-height: 750px;
-  overflow: hidden;
 
   & > * {
     position: relative;
@@ -25,10 +23,15 @@
   }
 
   &__title {
-    @include maxWidth($breakpoint-lg) { font-size: 4rem; }
+    @include minWidth($breakpoint-lg + 1) {
+      @include fontSize(148px);
 
+      max-width: 800px;
+    }
+
+    margin-right: auto;
+    margin-left: auto;
     max-width: 100%;
-    font-size: 6rem;
     word-wrap: break-word;
   }
 }

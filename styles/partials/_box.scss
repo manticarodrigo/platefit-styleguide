@@ -1,5 +1,24 @@
+.box-row {
+  @include maxWidth($breakpoint-md) {
+    position: relative;
+    transform: translate(-50%, 0%);
+  }
+
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  transition: transform $duration;
+}
+
+.box-section-after {
+  @include minWidth($breakpoint-md + 1) {
+    padding-top: 175px;
+  }
+}
+
 .box {
-  @include maxWidth($breakpoint-lg) {
+  @include maxWidth($breakpoint-md) {
     width: 100%;
     height: auto;
   }

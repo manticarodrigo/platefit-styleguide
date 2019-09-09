@@ -27,13 +27,14 @@ body {
   font-size: 16px;
   font-family: $font-book;
   color: $color-dark;
+  word-wrap: break-word;
 }
 
 h1,
 .h1 {
   @include fontSize(50px);
 
-  color: $color-black;
+  color: $color-dark;
   font-family: $font-knockout;
 }
 

@@ -1,9 +1,8 @@
 .banner {
+  box-sizing: border-box;
   position: relative;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
   height: 400px;
+  overflow: hidden;
 
   & > * {
     position: relative;

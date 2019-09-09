@@ -2590,6 +2590,13 @@ a,
   .col-6-sm {
     width: 16.66667%; } }
 
+main {
+  /* Account for the navbar height */
+  padding-top: 61px; }
+  @media (max-width: 950px) {
+    main {
+      padding-top: 93px; } }
+
 .container {
   box-sizing: border-box;
   margin-right: auto;
@@ -2598,10 +2605,16 @@ a,
 
 .navbar {
   z-index: 999;
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center; }
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: opacity 250ms ease-in-out; }
+  .navbar__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff; }
   .navbar__logo img {
     width: 200px;
     padding: 10px;
@@ -2734,18 +2747,44 @@ a,
       .navbar__mobile-icon span:not(:last-of-type) {
         margin-bottom: 5px; }
 
+.parallax-container {
+  /* The height needs to be set to a fixed value for the effect to work. */
+  height: 100vh;
+  /* The scaling of the images would add a horizontal scrollbar, so disable x overflow. */
+  overflow-x: hidden;
+  /* Enable scrolling on the page. */
+  overflow-y: auto;
+  /* Set the perspective to 2px. This is essentailly the simulated distance from the viewport to transformed objects.*/
+  perspective: 2px; }
+
+.parallax::after {
+  /* Display and position the pseudo-element */
+  content: " ";
+  position: absolute;
+  top: -25%;
+  right: 0;
+  bottom: -25%;
+  left: 0;
+  /* Move the pseudo-element back away from the camera,
+     * then scale it back up to fill the viewport.
+     * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
+  transform: translateZ(-1px) scale(1.5);
+  /* Force the background image to fill the whole element. */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  /* Keep the image from overlapping sibling elements. */
+  z-index: -1; }
+
 .hero {
   box-sizing: border-box;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
-  height: 750px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  width: 100%; }
+  width: 100%;
+  min-height: 750px;
+  overflow: hidden; }
   @media (max-width: 950px) {
     .hero {
       height: 550px; } }
@@ -2848,11 +2887,10 @@ a,
   width: 180px; }
 
 .banner {
+  box-sizing: border-box;
   position: relative;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 400px; }
+  height: 400px;
+  overflow: hidden; }
   .banner > * {
     position: relative; }
   .banner::before {
@@ -2886,51 +2924,49 @@ a,
       font-size: 12px;
       font-family: "MaisonNeue-Bold", sans-serif; }
 
-.footer__slogan {
-  font-size: 16px;
-  font-size: 1rem;
-  color: #909090;
-  font-family: "MaisonNeue-Bold", sans-serif;
-  line-height: 1.8; }
-
-.footer__headline {
-  font-size: 28px;
-  font-size: 1.75rem;
-  color: #333333;
-  font-family: "MaisonNeue-Book", sans-serif; }
-
-.footer li {
-  font-size: 18px;
-  font-size: 1.125rem;
-  font-family: "MaisonNeue-Book", sans-serif;
-  list-style: none; }
-  .footer li a {
+.footer {
+  background-color: #fff; }
+  .footer__slogan {
+    font-size: 16px;
+    font-size: 1rem;
     color: #909090;
-    text-decoration: none;
-    letter-spacing: 0; }
-    .footer li a:hover {
-      color: #f3cc4b; }
-
-.footer__social-img {
-  margin-right: 15px;
-  max-width: 30px;
-  max-height: 20px;
-  color: #fed710; }
-
-.footer__newsletter {
-  display: flex;
-  flex-direction: row; }
-  .footer__newsletter input[type="email"],
-  .footer__newsletter input[type="submit"] {
-    font-size: 13px;
-    font-size: 0.8125rem;
-    padding: 15px;
-    border: none;
-    background-color: #fafafa; }
-  .footer__newsletter input[type="email"] {
-    color: #909090; }
-    .footer__newsletter input[type="email"]::placeholder {
+    font-family: "MaisonNeue-Bold", sans-serif;
+    line-height: 1.8; }
+  .footer__headline {
+    font-size: 28px;
+    font-size: 1.75rem;
+    color: #333333;
+    font-family: "MaisonNeue-Book", sans-serif; }
+  .footer li {
+    font-size: 18px;
+    font-size: 1.125rem;
+    font-family: "MaisonNeue-Book", sans-serif;
+    list-style: none; }
+    .footer li a {
+      color: #909090;
+      text-decoration: none;
+      letter-spacing: 0; }
+      .footer li a:hover {
+        color: #f3cc4b; }
+  .footer__social-img {
+    margin-right: 15px;
+    max-width: 30px;
+    max-height: 20px;
+    color: #fed710; }
+  .footer__newsletter {
+    display: flex;
+    flex-direction: row; }
+    .footer__newsletter input[type="email"],
+    .footer__newsletter input[type="submit"] {
+      font-size: 13px;
+      font-size: 0.8125rem;
+      padding: 15px;
+      border: none;
+      background-color: #fafafa; }
+    .footer__newsletter input[type="email"] {
       color: #909090; }
-  .footer__newsletter input[type="submit"] {
-    color: #f3cc4b; }
+      .footer__newsletter input[type="email"]::placeholder {
+        color: #909090; }
+    .footer__newsletter input[type="submit"] {
+      color: #f3cc4b; }
 

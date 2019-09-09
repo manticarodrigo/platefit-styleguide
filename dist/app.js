@@ -86,6 +86,17 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./scripts/app.js":
+/*!************************!*\
+  !*** ./scripts/app.js ***!
+  \************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("document.addEventListener('DOMContentLoaded', () => {\n  const container = document.querySelector('[data-component=\"parallax-container\"]') || window;\n  const navbar = document.querySelector('[data-component=\"navbar\"]');\n\n  const getIsScrolled = () => container.scrollTop > 10;\n\n  const setNavOpacity = () => {\n    const opacity = getIsScrolled() ? 0.75 : 1;\n    navbar.style.opacity = opacity;\n  };\n\n\n  const onScroll = () => setNavOpacity();\n\n  container.addEventListener('scroll', onScroll);\n\n  navbar.onmouseenter = () => {\n    if (!getIsScrolled()) return;\n\n    navbar.style.opacity = 1;\n  };\n  \n  navbar.onmouseleave = () => {\n    if (!getIsScrolled()) return;\n\n    navbar.style.opacity = 0.75;\n  };\n});\n\n\n//# sourceURL=webpack:///./scripts/app.js?");
+
+/***/ }),
+
 /***/ "./styles/app.scss":
 /*!*************************!*\
   !*** ./styles/app.scss ***!
@@ -98,13 +109,13 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./styl
 /***/ }),
 
 /***/ 0:
-/*!*******************************!*\
-  !*** multi ./styles/app.scss ***!
-  \*******************************/
+/*!************************************************!*\
+  !*** multi ./scripts/app.js ./styles/app.scss ***!
+  \************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("module.exports = __webpack_require__(/*! ./styles/app.scss */\"./styles/app.scss\");\n\n\n//# sourceURL=webpack:///multi_./styles/app.scss?");
+eval("__webpack_require__(/*! ./scripts/app.js */\"./scripts/app.js\");\nmodule.exports = __webpack_require__(/*! ./styles/app.scss */\"./styles/app.scss\");\n\n\n//# sourceURL=webpack:///multi_./scripts/app.js_./styles/app.scss?");
 
 /***/ })
 

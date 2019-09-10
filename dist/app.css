@@ -2928,10 +2928,7 @@ main {
 .video {
   max-width: 100%;
   width: 500px;
-  background-color: transparent;
-  background-position: 50% 50%;
-  background-size: cover;
-  background-repeat: no-repeat; }
+  object-fit: cover; }
   .video__container {
     position: relative; }
   .video__button {

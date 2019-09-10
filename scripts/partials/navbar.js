@@ -11,8 +11,10 @@ const domReady = () => {
     navbar.style.opacity = entering ? 1 : 0.75;
   };
 
-  navbar.onmouseenter = () => setOpacity(true);
-  navbar.onmouseleave = () => setOpacity(false);
+  if (navbar) {
+    navbar.onmouseenter = () => setOpacity(true);
+    navbar.onmouseleave = () => setOpacity(false);
+  }
 };
 
 const onScroll = () => {

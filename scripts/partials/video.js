@@ -13,7 +13,9 @@ const domReady = () => {
     }
   };
 
-  videoContainer.addEventListener('click', playOrPauseVideo);
+  if (videoContainer) {
+    videoContainer.addEventListener('click', playOrPauseVideo);
+  }
 };
 
 export default {

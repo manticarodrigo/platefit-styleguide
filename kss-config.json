@@ -8,6 +8,6 @@
     "../dist/app.css"
   ],
   "js" : [
-    "../dist/main.js"
+    "../dist/app.js"
   ]
 }

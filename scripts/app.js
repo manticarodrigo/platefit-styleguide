@@ -11,7 +11,10 @@ const onScroll = () => {
 
 const domReady = () => {
   const parallaxContainer = getContainer();
-  parallaxContainer.addEventListener('scroll', onScroll);
+
+  if (parallaxContainer) {
+    parallaxContainer.addEventListener('scroll', onScroll);
+  }
 
   Navbar.domReady();
   Video.domReady();

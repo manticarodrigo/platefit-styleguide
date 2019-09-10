@@ -43,8 +43,10 @@ const domReady = () => {
       time = 20;
     }
   }
-  
-  backToTop.addEventListener('click', scrollToTop);
+
+  if (backToTop) {
+    backToTop.addEventListener('click', scrollToTop);
+  }
 };
 
 const onScroll = () => {

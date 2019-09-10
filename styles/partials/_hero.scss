@@ -24,9 +24,13 @@
 
   &__title {
     @include maxWidth($breakpoint-lg) {
-      @include fontSize(48px);
+      @include fontSize(93px);
       
       max-width: 100%;
+    }
+
+    @include maxWidth($breakpoint-md) {
+      @include fontSize(43px);
     }
     
     @include fontSize(148px);

@@ -2778,23 +2778,24 @@ main {
       .navbar__mobile-icon span:not(:last-of-type) {
         margin-bottom: 5px; }
 
-.parallax-container {
-  /* The height needs to be set to a fixed value for the effect to work. */
-  height: 100vh;
-  /* The scaling of the images would add a horizontal scrollbar, so disable x overflow. */
-  overflow-x: hidden;
-  /* Enable scrolling on the page. */
-  overflow-y: auto;
-  /* Set the perspective to 2px. This is essentailly the simulated distance from the viewport to transformed objects.*/
-  perspective: 2px; }
+@media (min-width: 951px) {
+  .parallax-container {
+    /* The height needs to be set to a fixed value for the effect to work. */
+    height: 100vh;
+    /* The scaling of the images would add a horizontal scrollbar, so disable x overflow. */
+    overflow-x: hidden;
+    /* Enable scrolling on the page. */
+    overflow-y: auto;
+    /* Set the perspective to 2px. This is essentailly the simulated distance from the viewport to transformed objects.*/
+    perspective: 2px; } }
 
 .parallax::after {
   /* Display and position the pseudo-element */
   content: " ";
   position: absolute;
   top: -25%;
-  right: 0;
   bottom: -25%;
+  right: 0;
   left: 0;
   /* Move the pseudo-element back away from the camera,
      * then scale it back up to fill the viewport.
@@ -2806,6 +2807,11 @@ main {
   background-position: center center;
   /* Keep the image from overlapping sibling elements. */
   z-index: -1; }
+  @media (max-width: 950px) {
+    .parallax::after {
+      top: 0;
+      bottom: 0;
+      transform: none; } }
 
 .parallax--bg-plate::after {
   transform: translateZ(-0.5px) scale(1);
@@ -2846,9 +2852,13 @@ main {
     word-wrap: break-word; }
     @media (max-width: 950px) {
       .hero__title {
-        font-size: 48px;
-        font-size: 3rem;
+        font-size: 93px;
+        font-size: 5.8125rem;
         max-width: 100%; } }
+    @media (max-width: 750px) {
+      .hero__title {
+        font-size: 43px;
+        font-size: 2.6875rem; } }
 
 .btn {
   border: 2px solid #fed710;
@@ -2875,12 +2885,13 @@ main {
   position: absolute;
   bottom: 0;
   left: 50%;
+  width: 100%;
   transform: translate(-50%, 50%);
   transition: transform 250ms ease-in-out; }
   @media (max-width: 750px) {
     .box-row {
       position: relative;
-      transform: translate(-50%, 0%); } }
+      transform: translate(-50%, 10%); } }
 
 @media (min-width: 751px) {
   .box-section-after {
@@ -2898,7 +2909,7 @@ main {
   text-align: center;
   transition: background-color 250ms ease-in-out;
   cursor: pointer; }
-  @media (max-width: 750px) {
+  @media (max-width: 500px) {
     .box {
       width: 100%;
       height: auto; } }

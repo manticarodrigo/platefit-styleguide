@@ -1,5 +1,6 @@
 .z-index {
 
+  &-n1 { z-index: -1; }
   &-0 { z-index: 0; }
   &-1 { z-index: 1; }
   &-2 { z-index: 2; }
@@ -82,14 +83,6 @@
   &-white { background-color: $color-white; }
   &-primary { background-color: $color-primary; }
   &-light { background-color: $color-light; }
-}
-
-.bg-plate {
-  position: absolute;
-  top: -15%;
-  right: -5%;
-  width: 75%;
-  height: 95%;
 }
 
 .shadow {

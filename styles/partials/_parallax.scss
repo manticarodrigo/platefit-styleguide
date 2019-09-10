@@ -31,4 +31,19 @@
     /* Keep the image from overlapping sibling elements. */
     z-index: -1;
   }
+
+  &--bg-plate {
+
+    &::after {
+      @include maxWidth($breakpoint-lg) {
+        background-position: center center;
+        background-size: 95%;
+      }
+
+      transform: translateZ(-0.5px) scale(1);
+      background-image: url('../assets/svgs/plate-white.svg');
+      background-size: 65%;
+      background-position: right top;
+    }
+  }
 }

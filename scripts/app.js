@@ -1,3 +1,8 @@
+function requireAll(r) {
+  r.keys().forEach(r);
+}
+requireAll(require.context('../assets/svgs/', true, /\.svg$/));
+
 document.addEventListener('DOMContentLoaded', () => {
   const container = document.querySelector('[data-component="parallax-container"]') || window;
   const navbar = document.querySelector('[data-component="navbar"]');

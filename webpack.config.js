@@ -1,7 +1,7 @@
 const path = require('path');
-// include the css extraction and minification plugins
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const SpriteLoaderPlugin = require('svg-sprite-loader/plugin');
 
 module.exports = {
   entry: ['./scripts/app.js', './styles/app.scss'],
@@ -16,12 +16,25 @@ module.exports = {
         test: /\.(sass|scss)$/,
         use: [MiniCssExtractPlugin.loader, 'css-loader?url=false', 'sass-loader'],
       },
+      // create sprite sheet from svgs
+      {
+        test: /assets\/svgs\/.*\.svg$/, // your icons directory
+        loader: 'svg-sprite-loader',
+        options: {
+          extract: true,
+          spriteFilename: './app.svg', // this is the destination of your sprite sheet
+        },
+      }
     ],
   },
   plugins: [
     // extract css into dedicated file
     new MiniCssExtractPlugin({
       filename: './app.css',
+    }),
+    // create svg spritesheet
+    new SpriteLoaderPlugin({
+      plainSprite: true,
     }),
   ],
   optimization: {

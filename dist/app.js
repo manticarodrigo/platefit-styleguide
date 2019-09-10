@@ -86,14 +86,61 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./assets/svgs sync recursive \\.svg$":
+/*!*********************************!*\
+  !*** ./assets/svgs sync \.svg$ ***!
+  \*********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var map = {\n\t\"./facebook.svg\": \"./assets/svgs/facebook.svg\",\n\t\"./instagram.svg\": \"./assets/svgs/instagram.svg\",\n\t\"./twitter.svg\": \"./assets/svgs/twitter.svg\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./assets/svgs sync recursive \\\\.svg$\";\n\n//# sourceURL=webpack:///./assets/svgs_sync_\\.svg$?");
+
+/***/ }),
+
+/***/ "./assets/svgs/facebook.svg":
+/*!**********************************!*\
+  !*** ./assets/svgs/facebook.svg ***!
+  \**********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n      id: \"facebook-usage\",\n      viewBox: \"0 0 12 24\",\n      url: __webpack_require__.p + \"./app.svg#facebook\",\n      toString: function () {\n        return this.url;\n      }\n    });\n\n//# sourceURL=webpack:///./assets/svgs/facebook.svg?");
+
+/***/ }),
+
+/***/ "./assets/svgs/instagram.svg":
+/*!***********************************!*\
+  !*** ./assets/svgs/instagram.svg ***!
+  \***********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n      id: \"instagram-usage\",\n      viewBox: \"0 0 21.312 21.312\",\n      url: __webpack_require__.p + \"./app.svg#instagram\",\n      toString: function () {\n        return this.url;\n      }\n    });\n\n//# sourceURL=webpack:///./assets/svgs/instagram.svg?");
+
+/***/ }),
+
+/***/ "./assets/svgs/twitter.svg":
+/*!*********************************!*\
+  !*** ./assets/svgs/twitter.svg ***!
+  \*********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n      id: \"twitter-usage\",\n      viewBox: \"0 0 21.312 17.376\",\n      url: __webpack_require__.p + \"./app.svg#twitter\",\n      toString: function () {\n        return this.url;\n      }\n    });\n\n//# sourceURL=webpack:///./assets/svgs/twitter.svg?");
+
+/***/ }),
+
 /***/ "./scripts/app.js":
 /*!************************!*\
   !*** ./scripts/app.js ***!
   \************************/
 /*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-eval("document.addEventListener('DOMContentLoaded', () => {\n  const container = document.querySelector('[data-component=\"parallax-container\"]') || window;\n  const navbar = document.querySelector('[data-component=\"navbar\"]');\n\n  const getIsScrolled = () => container.scrollTop > 61;\n\n  const setNavOpacity = () => {\n    const opacity = getIsScrolled() ? 0.75 : 1;\n    navbar.style.opacity = opacity;\n  };\n\n\n  const onScroll = () => setNavOpacity();\n\n  container.addEventListener('scroll', onScroll);\n\n  navbar.onmouseenter = () => {\n    if (!getIsScrolled()) return;\n\n    navbar.style.opacity = 1;\n  };\n  \n  navbar.onmouseleave = () => {\n    if (!getIsScrolled()) return;\n\n    navbar.style.opacity = 0.75;\n  };\n});\n\n\n//# sourceURL=webpack:///./scripts/app.js?");
+eval("function requireAll(r) {\n  r.keys().forEach(r);\n}\nrequireAll(__webpack_require__(\"./assets/svgs sync recursive \\\\.svg$\"));\n\ndocument.addEventListener('DOMContentLoaded', () => {\n  const container = document.querySelector('[data-component=\"parallax-container\"]') || window;\n  const navbar = document.querySelector('[data-component=\"navbar\"]');\n\n  const getIsScrolled = () => container.scrollTop > 61;\n\n  const setNavOpacity = () => {\n    const opacity = getIsScrolled() ? 0.75 : 1;\n    navbar.style.opacity = opacity;\n  };\n\n\n  const onScroll = () => setNavOpacity();\n\n  container.addEventListener('scroll', onScroll);\n\n  navbar.onmouseenter = () => {\n    if (!getIsScrolled()) return;\n\n    navbar.style.opacity = 1;\n  };\n  \n  navbar.onmouseleave = () => {\n    if (!getIsScrolled()) return;\n\n    navbar.style.opacity = 0.75;\n  };\n});\n\n\n//# sourceURL=webpack:///./scripts/app.js?");
 
 /***/ }),
 

@@ -397,6 +397,9 @@ a,
   .link:hover {
     color: #f3cc4b; }
 
+.display-none {
+  display: none; }
+
 .relative {
   position: relative; }
 
@@ -2804,7 +2807,7 @@ main {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.75);
     content: ''; }
   .hero__title {
     margin-right: auto;
@@ -2929,7 +2932,7 @@ main {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.75);
     transition: background-color 250ms ease-in-out;
     content: ''; }
   .banner--hover:hover::before {
@@ -2971,13 +2974,14 @@ main {
     font-family: "MaisonNeue-Bold", sans-serif;
     line-height: 1.8; }
   .footer__headline {
-    font-size: 28px;
-    font-size: 1.75rem;
-    color: #333333;
-    font-family: "MaisonNeue-Book", sans-serif; }
-  .footer li {
     font-size: 18px;
     font-size: 1.125rem;
+    color: #333333;
+    font-family: "MaisonNeue-Bold", sans-serif;
+    font-weight: 100; }
+  .footer li {
+    font-size: 16px;
+    font-size: 1rem;
     font-family: "MaisonNeue-Book", sans-serif;
     list-style: none; }
     .footer li a {
@@ -2986,11 +2990,17 @@ main {
       letter-spacing: 0; }
       .footer li a:hover {
         color: #f3cc4b; }
-  .footer__social-img {
+  .footer__social-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     margin-right: 15px;
     max-width: 30px;
     max-height: 20px;
-    color: #fed710; }
+    color: #b7b7b7; }
+    .footer__social-icon:hover {
+      color: #fed710; }
   .footer__newsletter {
     display: flex;
     flex-direction: row; }

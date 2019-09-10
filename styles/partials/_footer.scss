@@ -11,14 +11,15 @@
 
   
   &__headline {
-    @include fontSize(28px);
+    @include fontSize(18px);
 
     color: $color-dark;
-    font-family: $font-book;
+    font-family: $font-bold;
+    font-weight: 100;
   }
 
   li {
-    @include fontSize(18px);
+    @include fontSize(16px);
 
     font-family: $font-book;
     list-style: none;
@@ -35,11 +36,19 @@
   
   }
 
-  &__social-img {
+  &__social-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
     margin-right: 15px;
     max-width: 30px;
     max-height: 20px;
-    color: $color-primary;
+    color: $color-icon;
+    
+    &:hover {
+      color: $color-primary;
+    }
   }
 
   &__newsletter {

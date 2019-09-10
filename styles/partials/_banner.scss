@@ -1,9 +1,9 @@
 .banner {
+  box-sizing: border-box;
   position: relative;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  width: 100%;
   height: 400px;
+  overflow: hidden;
 
   & > * {
     position: relative;
@@ -28,5 +28,16 @@
         background-color: $color-overlay-primary;
       }
     }
+  }
+
+  &__title {
+    @include minWidth($breakpoint-lg + 1) {
+      @include fontSize(92px);
+
+      max-width: 800px;
+    }
+    
+    max-width: 100%;
+    word-wrap: break-word;
   }
 }

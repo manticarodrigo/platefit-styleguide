@@ -1,17 +1,12 @@
 .hero {
-  @include maxWidth($breakpoint-lg) { height: 550px; }
+  @include maxWidth($breakpoint-lg) { min-height: 550px; }
 
   box-sizing: border-box;
   position: relative;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: $spacing;
-  height: 750px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  flex-direction: column;
   width: 100%;
+  min-height: 750px;
 
   & > * {
     position: relative;
@@ -28,10 +23,18 @@
   }
 
   &__title {
-    @include maxWidth($breakpoint-lg) { font-size: 4rem; }
-
-    max-width: 100%;
-    font-size: 6rem;
+    @include maxWidth($breakpoint-lg) {
+      @include fontSize(48px);
+      
+      max-width: 100%;
+    }
+    
+    @include fontSize(148px);
+    
+    
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 800px;
     word-wrap: break-word;
   }
 }

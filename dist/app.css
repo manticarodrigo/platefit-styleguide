@@ -346,13 +346,14 @@ template {
 body {
   font-size: 16px;
   font-family: "MaisonNeue-Book", sans-serif;
-  color: #333333; }
+  color: #333333;
+  word-wrap: break-word; }
 
 h1,
 .h1 {
   font-size: 50px;
   font-size: 3.125rem;
-  color: #000;
+  color: #333333;
   font-family: "Knockout-HTF49-Liteweight", sans-serif; }
 
 h2,
@@ -395,6 +396,27 @@ a,
   a:hover,
   .link:hover {
     color: #f3cc4b; }
+
+.z-index-n1 {
+  z-index: -1; }
+
+.z-index-0 {
+  z-index: 0; }
+
+.z-index-1 {
+  z-index: 1; }
+
+.z-index-2 {
+  z-index: 2; }
+
+.z-index-3 {
+  z-index: 3; }
+
+.display-none {
+  display: none; }
+
+.overflow-hidden {
+  overflow: hidden; }
 
 .relative {
   position: relative; }
@@ -447,6 +469,8 @@ a,
 
 .letter-spacing {
   letter-spacing: .25em; }
+  .letter-spacing--sm {
+    letter-spacing: .025em; }
 
 .color-primary {
   color: #fed710; }
@@ -463,11 +487,10 @@ a,
 .shadow {
   box-shadow: 0 30px 10px -20px rgba(0, 0, 0, 0.3); }
 
-.pull-up {
-  transform: translateY(-50%); }
-  @media (max-width: 950px) {
-    .pull-up {
-      transform: none; } }
+.hover-translucent {
+  transition: opacity 250ms ease-in-out; }
+  .hover-translucent:hover {
+    opacity: 0.5; }
 
 .m-0 {
   margin: 0rem; }
@@ -2475,25 +2498,33 @@ a,
   display: flex;
   flex-direction: row;
   flex-wrap: wrap; }
-  .row.between {
-    justify-content: space-between; }
-  .row.around {
-    justify-content: space-around; }
-  .row.end {
-    justify-content: flex-end; }
-  .row.center {
-    justify-content: center; }
-    @media (max-width: 1440px) {
-      .row.center-xl {
-        justify-content: center; } }
-    @media (max-width: 950px) {
-      .row.center-lg {
-        justify-content: center; } }
-    @media (max-width: 750px) {
-      .row.center-md {
-        justify-content: center; } }
-  .row.align-center {
-    align-items: center; }
+
+.nowrap {
+  flex-wrap: nowrap; }
+
+.between {
+  justify-content: space-between; }
+
+.around {
+  justify-content: space-around; }
+
+.end {
+  justify-content: flex-end; }
+
+.center {
+  justify-content: center; }
+  @media (max-width: 1440px) {
+    .center-xl {
+      justify-content: center; } }
+  @media (max-width: 950px) {
+    .center-lg {
+      justify-content: center; } }
+  @media (max-width: 750px) {
+    .center-md {
+      justify-content: center; } }
+
+.align-center {
+  align-items: center; }
 
 .col-1 {
   width: 100%; }
@@ -2590,6 +2621,13 @@ a,
   .col-6-sm {
     width: 16.66667%; } }
 
+main {
+  /* Account for the navbar height */
+  padding-top: 61px; }
+  @media (max-width: 950px) {
+    main {
+      padding-top: 93px; } }
+
 .container {
   box-sizing: border-box;
   margin-right: auto;
@@ -2598,10 +2636,16 @@ a,
 
 .navbar {
   z-index: 999;
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center; }
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: opacity 250ms ease-in-out; }
+  .navbar__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff; }
   .navbar__logo img {
     width: 200px;
     padding: 10px;
@@ -2734,21 +2778,55 @@ a,
       .navbar__mobile-icon span:not(:last-of-type) {
         margin-bottom: 5px; }
 
+.parallax-container {
+  /* The height needs to be set to a fixed value for the effect to work. */
+  height: 100vh;
+  /* The scaling of the images would add a horizontal scrollbar, so disable x overflow. */
+  overflow-x: hidden;
+  /* Enable scrolling on the page. */
+  overflow-y: auto;
+  /* Set the perspective to 2px. This is essentailly the simulated distance from the viewport to transformed objects.*/
+  perspective: 2px; }
+
+.parallax::after {
+  /* Display and position the pseudo-element */
+  content: " ";
+  position: absolute;
+  top: -25%;
+  right: 0;
+  bottom: -25%;
+  left: 0;
+  /* Move the pseudo-element back away from the camera,
+     * then scale it back up to fill the viewport.
+     * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
+  transform: translateZ(-1px) scale(1.5);
+  /* Force the background image to fill the whole element. */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  /* Keep the image from overlapping sibling elements. */
+  z-index: -1; }
+
+.parallax--bg-plate::after {
+  transform: translateZ(-0.5px) scale(1);
+  background-image: url("../assets/svgs/plate-white.svg");
+  background-size: 65%;
+  background-position: right top; }
+  @media (max-width: 950px) {
+    .parallax--bg-plate::after {
+      background-position: center center;
+      background-size: 95%; } }
+
 .hero {
   box-sizing: border-box;
   position: relative;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  height: 750px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  width: 100%; }
+  flex-direction: column;
+  width: 100%;
+  min-height: 750px; }
   @media (max-width: 950px) {
     .hero {
-      height: 550px; } }
+      min-height: 550px; } }
   .hero > * {
     position: relative; }
   .hero::before {
@@ -2757,15 +2835,20 @@ a,
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.75);
     content: ''; }
   .hero__title {
-    max-width: 100%;
-    font-size: 6rem;
+    font-size: 148px;
+    font-size: 9.25rem;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 800px;
     word-wrap: break-word; }
     @media (max-width: 950px) {
       .hero__title {
-        font-size: 4rem; } }
+        font-size: 48px;
+        font-size: 3rem;
+        max-width: 100%; } }
 
 .btn {
   border: 2px solid #fed710;
@@ -2788,6 +2871,21 @@ a,
       margin-left: 10px;
       max-width: 25px; }
 
+.box-row {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  transition: transform 250ms ease-in-out; }
+  @media (max-width: 750px) {
+    .box-row {
+      position: relative;
+      transform: translate(-50%, 0%); } }
+
+@media (min-width: 751px) {
+  .box-section-after {
+    padding-top: 175px; } }
+
 .box {
   display: flex;
   flex-direction: column;
@@ -2800,7 +2898,7 @@ a,
   text-align: center;
   transition: background-color 250ms ease-in-out;
   cursor: pointer; }
-  @media (max-width: 950px) {
+  @media (max-width: 750px) {
     .box {
       width: 100%;
       height: auto; } }
@@ -2830,6 +2928,9 @@ a,
 
 .rachael-img {
   max-width: 340px; }
+  @media (max-width: 950px) {
+    .rachael-img {
+      max-width: 100%; } }
 
 .rachael-two-img {
   max-width: 250px; }
@@ -2848,11 +2949,11 @@ a,
   width: 180px; }
 
 .banner {
+  box-sizing: border-box;
   position: relative;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 400px; }
+  width: 100%;
+  height: 400px;
+  overflow: hidden; }
   .banner > * {
     position: relative; }
   .banner::before {
@@ -2861,11 +2962,19 @@ a,
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.75);
     transition: background-color 250ms ease-in-out;
     content: ''; }
   .banner--hover:hover::before {
     background-color: rgba(254, 215, 16, 0.75); }
+  .banner__title {
+    max-width: 100%;
+    word-wrap: break-word; }
+    @media (min-width: 951px) {
+      .banner__title {
+        font-size: 92px;
+        font-size: 5.75rem;
+        max-width: 800px; } }
 
 .quote {
   display: flex;
@@ -2886,51 +2995,56 @@ a,
       font-size: 12px;
       font-family: "MaisonNeue-Bold", sans-serif; }
 
-.footer__slogan {
-  font-size: 16px;
-  font-size: 1rem;
-  color: #909090;
-  font-family: "MaisonNeue-Bold", sans-serif;
-  line-height: 1.8; }
-
-.footer__headline {
-  font-size: 28px;
-  font-size: 1.75rem;
-  color: #333333;
-  font-family: "MaisonNeue-Book", sans-serif; }
-
-.footer li {
-  font-size: 18px;
-  font-size: 1.125rem;
-  font-family: "MaisonNeue-Book", sans-serif;
-  list-style: none; }
-  .footer li a {
+.footer {
+  background-color: #fff; }
+  .footer__slogan {
+    font-size: 16px;
+    font-size: 1rem;
     color: #909090;
-    text-decoration: none;
-    letter-spacing: 0; }
-    .footer li a:hover {
-      color: #f3cc4b; }
-
-.footer__social-img {
-  margin-right: 15px;
-  max-width: 30px;
-  max-height: 20px;
-  color: #fed710; }
-
-.footer__newsletter {
-  display: flex;
-  flex-direction: row; }
-  .footer__newsletter input[type="email"],
-  .footer__newsletter input[type="submit"] {
-    font-size: 13px;
-    font-size: 0.8125rem;
-    padding: 15px;
-    border: none;
-    background-color: #fafafa; }
-  .footer__newsletter input[type="email"] {
-    color: #909090; }
-    .footer__newsletter input[type="email"]::placeholder {
+    font-family: "MaisonNeue-Bold", sans-serif;
+    line-height: 1.8; }
+  .footer__headline {
+    font-size: 18px;
+    font-size: 1.125rem;
+    color: #333333;
+    font-family: "MaisonNeue-Bold", sans-serif;
+    font-weight: 100; }
+  .footer li {
+    font-size: 16px;
+    font-size: 1rem;
+    font-family: "MaisonNeue-Book", sans-serif;
+    list-style: none; }
+    .footer li a {
+      color: #909090;
+      text-decoration: none;
+      letter-spacing: 0; }
+      .footer li a:hover {
+        color: #f3cc4b; }
+  .footer__social-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    max-width: 30px;
+    max-height: 20px;
+    color: #b7b7b7; }
+    .footer__social-icon:hover {
+      color: #fed710; }
+  .footer__newsletter {
+    display: flex;
+    flex-direction: row; }
+    .footer__newsletter input[type="email"],
+    .footer__newsletter input[type="submit"] {
+      font-size: 13px;
+      font-size: 0.8125rem;
+      padding: 15px;
+      border: none;
+      background-color: #fafafa; }
+    .footer__newsletter input[type="email"] {
       color: #909090; }
-  .footer__newsletter input[type="submit"] {
-    color: #f3cc4b; }
+      .footer__newsletter input[type="email"]::placeholder {
+        color: #909090; }
+    .footer__newsletter input[type="submit"] {
+      color: #f3cc4b; }
 

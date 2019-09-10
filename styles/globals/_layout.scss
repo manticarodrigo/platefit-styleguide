@@ -10,32 +10,35 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-
-  &.between {
-    justify-content: space-between;
-  }
-
-  &.around {
-    justify-content: space-around;
-  }
-
-  &.end {
-    justify-content: flex-end;
-  }
-
-  &.center {
-    justify-content: center;
-
-    &-xl { @include maxWidth($breakpoint-xl) { justify-content: center; } }
-    &-lg { @include maxWidth($breakpoint-lg) { justify-content: center; } }
-    &-md { @include maxWidth($breakpoint-md) { justify-content: center; } }
-  }
-
-  &.align-center {
-    align-items: center;
-  }
 }
 
+.nowrap {
+  flex-wrap: nowrap;
+}
+
+.between {
+  justify-content: space-between;
+}
+
+.around {
+  justify-content: space-around;
+}
+
+.end {
+  justify-content: flex-end;
+}
+
+.center {
+  justify-content: center;
+
+  &-xl { @include maxWidth($breakpoint-xl) { justify-content: center; } }
+  &-lg { @include maxWidth($breakpoint-lg) { justify-content: center; } }
+  &-md { @include maxWidth($breakpoint-md) { justify-content: center; } }
+}
+
+.align-center {
+  align-items: center;
+}
 
 $col-map: (1: 100%, 2: 50%, 3: 33.3333334%, 4: 25%, 6: 16.66666667%);
 

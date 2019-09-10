@@ -1,3 +1,20 @@
+.z-index {
+
+  &-n1 { z-index: -1; }
+  &-0 { z-index: 0; }
+  &-1 { z-index: 1; }
+  &-2 { z-index: 2; }
+  &-3 { z-index: 3; }
+}
+
+.display-none {
+  display: none;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
 .relative {
   position: relative;
 }
@@ -54,6 +71,10 @@
 
 .letter-spacing {
   letter-spacing: .25em;
+
+  &--sm {
+    letter-spacing: .025em;
+  }
 }
 
 .color {
@@ -72,10 +93,10 @@
   box-shadow: $box-shadow;
 }
 
-.pull-up {
-  transform: translateY(-50%);
+.hover-translucent {
+  transition: opacity $duration;
 
-  @media (max-width: $breakpoint-lg) {
-    transform: none;
+  &:hover {
+    opacity: 0.5;
   }
 }

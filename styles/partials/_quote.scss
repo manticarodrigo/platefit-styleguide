@@ -1,3 +1,25 @@
+// Quote
+//
+// A quote component.
+//
+// Markup:
+// <div class="row nowrap">
+//   <div class="quote__img">
+//     <img class="shadow" src="../assets/jennifer-p.png">
+//   </div>
+//   <div class="quote__container">
+//     <p class="quote__text">
+//       Love love love PLATEFIT! This is hands down my favorite workout in LA. It's fast, challenging, and the
+//       instructors don't waste a second... you are moving the entire 30 minutes.
+//     </p>
+//     <h4 class="text-uppercase quote__text--small">
+//       / Jennifer P
+//     </h4>
+//   </div>
+// </div>
+//
+// Styleguide Components.quote
+
 .quote {
   display: flex;
   justify-content: center;

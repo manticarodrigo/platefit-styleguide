@@ -1,3 +1,12 @@
+// Button
+//
+// A button with an option arrow modifier.
+//
+// Markup:
+// <a class="btn btn--arrow">Button <svg class="i-arrow"><use xlink:href="#arrow" /></svg></a>
+//
+// Styleguide Components.button
+
 .btn {
   border: 2px solid $color-primary;
   padding: 14px 12px 12px;

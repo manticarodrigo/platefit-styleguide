@@ -72,7 +72,7 @@
             </a>
           </li>
           <li class="kss-nav__item">
-            <a class="kss-state-active" href="section-typography.html">
+            <a class="" href="section-typography.html">
               <span class="kss-nav__ref">5</span>
               <span class="kss-nav__name">Typography</span>
             </a>
@@ -90,20 +90,19 @@
           the "root" element comes first in this loop, and can be detected using
           the "#if @first" block as seen below.
         -->
-            <header class="kss-section kss-section--depth-1" id="kssref-typography">
+            <header class="kss-section kss-section--depth-2" id="kssref-components-video">
 
             <article class="kss-section__content">
-                <p class="kss-section__source">Source: <span>globals/_typography.scss</span>, line <span>1</span></p>
+                <p class="kss-section__source">Source: <span>partials/_video.scss</span>, line <span>1</span></p>
 
-              <a class="kss-section__permalink" href="#kssref-typography">
-                <h1 class="kss-section__item kss-section__item--depth-1">
-                  <span class="kss-section__ref">4</span>
-                  <span class="kss-section__name">Typography</span>
-                </h1>
+              <a class="kss-section__permalink" href="#kssref-components-video">
+                <h2 class="kss-section__item kss-section__item--depth-2">
+                  <span class="kss-section__ref">2.3</span>
+                  <span class="kss-section__name">Video</span>
+                </h2>
               </a>
 
-                <div class="kss-section__description"><p>Global typographic elements and classes. These can be used as HTML elements or CSS classes.<br>
-<strong>NOTE</strong>: The paragraph html tag will <em>not</em> inherit the .paragraph class styles</p>
+                <div class="kss-section__description"><p>A video component with custom controls.</p>
 </div>
 
             </article>
@@ -112,22 +111,28 @@
                 <h1 class="kss-modifiers__heading">Example</h1>
 
 
-                <div class="kss-modifiers__example"><h1 class="h1">The quick brown fox jumps over the lazy dog</h1>
-<h2 class="h2">The quick brown fox jumps over the lazy dog</h2>
-<h3 class="h3">The quick brown fox jumps over the lazy dog</h3>
-<h6 class="h6">The quick brown fox jumps over the lazy dog</h6>
-<p class="paragraph">The quick brown fox jumps over the lazy dog</p>
-<a class="link">The quick brown fox jumps over the lazy dog</a></div>
+                <div class="kss-modifiers__example"><div class="col-2 video__container">
+  <video class="video shadow" preload="auto" poster="../assets/poster.jpg">
+    <source src="../assets/platefit.mp4" type="video/mp4">
+    Video Not Supported
+  </video>
+  <div class="video__button">
+    <img src="../assets/play-btn.png">
+  </div>
+</div></div>
 
               </article>
 
                 <article class="kss-section__markup">
-                  <pre><code class="language-markup">&lt;h1 class&#x3D;&quot;h1&quot;&gt;The quick brown fox jumps over the lazy dog&lt;/h1&gt;
-&lt;h2 class&#x3D;&quot;h2&quot;&gt;The quick brown fox jumps over the lazy dog&lt;/h2&gt;
-&lt;h3 class&#x3D;&quot;h3&quot;&gt;The quick brown fox jumps over the lazy dog&lt;/h3&gt;
-&lt;h6 class&#x3D;&quot;h6&quot;&gt;The quick brown fox jumps over the lazy dog&lt;/h6&gt;
-&lt;p class&#x3D;&quot;paragraph&quot;&gt;The quick brown fox jumps over the lazy dog&lt;/p&gt;
-&lt;a class&#x3D;&quot;link&quot;&gt;The quick brown fox jumps over the lazy dog&lt;/a&gt;</code></pre>
+                  <pre><code class="language-markup">&lt;div class&#x3D;&quot;col-2 video__container&quot;&gt;
+  &lt;video class&#x3D;&quot;video shadow&quot; preload&#x3D;&quot;auto&quot; poster&#x3D;&quot;../assets/poster.jpg&quot;&gt;
+    &lt;source src&#x3D;&quot;../assets/platefit.mp4&quot; type&#x3D;&quot;video/mp4&quot;&gt;
+    Video Not Supported
+  &lt;/video&gt;
+  &lt;div class&#x3D;&quot;video__button&quot;&gt;
+    &lt;img src&#x3D;&quot;../assets/play-btn.png&quot;&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
                 </article>
 
             </header>

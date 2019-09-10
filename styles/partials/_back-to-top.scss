@@ -10,6 +10,7 @@
   transition: opacity $duration, color $duration;
   cursor: pointer;
 
+  &:focus,
   &:hover {
     color: $color-dark;
 

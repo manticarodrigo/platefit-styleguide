@@ -9,19 +9,25 @@
   line-height: 0;
   transition: background-color $duration;
 
+  
+  &:focus,
   &:hover {
     background-color: $color-primary;
     color: $color-dark;
+  }
+
+  &:active {
+    background-color: $color-primary;
+    color: $color-white;
   }
 
   &--arrow {
     display: inline-flex;
     align-items: center;
 
-    img {
-      margin-top: -3px;
+    svg {
+      margin-bottom: -2px;
       margin-left: $spacing / 2;
-      max-width: 25px;
     }
   }
 }

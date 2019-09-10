@@ -96,6 +96,7 @@
 .hover-translucent {
   transition: opacity $duration;
 
+  &:focus,
   &:hover {
     opacity: 0.5;
   }

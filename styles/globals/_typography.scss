@@ -81,6 +81,7 @@ a,
   text-decoration: none;
   transition: color $duration;
 
+  &:focus,
   &:hover {
     color: $color-primary-alt;
   }

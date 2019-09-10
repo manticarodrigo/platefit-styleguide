@@ -59,6 +59,7 @@
       a {
         @include minWidth($breakpoint-lg + 1) {
 
+          &:focus,
           &:hover { color: $color-primary-alt; }
         }
 
@@ -67,6 +68,7 @@
 
           color: $color-dark;
 
+          &:focus,
           &:hover { color: $color-white; }
         }
 
@@ -81,7 +83,8 @@
 
           @include minWidth($breakpoint-lg + 1) {
             color: inherit;
-            
+
+            &:focus,
             &:hover { color: inherit; }
           }
 
@@ -111,7 +114,7 @@
     z-index: 2; /* and place it over the hamburger */
     -webkit-touch-callout: none;
 
-    /* 
+    /*
     * transform all the slices of hamburger
     * into a crossmark.
     */

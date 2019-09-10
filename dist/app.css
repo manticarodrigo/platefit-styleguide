@@ -393,7 +393,8 @@ a,
   color: #fed710;
   text-decoration: none;
   transition: color 250ms ease-in-out; }
-  a:hover,
+  a:focus, a:hover,
+  .link:focus,
   .link:hover {
     color: #f3cc4b; }
 
@@ -489,7 +490,7 @@ a,
 
 .hover-translucent {
   transition: opacity 250ms ease-in-out; }
-  .hover-translucent:hover {
+  .hover-translucent:focus, .hover-translucent:hover {
     opacity: 0.5; }
 
 .m-0 {
@@ -2688,19 +2689,19 @@ main {
       text-decoration: none;
       letter-spacing: .02em; }
       @media (min-width: 951px) {
-        .navbar__menu li a:hover {
+        .navbar__menu li a:focus, .navbar__menu li a:hover {
           color: #f3cc4b; } }
       @media (max-width: 950px) {
         .navbar__menu li a {
           font-size: 20px;
           font-size: 1.25rem;
           color: #333333; }
-          .navbar__menu li a:hover {
+          .navbar__menu li a:focus, .navbar__menu li a:hover {
             color: #fff; } }
       @media (min-width: 951px) {
         .navbar__menu li a.btn {
           color: inherit; }
-          .navbar__menu li a.btn:hover {
+          .navbar__menu li a.btn:focus, .navbar__menu li a.btn:hover {
             color: inherit; } }
       @media (max-width: 950px) {
         .navbar__menu li a.btn {
@@ -2722,7 +2723,7 @@ main {
     z-index: 2;
     /* and place it over the hamburger */
     -webkit-touch-callout: none;
-    /* 
+    /*
     * transform all the slices of hamburger
     * into a crossmark.
     */
@@ -2870,16 +2871,18 @@ main {
   text-transform: uppercase;
   line-height: 0;
   transition: background-color 250ms ease-in-out; }
-  .btn:hover {
+  .btn:focus, .btn:hover {
     background-color: #fed710;
     color: #333333; }
+  .btn:active {
+    background-color: #fed710;
+    color: #fff; }
   .btn--arrow {
     display: inline-flex;
     align-items: center; }
-    .btn--arrow img {
-      margin-top: -3px;
-      margin-left: 10px;
-      max-width: 25px; }
+    .btn--arrow svg {
+      margin-bottom: -2px;
+      margin-left: 10px; }
 
 .box-row {
   position: absolute;
@@ -2922,8 +2925,6 @@ main {
     font-size: 2.5rem;
     letter-spacing: 0.05em;
     text-transform: uppercase; }
-  .box__arrow {
-    max-width: 30px; }
 
 .video {
   max-width: 100%;
@@ -2943,6 +2944,10 @@ main {
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%); }
+
+.i-arrow {
+  width: 36px;
+  height: 20px; }
 
 .insta-img {
   height: 169px;
@@ -3045,7 +3050,7 @@ main {
       color: #909090;
       text-decoration: none;
       letter-spacing: 0; }
-      .footer li a:hover {
+      .footer li a:focus, .footer li a:hover {
         color: #f3cc4b; }
   .footer__social-icon {
     display: flex;
@@ -3060,7 +3065,7 @@ main {
       .footer__social-icon {
         margin-right: 0;
         padding: .5em; } }
-    .footer__social-icon:hover {
+    .footer__social-icon:focus, .footer__social-icon:hover {
       color: #fed710; }
   .footer__newsletter {
     display: flex;
@@ -3090,9 +3095,9 @@ main {
   color: #909090;
   transition: opacity 250ms ease-in-out, color 250ms ease-in-out;
   cursor: pointer; }
-  .back-to-top:hover {
+  .back-to-top:focus, .back-to-top:hover {
     color: #333333; }
-    .back-to-top:hover p {
+    .back-to-top:focus p, .back-to-top:hover p {
       border-bottom: 2px solid #fed710; }
   .back-to-top p {
     border-bottom: 2px solid transparent;

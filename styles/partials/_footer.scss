@@ -29,6 +29,7 @@
       text-decoration: none;
       letter-spacing: 0;
 
+      &:focus,
       &:hover {
         color: $color-primary-alt;
       }
@@ -51,6 +52,7 @@
     max-height: 20px;
     color: $color-icon;
     
+    &:focus,
     &:hover {
       color: $color-primary;
     }

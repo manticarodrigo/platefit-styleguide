@@ -3081,12 +3081,25 @@ main {
 
 .back-to-top {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 1.5em;
+  right: 1.5em;
   display: flex;
+  flex-direction: row;
+  align-items: center;
   opacity: 0;
-  transition: opacity 250ms ease-in-out; }
-  .back-to-top__img {
-    max-width: 15px;
-    margin: auto 10; }
+  color: #909090;
+  transition: opacity 250ms ease-in-out, color 250ms ease-in-out;
+  cursor: pointer; }
+  .back-to-top:hover {
+    color: #333333; }
+    .back-to-top:hover p {
+      border-bottom: 2px solid #fed710; }
+  .back-to-top p {
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 250ms ease-in-out; }
+  .back-to-top svg {
+    margin-top: -0.75em;
+    width: 27px;
+    height: 15px;
+    transform: rotate(-90deg); }
 

@@ -1,13 +1,32 @@
 .back-to-top {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 1.5em;
+  right: 1.5em;
   display: flex;
+  flex-direction: row;
+  align-items: center;
   opacity: 0;
-  transition: opacity $duration;
+  color: $color-text;
+  transition: opacity $duration, color $duration;
+  cursor: pointer;
 
-  &__img {
-    max-width: 15px;
-    margin: auto 10;
+  &:hover {
+    color: $color-dark;
+
+    p {
+      border-bottom: 2px solid $color-primary;
+    }
+  }
+
+  p {
+    border-bottom: 2px solid transparent;
+    transition: border-bottom $duration;
+  }
+
+  svg {
+    margin-top: -0.75em;
+    width: 27px;
+    height: 15px;
+    transform: rotate(-90deg);
   }
 }

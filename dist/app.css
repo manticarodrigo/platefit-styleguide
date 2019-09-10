@@ -2934,3 +2934,12 @@ a,
   .footer__newsletter input[type="submit"] {
     color: #f3cc4b; }
 
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex; }
+  .back-to-top__img {
+    max-width: 15px;
+    margin: auto 10; }
+

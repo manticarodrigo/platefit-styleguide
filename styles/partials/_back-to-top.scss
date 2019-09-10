@@ -1,0 +1,11 @@
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+
+  &__img {
+    max-width: 15px;
+    margin: auto 10;
+  }
+}

@@ -236,7 +236,7 @@ eval("const requireAll = (r) => r.keys().forEach(r);\n\nrequireAll(__webpack_req
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\nconst domReady = () => {\n  const video = document.querySelector('.video');\n  const videoButton = document.querySelector('.video__button');\n  const videoContainer = document.querySelector('.video__container');\n  \n  function playOrPauseVideo() {\n    if (video.paused === true) {\n      video.play();\n      videoButton.style.display = 'none';\n    } else {\n      video.pause();\n      videoButton.style.display = 'block';\n    }\n  };\n\n  if (videoContainer) {\n    videoContainer.addEventListener('click', playOrPauseVideo);\n  }\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  domReady,\n});\n\n\n//# sourceURL=webpack:///./scripts/partials/video.js?");
+eval("__webpack_require__.r(__webpack_exports__);\nconst domReady = () => {\n  const video = document.querySelector('.video');\n  const videoContainer = document.querySelector('.video-container');\n  \n  function playOrPauseVideo() {\n    if (video.paused === true) {\n      video.play();\n      videoContainer.classList.add('is-playing');\n    } else {\n      video.pause();\n      videoContainer.classList.remove('is-playing');\n    }\n  };\n\n  if (videoContainer) {\n    videoContainer.addEventListener('click', playOrPauseVideo);\n  }\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  domReady,\n});\n\n\n//# sourceURL=webpack:///./scripts/partials/video.js?");
 
 /***/ }),
 

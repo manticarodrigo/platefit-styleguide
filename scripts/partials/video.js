@@ -1,15 +1,14 @@
 const domReady = () => {
   const video = document.querySelector('.video');
-  const videoButton = document.querySelector('.video__button');
-  const videoContainer = document.querySelector('.video__container');
+  const videoContainer = document.querySelector('.video-container');
   
   function playOrPauseVideo() {
     if (video.paused === true) {
       video.play();
-      videoButton.style.display = 'none';
+      videoContainer.classList.add('is-playing');
     } else {
       video.pause();
-      videoButton.style.display = 'block';
+      videoContainer.classList.remove('is-playing');
     }
   };
 

@@ -1,5 +1,5 @@
 .hero {
-  @include maxWidth($breakpoint-lg) { height: 550px; }
+  @include maxWidth($breakpoint-lg) { min-height: 550px; }
 
   box-sizing: border-box;
   position: relative;
@@ -23,15 +23,18 @@
   }
 
   &__title {
-    @include minWidth($breakpoint-lg + 1) {
-      @include fontSize(148px);
-
-      max-width: 800px;
+    @include maxWidth($breakpoint-lg) {
+      @include fontSize(48px);
+      
+      max-width: 100%;
     }
-
+    
+    @include fontSize(148px);
+    
+    
     margin-right: auto;
     margin-left: auto;
-    max-width: 100%;
+    max-width: 800px;
     word-wrap: break-word;
   }
 }

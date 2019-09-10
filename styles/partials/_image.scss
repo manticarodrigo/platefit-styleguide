@@ -10,7 +10,7 @@
 }
 
 .rachael-img {
-  @include maxWidth($breakpoint-md) {
+  @include maxWidth($breakpoint-lg) {
     max-width: 100%;
   }
 

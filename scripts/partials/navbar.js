@@ -1,33 +1,25 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const container = document.querySelector('[data-component="parallax-container"]');
-  const navbar = document.querySelector('[data-component="navbar"]');
+import { getIsScrolled } from '../globals/utility';
 
-  const getIsScrolled = () => {
-    if (window.innerWidth > 950) {
-      return container.scrollTop > 61;
-    } else {
-      return window.pageYOffset > 61;
-    }
-  }
+let navbar;
 
-  const setNavOpacity = () => {
-    const opacity = getIsScrolled() ? 0.75 : 1;
-    navbar.style.opacity = opacity;
-  };
+const domReady = () => {
+  navbar = document.querySelector('[data-component="navbar"]');
 
-
-  container.addEventListener('scroll', setNavOpacity);
-  window.addEventListener('scroll', setNavOpacity);
-
-  navbar.onmouseenter = () => {
+  const setOpacity = (entering) => {
     if (!getIsScrolled()) return;
 
-    navbar.style.opacity = 1;
+    navbar.style.opacity = entering ? 1 : 0.75;
   };
-  
-  navbar.onmouseleave = () => {
-    if (!getIsScrolled()) return;
 
-    navbar.style.opacity = 0.75;
-  };
-});
+  navbar.onmouseenter = () => setOpacity(true);
+  navbar.onmouseleave = () => setOpacity(false);
+};
+
+const onScroll = () => {
+  navbar.style.opacity = getIsScrolled() ? 0.75 : 1;
+}
+
+export default {
+  domReady,
+  onScroll,
+}

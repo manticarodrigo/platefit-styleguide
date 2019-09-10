@@ -1,9 +1,9 @@
-document.addEventListener('DOMContentLoaded', () => {
+const domReady = () => {
   const video = document.querySelector('.video');
   const videoButton = document.querySelector('.video__button');
   const videoContainer = document.querySelector('.video__container');
   
-  videoContainer.addEventListener('click', () => {
+  function playOrPauseVideo() {
     if (video.paused === true) {
       video.play();
       videoButton.style.display = 'none';
@@ -11,5 +11,11 @@ document.addEventListener('DOMContentLoaded', () => {
       video.pause();
       videoButton.style.display = 'block';
     }
-  });
-});
+  };
+
+  videoContainer.addEventListener('click', playOrPauseVideo);
+};
+
+export default {
+  domReady,
+}

@@ -153,7 +153,43 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _partials_sprites__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./partials/sprites */ \"./scripts/partials/sprites.js\");\n/* harmony import */ var _partials_sprites__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_partials_sprites__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _partials_navbar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./partials/navbar */ \"./scripts/partials/navbar.js\");\n/* harmony import */ var _partials_navbar__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_partials_navbar__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _partials_video__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./partials/video */ \"./scripts/partials/video.js\");\n/* harmony import */ var _partials_video__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_partials_video__WEBPACK_IMPORTED_MODULE_2__);\n\n\n\n\n\n//# sourceURL=webpack:///./scripts/app.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _globals_parallax__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./globals/parallax */ \"./scripts/globals/parallax.js\");\n/* harmony import */ var _partials_navbar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./partials/navbar */ \"./scripts/partials/navbar.js\");\n/* harmony import */ var _partials_video__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./partials/video */ \"./scripts/partials/video.js\");\n/* harmony import */ var _partials_back_to_top__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./partials/back-to-top */ \"./scripts/partials/back-to-top.js\");\n/* harmony import */ var _partials_sprites__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./partials/sprites */ \"./scripts/partials/sprites.js\");\n/* harmony import */ var _partials_sprites__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_partials_sprites__WEBPACK_IMPORTED_MODULE_4__);\n\n\n\n\n\n\nconst onScroll = () => {\n  _partials_navbar__WEBPACK_IMPORTED_MODULE_1__[\"default\"].onScroll();\n  _partials_back_to_top__WEBPACK_IMPORTED_MODULE_3__[\"default\"].onScroll();\n};\n\nconst domReady = () => {\n  const parallaxContainer = Object(_globals_parallax__WEBPACK_IMPORTED_MODULE_0__[\"getContainer\"])();\n  parallaxContainer.addEventListener('scroll', onScroll);\n\n  _partials_navbar__WEBPACK_IMPORTED_MODULE_1__[\"default\"].domReady();\n  _partials_video__WEBPACK_IMPORTED_MODULE_2__[\"default\"].domReady();\n  _partials_back_to_top__WEBPACK_IMPORTED_MODULE_3__[\"default\"].domReady();\n};\n\ndocument.addEventListener('DOMContentLoaded', domReady);\nwindow.addEventListener('scroll', onScroll);\n\n\n//# sourceURL=webpack:///./scripts/app.js?");
+
+/***/ }),
+
+/***/ "./scripts/globals/parallax.js":
+/*!*************************************!*\
+  !*** ./scripts/globals/parallax.js ***!
+  \*************************************/
+/*! exports provided: getContainer */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"getContainer\", function() { return getContainer; });\nconst getContainer = () => document.querySelector('[data-component=\"parallax-container\"]');\n\n\n//# sourceURL=webpack:///./scripts/globals/parallax.js?");
+
+/***/ }),
+
+/***/ "./scripts/globals/utility.js":
+/*!************************************!*\
+  !*** ./scripts/globals/utility.js ***!
+  \************************************/
+/*! exports provided: getIsScrolled */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"getIsScrolled\", function() { return getIsScrolled; });\n/* harmony import */ var _parallax__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./parallax */ \"./scripts/globals/parallax.js\");\n\n\nconst getIsScrolled = () => {\n  const parallaxContainer = Object(_parallax__WEBPACK_IMPORTED_MODULE_0__[\"getContainer\"])();\n  const isMobile = window.innerWidth > 950;\n\n  if (isMobile) {\n    return parallaxContainer.scrollTop > 61;\n  } else {\n    return window.pageYOffset > 61;\n  }\n}\n\n\n//# sourceURL=webpack:///./scripts/globals/utility.js?");
+
+/***/ }),
+
+/***/ "./scripts/partials/back-to-top.js":
+/*!*****************************************!*\
+  !*** ./scripts/partials/back-to-top.js ***!
+  \*****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _globals_parallax__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../globals/parallax */ \"./scripts/globals/parallax.js\");\n/* harmony import */ var _globals_utility__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../globals/utility */ \"./scripts/globals/utility.js\");\n\n\n\nlet backToTop;\n\nconst domReady = () => {\n  backToTop = document.querySelector('[data-component=\"back-to-top\"]');\n  const parallaxContainer = Object(_globals_parallax__WEBPACK_IMPORTED_MODULE_0__[\"getContainer\"])();\n\n  let container;\n  let timeOut;\n  let distance = -5;\n  let time = 20;\n  \n  const scrollToTop = () => {\n    if (document.body.scrollTop != 0 || document.documentElement.scrollTop != 0) {\n      container = window;\n    } else if (parallaxContainer.scrollTop != 0) {\n      container = parallaxContainer;\n    } else {\n      container = null;\n    }\n\n    if (container) {\n      if (time < 0) {\n        time = 0;\n      }\n  \n      container.scrollBy(0, distance);\n      timeOut = setTimeout(scrollToTop, time);\n  \n      if (distance > -60) {\n        distance = distance - 2;\n        time = time - 1\n      } else {\n        distance = -150;\n        time = 0;\n      }\n  \n    } else {\n      clearTimeout(timeOut);\n      distance = -5;\n      time = 20;\n    }\n  }\n  \n  backToTop.addEventListener('click', scrollToTop);\n};\n\nconst onScroll = () => {\n  backToTop.style.opacity = Object(_globals_utility__WEBPACK_IMPORTED_MODULE_1__[\"getIsScrolled\"])() ? 1 : 0;\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  domReady,\n  onScroll,\n});\n\n\n//# sourceURL=webpack:///./scripts/partials/back-to-top.js?");
 
 /***/ }),
 
@@ -161,10 +197,11 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _par
 /*!************************************!*\
   !*** ./scripts/partials/navbar.js ***!
   \************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("document.addEventListener('DOMContentLoaded', () => {\n  const container = document.querySelector('[data-component=\"parallax-container\"]');\n  const navbar = document.querySelector('[data-component=\"navbar\"]');\n\n  const getIsScrolled = () => {\n    if (window.innerWidth > 950) {\n      return container.scrollTop > 61;\n    } else {\n      return window.pageYOffset > 61;\n    }\n  }\n\n  const setNavOpacity = () => {\n    const opacity = getIsScrolled() ? 0.75 : 1;\n    navbar.style.opacity = opacity;\n  };\n\n\n  container.addEventListener('scroll', setNavOpacity);\n  window.addEventListener('scroll', setNavOpacity);\n\n  navbar.onmouseenter = () => {\n    if (!getIsScrolled()) return;\n\n    navbar.style.opacity = 1;\n  };\n  \n  navbar.onmouseleave = () => {\n    if (!getIsScrolled()) return;\n\n    navbar.style.opacity = 0.75;\n  };\n});\n\n\n//# sourceURL=webpack:///./scripts/partials/navbar.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _globals_utility__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../globals/utility */ \"./scripts/globals/utility.js\");\n\n\nlet navbar;\n\nconst domReady = () => {\n  navbar = document.querySelector('[data-component=\"navbar\"]');\n\n  const setOpacity = (entering) => {\n    if (!Object(_globals_utility__WEBPACK_IMPORTED_MODULE_0__[\"getIsScrolled\"])()) return;\n\n    navbar.style.opacity = entering ? 1 : 0.75;\n  };\n\n  navbar.onmouseenter = () => setOpacity(true);\n  navbar.onmouseleave = () => setOpacity(false);\n};\n\nconst onScroll = () => {\n  navbar.style.opacity = Object(_globals_utility__WEBPACK_IMPORTED_MODULE_0__[\"getIsScrolled\"])() ? 0.75 : 1;\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  domReady,\n  onScroll,\n});\n\n\n//# sourceURL=webpack:///./scripts/partials/navbar.js?");
 
 /***/ }),
 
@@ -175,7 +212,7 @@ eval("document.addEventListener('DOMContentLoaded', () => {\n  const container =
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("function requireAll(r) {\n  r.keys().forEach(r);\n}\nrequireAll(__webpack_require__(\"./assets/svgs sync recursive \\\\.svg$\"));\n\n\n//# sourceURL=webpack:///./scripts/partials/sprites.js?");
+eval("const requireAll = (r) => r.keys().forEach(r);\n\nrequireAll(__webpack_require__(\"./assets/svgs sync recursive \\\\.svg$\"));\n\n\n//# sourceURL=webpack:///./scripts/partials/sprites.js?");
 
 /***/ }),
 
@@ -183,10 +220,11 @@ eval("function requireAll(r) {\n  r.keys().forEach(r);\n}\nrequireAll(__webpack_
 /*!***********************************!*\
   !*** ./scripts/partials/video.js ***!
   \***********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("document.addEventListener('DOMContentLoaded', () => {\n  const video = document.querySelector('.video');\n  const videoButton = document.querySelector('.video__button');\n  const videoContainer = document.querySelector('.video__container');\n  \n  videoContainer.addEventListener('click', () => {\n    if (video.paused === true) {\n      video.play();\n      videoButton.style.display = 'none';\n    } else {\n      video.pause();\n      videoButton.style.display = 'block';\n    }\n  });\n});\n\n//# sourceURL=webpack:///./scripts/partials/video.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\nconst domReady = () => {\n  const video = document.querySelector('.video');\n  const videoButton = document.querySelector('.video__button');\n  const videoContainer = document.querySelector('.video__container');\n  \n  function playOrPauseVideo() {\n    if (video.paused === true) {\n      video.play();\n      videoButton.style.display = 'none';\n    } else {\n      video.pause();\n      videoButton.style.display = 'block';\n    }\n  };\n\n  videoContainer.addEventListener('click', playOrPauseVideo);\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  domReady,\n});\n\n\n//# sourceURL=webpack:///./scripts/partials/video.js?");
 
 /***/ }),
 

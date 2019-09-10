@@ -153,7 +153,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _partials_sprites__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./partials/sprites */ \"./scripts/partials/sprites.js\");\n/* harmony import */ var _partials_sprites__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_partials_sprites__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _partials_navbar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./partials/navbar */ \"./scripts/partials/navbar.js\");\n/* harmony import */ var _partials_navbar__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_partials_navbar__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\n//# sourceURL=webpack:///./scripts/app.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _partials_sprites__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./partials/sprites */ \"./scripts/partials/sprites.js\");\n/* harmony import */ var _partials_sprites__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_partials_sprites__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _partials_navbar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./partials/navbar */ \"./scripts/partials/navbar.js\");\n/* harmony import */ var _partials_navbar__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_partials_navbar__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _partials_video__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./partials/video */ \"./scripts/partials/video.js\");\n/* harmony import */ var _partials_video__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_partials_video__WEBPACK_IMPORTED_MODULE_2__);\n\n\n\n\n\n//# sourceURL=webpack:///./scripts/app.js?");
 
 /***/ }),
 
@@ -176,6 +176,17 @@ eval("document.addEventListener('DOMContentLoaded', () => {\n  const container =
 /***/ (function(module, exports, __webpack_require__) {
 
 eval("function requireAll(r) {\n  r.keys().forEach(r);\n}\nrequireAll(__webpack_require__(\"./assets/svgs sync recursive \\\\.svg$\"));\n\n\n//# sourceURL=webpack:///./scripts/partials/sprites.js?");
+
+/***/ }),
+
+/***/ "./scripts/partials/video.js":
+/*!***********************************!*\
+  !*** ./scripts/partials/video.js ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("document.addEventListener('DOMContentLoaded', () => {\n  const video = document.querySelector('.video');\n  const videoButton = document.querySelector('.video__button');\n  const videoContainer = document.querySelector('.video__container');\n  \n  videoContainer.addEventListener('click', () => {\n    if (video.paused === true) {\n      video.play();\n      videoButton.style.display = 'none';\n    } else {\n      video.pause();\n      videoButton.style.display = 'block';\n    }\n  });\n});\n\n//# sourceURL=webpack:///./scripts/partials/video.js?");
 
 /***/ }),
 

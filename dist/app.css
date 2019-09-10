@@ -397,6 +397,18 @@ a,
   .link:hover {
     color: #f3cc4b; }
 
+.z-index-0 {
+  z-index: 0; }
+
+.z-index-1 {
+  z-index: 1; }
+
+.z-index-2 {
+  z-index: 2; }
+
+.z-index-3 {
+  z-index: 3; }
+
 .display-none {
   display: none; }
 
@@ -465,6 +477,13 @@ a,
 
 .bg-color-light {
   background-color: #fafafa; }
+
+.bg-plate {
+  position: absolute;
+  top: -15%;
+  right: -5%;
+  width: 75%;
+  height: 95%; }
 
 .shadow {
   box-shadow: 0 30px 10px -20px rgba(0, 0, 0, 0.3); }

@@ -3040,6 +3040,10 @@ main {
     max-width: 30px;
     max-height: 20px;
     color: #b7b7b7; }
+    @media (max-width: 950px) {
+      .footer__social-icon {
+        margin-right: 0;
+        padding: .5em; } }
     .footer__social-icon:hover {
       color: #fed710; }
   .footer__newsletter {

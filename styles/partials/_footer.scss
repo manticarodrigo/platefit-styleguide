@@ -37,6 +37,11 @@
   }
 
   &__social-icon {
+    @include maxWidth($breakpoint-lg) {
+      margin-right: 0;
+      padding: .5em;
+    }
+
     display: flex;
     flex-direction: row;
     justify-content: center;

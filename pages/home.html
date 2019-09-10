@@ -49,11 +49,13 @@
 
     </header>
 
-    <!-- main content -->
+    <!-- parallax container -->
 
-    <main class="px-4 px-3-md px-2-sm  container parallax-container" data-component="parallax-container">
+    <div class="parallax-container" data-component="parallax-container">
+      
+      <!-- main content -->
 
-      <div class="z-index-3 relative overflow-hidden bg-color-light">
+      <main class="px-4 px-3-md px-2-sm overflow-hidden relative container">
 
         <!-- hero -->
   
@@ -118,67 +120,73 @@
           </div>
   
         </section>
+
+        <!-- plate parallax bg container -->
+
+        <div class="z-index-n1 relative bg-color-light">
+          
+          <!-- video / quote -->
   
-        <!-- video / quote -->
-  
-        <section class="z-index-2 px-6 px-4-md px-2-sm py-4 pb-6 pb-4-sm row">
-  
-          <div class="col-2 col-1-lg row center-lg">
-            <div class="py-4 py-2-md">
-              <video class="video shadow" width="500" height="300" controls>
-                <source src="../assets/platefit.mp4" type="video/mp4">
-                Video Not Supported
-              </video>
+          <section class="px-6 px-4-md px-2-sm py-4 pb-6 pb-4-sm row">
+    
+            <div class="col-2 col-1-lg row center-lg">
+              <div class="py-4 py-2-md">
+                <video class="video shadow" width="500" height="300" controls>
+                  <source src="../assets/platefit.mp4" type="video/mp4">
+                  Video Not Supported
+                </video>
+              </div>
             </div>
-          </div>
-  
-          <div class="col-2 col-1-lg row end center-lg align-center">
-            <div class="py-4 py-2-md pt-4-md pl-4-xl pl-0-lg">
-              <div class="row nowrap">
-                <div class="quote__img">
-                  <img class="shadow" src="../assets/jennifer-p.png">
-                </div>
-                <div class="quote__container">
-                  <p class="quote__text">
-                    Love love love PLATEFIT! This is hands down my favorite workout in LA. It's fast, challenging, and the
-                    instructors don't waste a second... you are moving the entire 30 minutes.
-                  </p>
-                  <h4 class="text-uppercase quote__text--small">
-                    / Jennifer P
-                  </h4>
+    
+            <div class="col-2 col-1-lg row end center-lg align-center">
+              <div class="py-4 py-2-md pt-4-md pl-4-xl pl-0-lg">
+                <div class="row nowrap">
+                  <div class="quote__img">
+                    <img class="shadow" src="../assets/jennifer-p.png">
+                  </div>
+                  <div class="quote__container">
+                    <p class="quote__text">
+                      Love love love PLATEFIT! This is hands down my favorite workout in LA. It's fast, challenging, and the
+                      instructors don't waste a second... you are moving the entire 30 minutes.
+                    </p>
+                    <h4 class="text-uppercase quote__text--small">
+                      / Jennifer P
+                    </h4>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
+    
+          </section>
+    
+          <!-- the science -->
+    
+          <section class="z-index-n1 px-6 px-4-md px-2-sm py-6 py-4-sm relative row parallax parallax--bg-plate">
   
-        </section>
-  
-        <!-- the science -->
-  
-        <section class="z-index-n1 px-6 px-4-md px-2-sm py-6 py-4-sm relative row parallax parallax--bg-plate">
-          <div class="col-2 col-1-lg">
-            <div class="py-4 py-2-md pr-6 pr-0-lg text-center-lg">
-                <p class="h6">What is a Power Plate?</p>
-                <p class="my-0 h3">THE SCIENCE.</p>
-                <p class="paragraph">
-                  Power Plate is a medical grade device that contracts the muscles 30-50 times per second engaging multiple muscle groups at once for results in half the time.
-                </p>
-                <a class="btn btn--arrow" href="#">
-                  Learn more
-                  <img src="../assets/arrow.png">
-                </a>
+            <div class="col-2 col-1-lg">
+              <div class="py-4 py-2-md pr-6 pr-0-lg text-center-lg">
+                  <p class="h6">What is a Power Plate?</p>
+                  <p class="my-0 h3">THE SCIENCE.</p>
+                  <p class="paragraph">
+                    Power Plate is a medical grade device that contracts the muscles 30-50 times per second engaging multiple muscle groups at once for results in half the time.
+                  </p>
+                  <a class="btn btn--arrow" href="#">
+                    Learn more
+                    <img src="../assets/arrow.png">
+                  </a>
+              </div>
             </div>
-          </div>
-
-          <div class="col-2 col-1-lg row center">
-
-            <div class="py-5-md px-6 px-4-xl">
-              <img class="max-width-full" src="../assets/power-plate.png">
-            </div>
-
-          </div>
   
-        </section>
+            <div class="col-2 col-1-lg row center">
+              <div class="py-5-md px-6 px-4-xl">
+                <img class="max-width-full" src="../assets/power-plate.png">
+              </div>
+            </div>
+    
+          </section>
+
+        </div>
+          
   
         <!-- banner -->
   
@@ -297,76 +305,76 @@
             </div>
           </a>
         </section>
-  
-        <!-- footer -->
-    
-        <footer class="px-6 px-4-md px-2-sm py-6 py-4-sm container row text-center-lg footer">
-          <div class="pb-4-lg col-4 col-2-lg col-1-sm">
-            <div class="mr-5 mr-lg-3 mr-0-sm">
-              <img class="grey-logo-img" src="../assets/logo-grey.png">
-              <p class="mt-4 text-uppercase footer__slogan">This <br>is <br>where <br> i <span class="color-primary">fit</span></span></p>
-            </div>
-          </div>
-          <div class="pb-4-lg col-4 col-2-lg col-1-sm">
-            <div class="mr-5 mr-lg-3 mr-0-sm">
-              <p class="mt-0 mb-4 text-uppercase footer__headline">Company</p>
-              <nav>
-                <ul class="pl-0 list-unstyled">
-                  <li class="mb-3"><a href="#lorem">Our Story</a></li>
-                  <li class="mb-3"><a href="#lorem">Careers</a></li>
-                  <li class="mb-3"><a href="#lorem">Press</a></li>
-                  <li class="mb-3"><a href="#lorem">FAQs</a></li>
-                  <li class="mb-3"><a href="#lorem">Studio Policies</a></li>
-                  <li class="mb-3"><a href="#lorem">Contract Agreement</a></li>
-                </ul>
-              </nav>
-            </div>
-          </div>
-          <div class="pb-4-lg col-4 col-2-lg col-1-sm">
-            <div class="mr-5 mr-lg-3 mr-0-sm">
-              <p class="mt-0 mb-4 text-uppercase footer__headline">Explore</p>
-              <nav>
-                <ul class="pl-0 list-unstyled">
-                  <li class="mb-3"><a href="#lorem">About</a></li>
-                  <li class="mb-3"><a href="#lorem">Schedule</a></li>
-                  <li class="mb-3"><a href="#lorem">Pricing</a></li>
-                  <li class="mb-3"><a href="#lorem">Trainers</a></li>
-                  <li class="mb-3"><a href="#lorem">Locations</a></li>
-                  <li class="mb-3"><a href="#lorem">Community</a></li>
-                </ul>
-              </nav>
-            </div>
-          </div>
-          <div class="pb-4-lg col-4 col-2-lg col-1-sm">
-            <div class="mr-5 mr-lg-3 mr-0-sm">
-              <p class="mt-0 mb-4 text-uppercase footer__headline">Follow</p>
-              <div class="mt-3 mb-4 row center-lg">
-                <a class="footer__social-icon" href="#social">
-                  <svg width="18px" height="36px">
-                    <use xlink:href="#facebook" />
-                  </svg>
-                </a>
-                <a class="footer__social-icon" href="#social">
-                  <svg width="32px" height="26px">
-                    <use xlink:href="#twitter" />
-                  </svg>
-                </a>
-                <a class="footer__social-icon" href="#social">
-                  <svg width="32px" height="32px">
-                    <use xlink:href="#instagram" />
-                  </svg>
-                </a>
-              </div>
-              <p class="mt-0 mb-4 text-uppercase footer__headline">Subscribe</p>
-              <form class="row footer__newsletter" action="#mailchimp">
-                <input class="col-2" type="email" name="email" placeholder="Your Email">
-                <input class="col-2" type="submit" name="submit" value="Subscribe">
-              </form>
-            </div>
-          </div>
-        </footer>
-
+        
       </main>
+
+      <!-- footer -->
+  
+      <footer class="px-6 px-4-md px-2-sm py-6 py-4-sm container row text-center-lg footer">
+        <div class="pb-4-lg col-4 col-2-lg col-1-sm">
+          <div class="mr-5 mr-lg-3 mr-0-sm">
+            <img class="grey-logo-img" src="../assets/logo-grey.png">
+            <p class="mt-4 text-uppercase footer__slogan">This <br>is <br>where <br> i <span class="color-primary">fit</span></span></p>
+          </div>
+        </div>
+        <div class="pb-4-lg col-4 col-2-lg col-1-sm">
+          <div class="mr-5 mr-lg-3 mr-0-sm">
+            <p class="mt-0 mb-4 text-uppercase footer__headline">Company</p>
+            <nav>
+              <ul class="pl-0 list-unstyled">
+                <li class="mb-3"><a href="#lorem">Our Story</a></li>
+                <li class="mb-3"><a href="#lorem">Careers</a></li>
+                <li class="mb-3"><a href="#lorem">Press</a></li>
+                <li class="mb-3"><a href="#lorem">FAQs</a></li>
+                <li class="mb-3"><a href="#lorem">Studio Policies</a></li>
+                <li class="mb-3"><a href="#lorem">Contract Agreement</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="pb-4-lg col-4 col-2-lg col-1-sm">
+          <div class="mr-5 mr-lg-3 mr-0-sm">
+            <p class="mt-0 mb-4 text-uppercase footer__headline">Explore</p>
+            <nav>
+              <ul class="pl-0 list-unstyled">
+                <li class="mb-3"><a href="#lorem">About</a></li>
+                <li class="mb-3"><a href="#lorem">Schedule</a></li>
+                <li class="mb-3"><a href="#lorem">Pricing</a></li>
+                <li class="mb-3"><a href="#lorem">Trainers</a></li>
+                <li class="mb-3"><a href="#lorem">Locations</a></li>
+                <li class="mb-3"><a href="#lorem">Community</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="pb-4-lg col-4 col-2-lg col-1-sm">
+          <div class="mr-5 mr-lg-3 mr-0-sm">
+            <p class="mt-0 mb-4 text-uppercase footer__headline">Follow</p>
+            <div class="mt-3 mb-4 row center-lg">
+              <a class="footer__social-icon" href="#social">
+                <svg width="18px" height="36px">
+                  <use xlink:href="#facebook" />
+                </svg>
+              </a>
+              <a class="footer__social-icon" href="#social">
+                <svg width="32px" height="26px">
+                  <use xlink:href="#twitter" />
+                </svg>
+              </a>
+              <a class="footer__social-icon" href="#social">
+                <svg width="32px" height="32px">
+                  <use xlink:href="#instagram" />
+                </svg>
+              </a>
+            </div>
+            <p class="mt-0 mb-4 text-uppercase footer__headline">Subscribe</p>
+            <form class="row footer__newsletter" action="#mailchimp">
+              <input class="col-2" type="email" name="email" placeholder="Your Email">
+              <input class="col-2" type="submit" name="submit" value="Subscribe">
+            </form>
+          </div>
+        </div>
+      </footer>
         
     </div>
 

@@ -1,0 +1,70 @@
+.trainers {
+  background-color: $color-light;
+  
+  &__headline {
+    text-align: center;
+    color: $color-black;
+    letter-spacing: 6px;
+    margin-bottom: 10px;
+  }
+
+  &__message {
+    text-align: center;
+    color: $color-text;
+    max-width: 490px;
+    margin: auto;
+    line-height: 1.8;
+  }
+
+  &__box {
+    width: 232px;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+
+  
+  
+    &__img {
+      width: 100%;
+      transition: transform $duration;
+      position: relative;
+
+
+      &:hover {
+    
+        &::after {
+          opacity: 1;
+        }
+      }
+    
+      &::after {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100px;
+        height: 20px;
+        background-color: $color-primary;
+        opacity: 0;
+        transition: opacity $duration;
+        content: 'View Profile';
+        color: black;
+      }
+
+      &:hover {
+        transform: translateY(-1rem);
+      }
+
+      img {
+        width: 100%;
+        box-shadow: 0px 20px 30px -20px rgba(0,0,0,0.3);
+      }
+    }
+  }
+
+  &__name {
+    line-height: 0.8;
+    margin-top: 12px;
+    margin-bottom: 12;
+  }
+}

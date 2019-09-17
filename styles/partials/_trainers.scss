@@ -67,4 +67,18 @@
     margin-top: 12px;
     margin-bottom: 12;
   }
+
+  &__single__img {
+    height: 100%;
+    object-fit: cover;
+
+    @include maxWidth($breakpoint-lg) {
+      max-width: 100%;
+    }    
+
+    &__container {
+      height: 650px;
+      width: 577px;
+    }
+  }
 }

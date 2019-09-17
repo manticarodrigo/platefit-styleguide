@@ -3159,4 +3159,13 @@ main {
     line-height: 0.8;
     margin-top: 12px;
     margin-bottom: 12; }
+  .trainers__single__img {
+    height: 100%;
+    object-fit: cover; }
+    @media (max-width: 950px) {
+      .trainers__single__img {
+        max-width: 100%; } }
+    .trainers__single__img__container {
+      height: 650px;
+      width: 577px; }
 

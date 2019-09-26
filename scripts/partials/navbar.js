@@ -2,7 +2,7 @@ import { getIsScrolled } from '../globals/utility';
 
 let navbar;
 
-const domReady = () => {
+const onDomReady = () => {
   navbar = document.querySelector('[data-component="navbar"]');
 
   const setOpacity = (entering) => {
@@ -22,6 +22,6 @@ const onScroll = () => {
 }
 
 export default {
-  domReady,
+  onDomReady,
   onScroll,
-}
+};

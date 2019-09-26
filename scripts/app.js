@@ -1,25 +1,22 @@
-import { getContainer } from './globals/parallax';
+import { jarallax } from 'jarallax';
+
 import Navbar from './partials/navbar';
 import Video from './partials/video';
-import BackToTop from './partials/back-to-top';
-import './partials/sprites'
+import ScrollTop from './partials/scroll-top';
+import './partials/sprites';
 
 const onScroll = () => {
   Navbar.onScroll();
   BackToTop.onScroll();
 };
 
-const domReady = () => {
-  const parallaxContainer = getContainer();
+const onDomReady = () => {
+  Navbar.onDomReady();
+  Video.onDomReady();
+  ScrollTop.onDomReady();
 
-  if (parallaxContainer) {
-    parallaxContainer.addEventListener('scroll', onScroll);
-  }
-
-  Navbar.domReady();
-  Video.domReady();
-  BackToTop.domReady();
+  jarallax(document.querySelectorAll('.bg-cover'), { speed: 0.5 });
 };
 
-document.addEventListener('DOMContentLoaded', domReady);
+document.addEventListener('DOMContentLoaded', onDomReady);
 window.addEventListener('scroll', onScroll);

@@ -49,339 +49,323 @@
 
     </header>
 
-    <!-- parallax container -->
+    <!-- main content -->
 
-    <div class="parallax-container" data-component="parallax-container">
+    <main class="px-4 px-3-md px-2-sm overflow-hidden relative container">
 
-      <!-- main content -->
+      <!-- hero -->
 
-      <main class="px-4 px-3-md px-2-sm overflow-hidden relative container">
+      <section class="px-6 px-4-md px-2-sm center bg-cover hero" style="background-image: url(../assets/hero-lg.jpg);">
+        <h2 class="my-0 h1 text-center letter-spacing--sm hero__title">#THIS IS WHERE I FIT</h2>
 
-        <!-- hero -->
+        <div class="row box-row">
 
-        <section id="hero" class="px-6 px-4-md px-2-sm center parallax hero">
-          <style type="text/css">
-            #hero::after { background-image: url('../assets/hero-lg.jpg'); }
-          </style>
-
-          <h2 class="my-0 h1 text-center letter-spacing--sm hero__title">#THIS IS WHERE I FIT</h2>
-
-          <div class="row box-row">
-
-            <div class="col-2 col-1-sm">
-              <div class="p-2 p-0-sm my-4-sm row end">
-                <div class="box box--yellow shadow">
-                  <p class="text-bold text-sm">First Time</p>
-                  <h3 class="my-0 box__text">Try 2 weeks for &dollar;49</h3>
-                  <svg class="i-arrow"><use href="#arrow" /></svg>
-                </div>
+          <div class="col-2 col-1-sm">
+            <div class="p-2 p-0-sm my-4-sm row end">
+              <div class="box box--yellow shadow">
+                <p class="text-bold text-sm">First Time</p>
+                <h3 class="my-0 box__text">Try 2 weeks for &dollar;49</h3>
+                <svg class="i-arrow"><use href="#arrow" /></svg>
               </div>
             </div>
-
-            <div class="col-2 col-1-sm">
-              <div class="p-2 p-0-sm row">
-                <div class="box shadow">
-                  <p class="text-bold text-sm">View Schedule</p>
-                  <h3 class="my-0 box__text">Reserve a class</h3>
-                    <svg class="i-arrow"><use href="#arrow" /></svg>
-                </div>
-              </div>
-            </div>
-
           </div>
+
+          <div class="col-2 col-1-sm">
+            <div class="p-2 p-0-sm row">
+              <div class="box shadow">
+                <p class="text-bold text-sm">View Schedule</p>
+                <h3 class="my-0 box__text">Reserve a class</h3>
+                  <svg class="i-arrow"><use href="#arrow" /></svg>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- about -->
+
+      <section class="px-6 px-4-md px-2-sm py-4 pb-6 pb-4-sm box-section-after bg-color-light">
+        <h3 class="h2 text-center text-uppercase letter-spacing">The Workout</h3>
+
+        <div class="row">
+          <div class="col-2 col-1-md">
+            <div class="py-4 py-2-md">
+              <p class="h2 h2--sm text-center-lg">You are unstoppable.</p>
+            </div>
+          </div>
+
+          <div class="col-2 col-1-md">
+            <div class="py-4 py-2-md text-right text-center-lg">
+              <p class="paragraph">
+                Platefit is a 27-minute high intensity interval training workout done on individual Power Plates with guided
+                instruction carefully curated music and a new dynamic experience built for efficiency. Platefit will challenge
+                you, strengthen you, and renew you. The results are strong, lean, powerful, resilient bodies.
+              </p>
+              <a class="btn btn--arrow" href="#">
+                Learn more
+                <svg class="i-arrow"><use href="#arrow" /></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- plate bg container -->
+
+      <div class="z-index-0 relative bg-color-light bg-plate">
+
+        <!-- video / quote -->
+
+        <section class="px-6 px-4-md px-2-sm py-4 pb-6 pb-4-sm row">
+
+          <div class="col-2 col-1-lg row center-lg">
+            <div class="py-4 py-2-md pb-4-md">
+              <div class="video-container">
+                <video class="video shadow" preload="none" poster="../assets/poster.jpg">
+                  <source src="../assets/platefit.mp4" type="video/mp4">
+                  Video Not Supported
+                </video>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-2 col-1-lg row end center-lg align-center">
+            <div class="py-4 py-2-md pt-4-md pl-4-xl pl-0-lg">
+              <div class="row nowrap">
+                <div class="quote__img">
+                  <img class="shadow" src="../assets/jennifer-p.png">
+                </div>
+                <div class="quote__container">
+                  <p class="quote__text">
+                    Love love love PLATEFIT! This is hands down my favorite workout in LA. It's fast, challenging, and the
+                    instructors don't waste a second... you are moving the entire 30 minutes.
+                  </p>
+                  <h4 class="text-uppercase quote__text--small">
+                    / Jennifer P
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </section>
 
-        <!-- about -->
+        <!-- the science -->
 
-        <section class="px-6 px-4-md px-2-sm py-4 pb-6 pb-4-sm box-section-after bg-color-light">
-          <h3 class="h2 text-center text-uppercase letter-spacing">The Workout</h3>
+        <section class="z-index-n1 px-6 px-4-md px-2-sm py-6 py-4-sm relative row">
 
-          <div class="row">
-            <div class="col-2 col-1-md">
-              <div class="py-4 py-2-md">
-                <p class="h2 h2--sm text-center-lg">You are unstoppable.</p>
-              </div>
-            </div>
-
-            <div class="col-2 col-1-md">
-              <div class="py-4 py-2-md text-right text-center-lg">
+          <div class="col-2 col-1-lg">
+            <div class="py-4 py-2-md pr-6 pr-0-lg text-center-lg">
+                <p class="h6">What is a Power Plate?</p>
+                <p class="my-0 h3">THE SCIENCE.</p>
                 <p class="paragraph">
-                  Platefit is a 27-minute high intensity interval training workout done on individual Power Plates with guided
-                  instruction carefully curated music and a new dynamic experience built for efficiency. Platefit will challenge
-                  you, strengthen you, and renew you. The results are strong, lean, powerful, resilient bodies.
+                  Power Plate is a medical grade device that contracts the muscles 30-50 times per second engaging multiple muscle groups at once for results in half the time.
                 </p>
                 <a class="btn btn--arrow" href="#">
                   Learn more
                   <svg class="i-arrow"><use href="#arrow" /></svg>
                 </a>
-              </div>
+            </div>
+          </div>
+
+          <div class="col-2 col-1-lg row center">
+            <div class="py-5-md px-6 px-4-xl">
+              <img class="max-width-full" src="../assets/squat.png">
             </div>
           </div>
 
         </section>
 
-        <!-- plate parallax bg container -->
+      </div>
 
-        <div class="z-index-0 relative bg-color-light">
+      <!-- banner -->
 
-          <!-- video / quote -->
+      <section id="banner" class="z-index-1 bg-cover banner" style="background-image: url('../assets/banner.jpg');">
+      </section>
 
-          <section class="px-6 px-4-md px-2-sm py-4 pb-6 pb-4-sm row">
+      <!-- press -->
 
-            <div class="col-2 col-1-lg row center-lg">
-              <div class="py-4 py-2-md pb-4-md">
-                <div class="video-container">
-                  <video class="video shadow" preload="none" poster="../assets/poster.jpg">
-                    <source src="../assets/platefit.mp4" type="video/mp4">
-                    Video Not Supported
-                  </video>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-2 col-1-lg row end center-lg align-center">
-              <div class="py-4 py-2-md pt-4-md pl-4-xl pl-0-lg">
-                <div class="row nowrap">
-                  <div class="quote__img">
-                    <img class="shadow" src="../assets/jennifer-p.png">
-                  </div>
-                  <div class="quote__container">
-                    <p class="quote__text">
-                      Love love love PLATEFIT! This is hands down my favorite workout in LA. It's fast, challenging, and the
-                      instructors don't waste a second... you are moving the entire 30 minutes.
-                    </p>
-                    <h4 class="text-uppercase quote__text--small">
-                      / Jennifer P
-                    </h4>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </section>
-
-          <!-- the science -->
-
-          <section class="z-index-n1 px-6 px-4-md px-2-sm py-6 py-4-sm relative row parallax parallax--bg-plate">
-
-            <div class="col-2 col-1-lg">
-              <div class="py-4 py-2-md pr-6 pr-0-lg text-center-lg">
-                  <p class="h6">What is a Power Plate?</p>
-                  <p class="my-0 h3">THE SCIENCE.</p>
-                  <p class="paragraph">
-                    Power Plate is a medical grade device that contracts the muscles 30-50 times per second engaging multiple muscle groups at once for results in half the time.
-                  </p>
-                  <a class="btn btn--arrow" href="#">
-                    Learn more
-                    <svg class="i-arrow"><use href="#arrow" /></svg>
-                  </a>
-              </div>
-            </div>
-
-            <div class="col-2 col-1-lg row center">
-              <div class="py-5-md px-6 px-4-xl">
-                <img class="max-width-full" src="../assets/squat.png">
-              </div>
-            </div>
-
-          </section>
-
+      <section class="bg-color-white">
+        <div class="p-6">
+          <div class="row around">
+            <a class="col-6 col-3-lg col-1-md mb-4-md row center align-center hover-translucent" href="#press"><img class="press-img" src="../assets/la-times.png" /></a>
+            <a class="col-6 col-3-lg col-1-md mb-4-md row center align-center hover-translucent" href="#press"><img class="press-img" src="../assets/vogue.png" /></a>
+            <a class="col-6 col-3-lg col-1-md mb-4-md row center align-center hover-translucent" href="#press"><img class="press-img" src="../assets/e-news.png" /></a>
+            <a class="col-6 col-3-lg col-1-md mb-4-md row center align-center hover-translucent" href="#press"><img class="press-img" src="../assets/elle.png" /></a>
+            <a class="col-6 col-3-lg col-1-md mb-4-md row center align-center hover-translucent" href="#press"><img class="press-img" src="../assets/people.png" /></a>
+            <a class="col-6 col-3-lg col-1-md row center align-center hover-translucent" href="#press"><img class="press-img" src="../assets/la-weekly.png" /></a>
+          </div>
         </div>
+      </section>
 
-        <!-- banner -->
+      <!-- owner -->
 
-        <section id="banner" class="z-index-1 parallax banner">
-          <style type="text/css">
-            #banner::after { background-image: url('../assets/banner.jpg'); }
-          </style>
-        </section>
+      <section class="bg-color-white">
 
-        <!-- press -->
-
-        <section class="bg-color-white">
-          <div class="p-6">
-            <div class="row around">
-              <a class="col-6 col-3-lg col-1-md mb-4-md row center align-center hover-translucent" href="#press"><img class="press-img" src="../assets/la-times.png" /></a>
-              <a class="col-6 col-3-lg col-1-md mb-4-md row center align-center hover-translucent" href="#press"><img class="press-img" src="../assets/vogue.png" /></a>
-              <a class="col-6 col-3-lg col-1-md mb-4-md row center align-center hover-translucent" href="#press"><img class="press-img" src="../assets/e-news.png" /></a>
-              <a class="col-6 col-3-lg col-1-md mb-4-md row center align-center hover-translucent" href="#press"><img class="press-img" src="../assets/elle.png" /></a>
-              <a class="col-6 col-3-lg col-1-md mb-4-md row center align-center hover-translucent" href="#press"><img class="press-img" src="../assets/people.png" /></a>
-              <a class="col-6 col-3-lg col-1-md row center align-center hover-translucent" href="#press"><img class="press-img" src="../assets/la-weekly.png" /></a>
-            </div>
+        <div class="pt-3 pb-6 row">
+          <div class="col-3 col-2-lg col-1-md text-center">
+            <img class="rachael-img" src="../assets/rachael-headshot.jpg">
           </div>
-        </section>
 
-        <!-- owner -->
-
-        <section class="bg-color-white">
-
-          <div class="pt-3 pb-6 row">
-            <div class="col-3 col-2-lg col-1-md text-center">
-              <img class="rachael-img" src="../assets/rachael-headshot.jpg">
-            </div>
-
-            <div class="col-3 col-2-lg col-1-md text-center-md">
-              <div class="mt-5-md mx-4">
-                <div>
-                  <p class="h6">Owner</p>
-                  <h3 class="my-3 text-uppercase">Rachael Blumberg</h3>
-                </div>
-                <p class="paragraph">
-                  After ten years of training clients in her private Power Plate studio in West Hollywood, Rachael Blumberg
-                  decided to open the doors to PLATEFIT and fulfill her dream of offering this full-body toning, no-nonsense,
-                  revitalizing workout to the public. The workout is designed for efficiencies. This is what transformation
-                  looks like.
-                </p>
-                <a class="btn btn--arrow">
-                  Our Story
-                  <svg class="i-arrow"><use href="#arrow" /></svg>
-                </a>
+          <div class="col-3 col-2-lg col-1-md text-center-md">
+            <div class="mt-5-md mx-4">
+              <div>
+                <p class="h6">Owner</p>
+                <h3 class="my-3 text-uppercase">Rachael Blumberg</h3>
               </div>
-            </div>
-
-            <div class="col-3 col-1-lg text-center">
-              <img class="mt-5-lg pt-4 pr-5 pt-0-lg pr-0-lg rachael-two-img" src="../assets/rachael2.jpg">
-            </div>
-          </div>
-
-        </section>
-
-        <!-- community -->
-
-        <section class="px-6 px-4-md px-2-sm py-6 py-4-sm">
-          <p class="p-3 h2 text-center text-uppercase">Platefit Community</p>
-
-          <div class="text-center-lg row">
-
-            <div class="mb-6-lg col-2 col-1-lg">
-              <p class="h6">Social</p>
-              <p class="my-0 h3 text-uppercase">#THISISWHEREI<span class="color-primary">FIT</span></p>
-              <p class="paragraph">Get to know your PLATEFIT team, make new friends, learn from our special guests, and get more out of your PLATEFIT experience.</p>
-              <a class="btn btn--arrow" href="#community">
-                Learn more
+              <p class="paragraph">
+                After ten years of training clients in her private Power Plate studio in West Hollywood, Rachael Blumberg
+                decided to open the doors to PLATEFIT and fulfill her dream of offering this full-body toning, no-nonsense,
+                revitalizing workout to the public. The workout is designed for efficiencies. This is what transformation
+                looks like.
+              </p>
+              <a class="btn btn--arrow">
+                Our Story
                 <svg class="i-arrow"><use href="#arrow" /></svg>
               </a>
             </div>
-
-            <div class="col-2 col-1-lg row end center-lg">
-              <a class="insta-img" style="background-image: url('../assets/community-1.jpg');" href="#insta"></a>
-              <a class="insta-img" style="background-image: url('../assets/community-2.jpg');" href="#insta"></a>
-              <a class="insta-img" style="background-image: url('../assets/community-3.jpg');" href="#insta"></a>
-              <a class="insta-img" style="background-image: url('../assets/community-4.jpg');" href="#insta"></a>
-              <a class="insta-img" style="background-image: url('../assets/community-5.jpg');" href="#insta"></a>
-              <a class="insta-img" style="background-image: url('../assets/community-6.jpg');" href="#insta"></a>
-            </div>
-
           </div>
 
-        </section>
-
-        <!-- mobile app -->
-
-        <section class="row">
-          <div class="col-2 col-1-md">
-            <div class="p-6 p-4-lg text-center-md">
-              <h3>FIT ON THE GO</h3>
-              <p class="paragraph">Download the FREE PLATEFIT iOS &amp; Android app to sign-up for classes and stay up to date on promotions.</p>
-              <a href="#ios"><img class="mr-2 mr-0-sm mb-2 app-download-img" src="../assets/app-store.png"></a>
-              <a href="#android"><img class="mb-2 pt-2 app-download-img" src="../assets/play-store.png"></a>
-            </div>
-          </div>
-          <div class="col-2 col-1-md text-center">
-            <img class="p-6 p-4-lg app-img" src="../assets/app.png">
-          </div>
-        </section>
-
-        <!-- cta -->
-
-        <section>
-          <a href="#cta">
-            <div id="cta" class="px-3 row center align-center parallax banner banner--hover">
-              <h1 class="my-0 text-center letter-spacing--sm banner__title">
-                TRY 2 WEEKS UNLIMITED FOR $49
-              </h1>
-              <style type="text/css">
-                #cta::after { background-image: url('../assets/studio4.jpg'); }
-              </style>
-            </div>
-          </a>
-        </section>
-
-      </main>
-
-      <!-- footer -->
-
-      <footer class="px-6 px-4-md px-2-sm py-6 py-4-sm container row text-center-lg footer">
-        <div class="pb-4-lg col-4 col-2-lg col-1-sm">
-          <div class="mr-5 mr-lg-3 mr-0-sm">
-            <img class="grey-logo-img" src="../assets/logo-grey.png">
-            <p class="mt-4 text-uppercase footer__slogan">This <br>is <br>where <br> i <span class="color-primary">fit</span></span></p>
+          <div class="col-3 col-1-lg text-center">
+            <img class="mt-5-lg pt-4 pr-5 pt-0-lg pr-0-lg rachael-two-img" src="../assets/rachael2.jpg">
           </div>
         </div>
-        <div class="pb-4-lg col-4 col-2-lg col-1-sm">
-          <div class="mr-5 mr-lg-3 mr-0-sm">
-            <p class="mt-0 mb-4 text-uppercase footer__headline">Company</p>
-            <nav>
-              <ul class="pl-0 list-unstyled">
-                <li class="mb-3"><a href="#lorem">Our Story</a></li>
-                <li class="mb-3"><a href="#lorem">Careers</a></li>
-                <li class="mb-3"><a href="#lorem">Press</a></li>
-                <li class="mb-3"><a href="#lorem">FAQs</a></li>
-                <li class="mb-3"><a href="#lorem">Studio Policies</a></li>
-                <li class="mb-3"><a href="#lorem">Contract Agreement</a></li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-        <div class="pb-4-lg col-4 col-2-lg col-1-sm">
-          <div class="mr-5 mr-lg-3 mr-0-sm">
-            <p class="mt-0 mb-4 text-uppercase footer__headline">Explore</p>
-            <nav>
-              <ul class="pl-0 list-unstyled">
-                <li class="mb-3"><a href="#lorem">About</a></li>
-                <li class="mb-3"><a href="#lorem">Schedule</a></li>
-                <li class="mb-3"><a href="#lorem">Pricing</a></li>
-                <li class="mb-3"><a href="#lorem">Trainers</a></li>
-                <li class="mb-3"><a href="#lorem">Locations</a></li>
-                <li class="mb-3"><a href="#lorem">Community</a></li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-        <div class="pb-4-lg col-4 col-2-lg col-1-sm">
-          <div class="mr-5 mr-lg-3 mr-0-sm">
-            <p class="mt-0 mb-4 text-uppercase footer__headline">Follow</p>
-            <div class="mt-3 mb-4 row center-lg">
-              <a class="footer__social-icon" href="#social">
-                <svg width="18px" height="36px">
-                  <use href="#facebook" />
-                </svg>
-              </a>
-              <a class="footer__social-icon" href="#social">
-                <svg width="32px" height="26px">
-                  <use href="#twitter" />
-                </svg>
-              </a>
-              <a class="footer__social-icon" href="#social">
-                <svg width="32px" height="32px">
-                  <use href="#instagram" />
-                </svg>
-              </a>
-            </div>
-            <p class="mt-0 mb-4 text-uppercase footer__headline">Subscribe</p>
-            <form class="row footer__newsletter" action="#mailchimp">
-              <input class="col-2" type="email" name="email" placeholder="Your Email">
-              <input class="col-2" type="submit" name="submit" value="Subscribe">
-            </form>
-          </div>
-        </div>
-      </footer>
 
-    </div>
+      </section>
+
+      <!-- community -->
+
+      <section class="px-6 px-4-md px-2-sm py-6 py-4-sm">
+        <p class="p-3 h2 text-center text-uppercase">Platefit Community</p>
+
+        <div class="text-center-lg row">
+
+          <div class="mb-6-lg col-2 col-1-lg">
+            <p class="h6">Social</p>
+            <p class="my-0 h3 text-uppercase">#THISISWHEREI<span class="color-primary">FIT</span></p>
+            <p class="paragraph">Get to know your PLATEFIT team, make new friends, learn from our special guests, and get more out of your PLATEFIT experience.</p>
+            <a class="btn btn--arrow" href="#community">
+              Learn more
+              <svg class="i-arrow"><use href="#arrow" /></svg>
+            </a>
+          </div>
+
+          <div class="col-2 col-1-lg row end center-lg">
+            <a class="insta-img" style="background-image: url('../assets/community-1.jpg');" href="#insta"></a>
+            <a class="insta-img" style="background-image: url('../assets/community-2.jpg');" href="#insta"></a>
+            <a class="insta-img" style="background-image: url('../assets/community-3.jpg');" href="#insta"></a>
+            <a class="insta-img" style="background-image: url('../assets/community-4.jpg');" href="#insta"></a>
+            <a class="insta-img" style="background-image: url('../assets/community-5.jpg');" href="#insta"></a>
+            <a class="insta-img" style="background-image: url('../assets/community-6.jpg');" href="#insta"></a>
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- mobile app -->
+
+      <section class="row">
+        <div class="col-2 col-1-md">
+          <div class="p-6 p-4-lg text-center-md">
+            <h3>FIT ON THE GO</h3>
+            <p class="paragraph">Download the FREE PLATEFIT iOS &amp; Android app to sign-up for classes and stay up to date on promotions.</p>
+            <a href="#ios"><img class="mr-2 mr-0-sm mb-2 app-download-img" src="../assets/app-store.png"></a>
+            <a href="#android"><img class="mb-2 pt-2 app-download-img" src="../assets/play-store.png"></a>
+          </div>
+        </div>
+        <div class="col-2 col-1-md text-center">
+          <img class="p-6 p-4-lg app-img" src="../assets/app.png">
+        </div>
+      </section>
+
+      <!-- cta -->
+
+      <section class="bg-cover" style="background-image: url('../assets/studio4.jpg');">
+        <a href="#cta">
+          <div id="cta" class="px-3 row center align-center banner banner--hover">
+            <h1 class="my-0 text-center letter-spacing--sm banner__title">
+              TRY 2 WEEKS UNLIMITED FOR $49
+            </h1>
+          </div>
+        </a>
+      </section>
+
+    </main>
+
+    <!-- footer -->
+
+    <footer class="px-6 px-4-md px-2-sm py-6 py-4-sm container row text-center-lg footer">
+      <div class="pb-4-lg col-4 col-2-lg col-1-sm">
+        <div class="mr-5 mr-lg-3 mr-0-sm">
+          <img class="grey-logo-img" src="../assets/logo-grey.png">
+          <p class="mt-4 text-uppercase footer__slogan">This <br>is <br>where <br> i <span class="color-primary">fit</span></span></p>
+        </div>
+      </div>
+      <div class="pb-4-lg col-4 col-2-lg col-1-sm">
+        <div class="mr-5 mr-lg-3 mr-0-sm">
+          <p class="mt-0 mb-4 text-uppercase footer__headline">Company</p>
+          <nav>
+            <ul class="pl-0 list-unstyled">
+              <li class="mb-3"><a href="#lorem">Our Story</a></li>
+              <li class="mb-3"><a href="#lorem">Careers</a></li>
+              <li class="mb-3"><a href="#lorem">Press</a></li>
+              <li class="mb-3"><a href="#lorem">FAQs</a></li>
+              <li class="mb-3"><a href="#lorem">Studio Policies</a></li>
+              <li class="mb-3"><a href="#lorem">Contract Agreement</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="pb-4-lg col-4 col-2-lg col-1-sm">
+        <div class="mr-5 mr-lg-3 mr-0-sm">
+          <p class="mt-0 mb-4 text-uppercase footer__headline">Explore</p>
+          <nav>
+            <ul class="pl-0 list-unstyled">
+              <li class="mb-3"><a href="#lorem">About</a></li>
+              <li class="mb-3"><a href="#lorem">Schedule</a></li>
+              <li class="mb-3"><a href="#lorem">Pricing</a></li>
+              <li class="mb-3"><a href="#lorem">Trainers</a></li>
+              <li class="mb-3"><a href="#lorem">Locations</a></li>
+              <li class="mb-3"><a href="#lorem">Community</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="pb-4-lg col-4 col-2-lg col-1-sm">
+        <div class="mr-5 mr-lg-3 mr-0-sm">
+          <p class="mt-0 mb-4 text-uppercase footer__headline">Follow</p>
+          <div class="mt-3 mb-4 row center-lg">
+            <a class="footer__social-icon" href="#social">
+              <svg width="18px" height="36px">
+                <use href="#facebook" />
+              </svg>
+            </a>
+            <a class="footer__social-icon" href="#social">
+              <svg width="32px" height="26px">
+                <use href="#twitter" />
+              </svg>
+            </a>
+            <a class="footer__social-icon" href="#social">
+              <svg width="32px" height="32px">
+                <use href="#instagram" />
+              </svg>
+            </a>
+          </div>
+          <p class="mt-0 mb-4 text-uppercase footer__headline">Subscribe</p>
+          <form class="row footer__newsletter" action="#mailchimp">
+            <input class="col-2" type="email" name="email" placeholder="Your Email">
+            <input class="col-2" type="submit" name="submit" value="Subscribe">
+          </form>
+        </div>
+      </div>
+    </footer>
 
     <!-- Back to top -->
 
-    <a class="z-index-3 back-to-top" data-component="back-to-top">
+    <a class="z-index-3 scroll-top" data-component="scroll-top">
       <p class="my-0 text-bold text-sm">Back to top</p>
       <svg><use href="#arrow" /></svg>
     </a>

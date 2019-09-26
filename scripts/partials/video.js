@@ -1,4 +1,4 @@
-const domReady = () => {
+const onDomReady = () => {
   const video = document.querySelector('.video');
   const videoContainer = document.querySelector('.video-container');
   
@@ -18,5 +18,5 @@ const domReady = () => {
 };
 
 export default {
-  domReady,
-}
+  onDomReady,
+};

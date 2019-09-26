@@ -101,3 +101,21 @@
     opacity: 0.5;
   }
 }
+
+.bg-cover {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.bg-plate {
+  @include maxWidth($breakpoint-lg) {
+    background-position: 50% 90%;
+    background-size: 95%;
+  }
+
+  background-image: url('../assets/svgs/plate-white.svg');
+  background-size: 65%;
+  background-position: 90% 50%;
+  background-repeat: no-repeat;
+}

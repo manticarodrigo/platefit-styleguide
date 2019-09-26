@@ -1,11 +1,9 @@
-import { getContainer } from '../globals/parallax';
 import { getIsScrolled } from '../globals/utility';
 
 let backToTop;
 
-const domReady = () => {
-  backToTop = document.querySelector('[data-component="back-to-top"]');
-  const parallaxContainer = getContainer();
+const onDomReady = () => {
+  backToTop = document.querySelector('[data-component="scroll-top"]');
 
   let container;
   let timeOut;
@@ -15,8 +13,6 @@ const domReady = () => {
   const scrollToTop = () => {
     if (document.body.scrollTop != 0 || document.documentElement.scrollTop != 0) {
       container = window;
-    } else if (parallaxContainer && parallaxContainer.scrollTop != 0) {
-      container = parallaxContainer;
     } else {
       container = null;
     }
@@ -54,6 +50,6 @@ const onScroll = () => {
 };
 
 export default {
-  domReady,
+  onDomReady,
   onScroll,
-}
+};

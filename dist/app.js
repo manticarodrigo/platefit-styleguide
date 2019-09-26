@@ -86,6 +86,77 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./assets/svgs sync recursive \\.svg$":
+/*!*********************************!*\
+  !*** ./assets/svgs sync \.svg$ ***!
+  \*********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var map = {\n\t\"./arrow.svg\": \"./assets/svgs/arrow.svg\",\n\t\"./facebook.svg\": \"./assets/svgs/facebook.svg\",\n\t\"./instagram.svg\": \"./assets/svgs/instagram.svg\",\n\t\"./plate-white.svg\": \"./assets/svgs/plate-white.svg\",\n\t\"./twitter.svg\": \"./assets/svgs/twitter.svg\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./assets/svgs sync recursive \\\\.svg$\";\n\n//# sourceURL=webpack:///./assets/svgs_sync_\\.svg$?");
+
+/***/ }),
+
+/***/ "./assets/svgs/arrow.svg":
+/*!*******************************!*\
+  !*** ./assets/svgs/arrow.svg ***!
+  \*******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n      id: \"arrow-usage\",\n      viewBox: \"0 0 26.688 14.688\",\n      url: __webpack_require__.p + \"./app.svg#arrow\",\n      toString: function () {\n        return this.url;\n      }\n    });\n\n//# sourceURL=webpack:///./assets/svgs/arrow.svg?");
+
+/***/ }),
+
+/***/ "./assets/svgs/facebook.svg":
+/*!**********************************!*\
+  !*** ./assets/svgs/facebook.svg ***!
+  \**********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n      id: \"facebook-usage\",\n      viewBox: \"0 0 12 24\",\n      url: __webpack_require__.p + \"./app.svg#facebook\",\n      toString: function () {\n        return this.url;\n      }\n    });\n\n//# sourceURL=webpack:///./assets/svgs/facebook.svg?");
+
+/***/ }),
+
+/***/ "./assets/svgs/instagram.svg":
+/*!***********************************!*\
+  !*** ./assets/svgs/instagram.svg ***!
+  \***********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n      id: \"instagram-usage\",\n      viewBox: \"0 0 21.312 21.312\",\n      url: __webpack_require__.p + \"./app.svg#instagram\",\n      toString: function () {\n        return this.url;\n      }\n    });\n\n//# sourceURL=webpack:///./assets/svgs/instagram.svg?");
+
+/***/ }),
+
+/***/ "./assets/svgs/plate-white.svg":
+/*!*************************************!*\
+  !*** ./assets/svgs/plate-white.svg ***!
+  \*************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n      id: \"plate-white-usage\",\n      viewBox: \"0 0 102.18 97.14\",\n      url: __webpack_require__.p + \"./app.svg#plate-white\",\n      toString: function () {\n        return this.url;\n      }\n    });\n\n//# sourceURL=webpack:///./assets/svgs/plate-white.svg?");
+
+/***/ }),
+
+/***/ "./assets/svgs/twitter.svg":
+/*!*********************************!*\
+  !*** ./assets/svgs/twitter.svg ***!
+  \*********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n      id: \"twitter-usage\",\n      viewBox: \"0 0 21.312 17.376\",\n      url: __webpack_require__.p + \"./app.svg#twitter\",\n      toString: function () {\n        return this.url;\n      }\n    });\n\n//# sourceURL=webpack:///./assets/svgs/twitter.svg?");
+
+/***/ }),
+
 /***/ "./scripts/app.js":
 /*!************************!*\
   !*** ./scripts/app.js ***!
@@ -94,7 +165,7 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _globals_parallax__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./globals/parallax */ \"./scripts/globals/parallax.js\");\n/* harmony import */ var _partials_navbar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./partials/navbar */ \"./scripts/partials/navbar.js\");\n/* harmony import */ var _partials_video__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./partials/video */ \"./scripts/partials/video.js\");\n/* harmony import */ var _partials_back_to_top__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./partials/back-to-top */ \"./scripts/partials/back-to-top.js\");\n\n\n\n\n// import './partials/sprites'\n\nconst onScroll = () => {\n  _partials_navbar__WEBPACK_IMPORTED_MODULE_1__[\"default\"].onScroll();\n  _partials_back_to_top__WEBPACK_IMPORTED_MODULE_3__[\"default\"].onScroll();\n};\n\nconst domReady = () => {\n  const parallaxContainer = Object(_globals_parallax__WEBPACK_IMPORTED_MODULE_0__[\"getContainer\"])();\n\n  if (parallaxContainer) {\n    parallaxContainer.addEventListener('scroll', onScroll);\n  }\n\n  _partials_navbar__WEBPACK_IMPORTED_MODULE_1__[\"default\"].domReady();\n  _partials_video__WEBPACK_IMPORTED_MODULE_2__[\"default\"].domReady();\n  _partials_back_to_top__WEBPACK_IMPORTED_MODULE_3__[\"default\"].domReady();\n};\n\ndocument.addEventListener('DOMContentLoaded', domReady);\nwindow.addEventListener('scroll', onScroll);\n\n\n//# sourceURL=webpack:///./scripts/app.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _globals_parallax__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./globals/parallax */ \"./scripts/globals/parallax.js\");\n/* harmony import */ var _partials_navbar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./partials/navbar */ \"./scripts/partials/navbar.js\");\n/* harmony import */ var _partials_video__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./partials/video */ \"./scripts/partials/video.js\");\n/* harmony import */ var _partials_back_to_top__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./partials/back-to-top */ \"./scripts/partials/back-to-top.js\");\n/* harmony import */ var _partials_sprites__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./partials/sprites */ \"./scripts/partials/sprites.js\");\n/* harmony import */ var _partials_sprites__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_partials_sprites__WEBPACK_IMPORTED_MODULE_4__);\n\n\n\n\n\n\nconst onScroll = () => {\n  _partials_navbar__WEBPACK_IMPORTED_MODULE_1__[\"default\"].onScroll();\n  _partials_back_to_top__WEBPACK_IMPORTED_MODULE_3__[\"default\"].onScroll();\n};\n\nconst domReady = () => {\n  const parallaxContainer = Object(_globals_parallax__WEBPACK_IMPORTED_MODULE_0__[\"getContainer\"])();\n\n  if (parallaxContainer) {\n    parallaxContainer.addEventListener('scroll', onScroll);\n  }\n\n  _partials_navbar__WEBPACK_IMPORTED_MODULE_1__[\"default\"].domReady();\n  _partials_video__WEBPACK_IMPORTED_MODULE_2__[\"default\"].domReady();\n  _partials_back_to_top__WEBPACK_IMPORTED_MODULE_3__[\"default\"].domReady();\n};\n\ndocument.addEventListener('DOMContentLoaded', domReady);\nwindow.addEventListener('scroll', onScroll);\n\n\n//# sourceURL=webpack:///./scripts/app.js?");
 
 /***/ }),
 
@@ -143,6 +214,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _glo
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _globals_utility__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../globals/utility */ \"./scripts/globals/utility.js\");\n\n\nlet navbar;\n\nconst domReady = () => {\n  navbar = document.querySelector('[data-component=\"navbar\"]');\n\n  const setOpacity = (entering) => {\n    if (!Object(_globals_utility__WEBPACK_IMPORTED_MODULE_0__[\"getIsScrolled\"])()) return;\n\n    navbar.style.opacity = entering ? 1 : 0.75;\n  };\n\n  if (navbar) {\n    navbar.onmouseenter = () => setOpacity(true);\n    navbar.onmouseleave = () => setOpacity(false);\n  }\n};\n\nconst onScroll = () => {\n  navbar.style.opacity = Object(_globals_utility__WEBPACK_IMPORTED_MODULE_0__[\"getIsScrolled\"])() ? 0.75 : 1;\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  domReady,\n  onScroll,\n});\n\n\n//# sourceURL=webpack:///./scripts/partials/navbar.js?");
+
+/***/ }),
+
+/***/ "./scripts/partials/sprites.js":
+/*!*************************************!*\
+  !*** ./scripts/partials/sprites.js ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("const requireAll = (r) => r.keys().forEach(r);\n\nrequireAll(__webpack_require__(\"./assets/svgs sync recursive \\\\.svg$\"));\n\n\n//# sourceURL=webpack:///./scripts/partials/sprites.js?");
 
 /***/ }),
 

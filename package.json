@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "watch": "webpack --watch --mode development",
+    "start": "webpack --watch --mode development",
     "kss": "kss --config kss-config.json"
   },
   "repository": {

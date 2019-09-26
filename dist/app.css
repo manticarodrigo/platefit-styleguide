@@ -2689,6 +2689,8 @@ main {
       text-decoration: none;
       letter-spacing: .02em; }
       @media (min-width: 951px) {
+        .navbar__menu li a.active {
+          color: #333333; }
         .navbar__menu li a:focus, .navbar__menu li a:hover {
           color: #f3cc4b; } }
       @media (max-width: 950px) {

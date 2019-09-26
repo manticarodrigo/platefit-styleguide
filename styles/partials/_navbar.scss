@@ -59,6 +59,8 @@
       a {
         @include minWidth($breakpoint-lg + 1) {
 
+          &.active { color: $color-dark; }
+
           &:focus,
           &:hover { color: $color-primary-alt; }
         }

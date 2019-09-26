@@ -15,7 +15,7 @@ const domReady = () => {
   const scrollToTop = () => {
     if (document.body.scrollTop != 0 || document.documentElement.scrollTop != 0) {
       container = window;
-    } else if (parallaxContainer.scrollTop != 0) {
+    } else if (parallaxContainer && parallaxContainer.scrollTop != 0) {
       container = parallaxContainer;
     } else {
       container = null;

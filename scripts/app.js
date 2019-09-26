@@ -2,7 +2,7 @@ import { getContainer } from './globals/parallax';
 import Navbar from './partials/navbar';
 import Video from './partials/video';
 import BackToTop from './partials/back-to-top';
-import './partials/sprites'
+// import './partials/sprites'
 
 const onScroll = () => {
   Navbar.onScroll();

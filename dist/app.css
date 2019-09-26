@@ -3114,3 +3114,22 @@ main {
     height: 15px;
     transform: rotate(-90deg); }
 
+.locations {
+  justify-content: space-evenly;
+  max-width: 60%;
+  margin: auto; }
+  .locations li {
+    margin: 0.5rem; }
+    .locations li a {
+      padding-bottom: 10px; }
+      .locations li a:focus .locations__text, .locations li a:hover .locations__text {
+        border-bottom: 2px solid #fed710; }
+  .locations__text {
+    color: #636363;
+    font-family: "MaisonNeue-Bold", sans-serif;
+    font-size: 1rem; }
+
+@media (min-width: 950px) {
+  .location-section .row:nth-child(even) .col-2:nth-child(2) {
+    order: -1; } }
+

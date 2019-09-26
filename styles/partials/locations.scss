@@ -1,0 +1,42 @@
+.locations {
+  justify-content: space-evenly;
+  max-width: 60%;
+  margin: auto;
+  
+  li {
+    margin: 0.5rem;
+
+    a {
+      padding-bottom: 10px;
+      &:focus,
+      &:hover {
+        .locations__text {
+          border-bottom: 2px solid $color-primary;
+        }
+      }
+      
+    }
+  }
+
+  &__text {
+    color: $color-headline;
+    font-family: $font-bold;
+    font-size: 1rem;  
+  }
+}
+
+.location-section {
+  @include minWidth($breakpoint-lg) {
+
+    .row {
+
+      &:nth-child(even) {
+
+        .col-2:nth-child(2) {
+          order: -1;
+        }
+      }
+    }
+  }
+}
+

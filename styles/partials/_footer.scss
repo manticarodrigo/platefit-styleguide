@@ -10,10 +10,13 @@
   }
 
   &__logo {
+    @include maxWidth($breakpoint-md) {
+      transform: translate(0, 0);
+    }
+
     width: 200px;
     height: 50px;
     transform: translate(-5%, -20%);
-    filter: grayscale(100%);
   }
 
   

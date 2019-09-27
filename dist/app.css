@@ -373,11 +373,16 @@ h2,
     .h2 {
       font-size: 42px;
       font-size: 2.625rem; } }
-  h2--sm,
-  .h2--sm {
+  h2-sm,
+  .h2-sm {
     font-size: 40px;
     font-size: 2.5rem;
     font-family: "MaisonNeue-Book", sans-serif; }
+    @media (max-width: 500px) {
+      h2-sm,
+      .h2-sm {
+        font-size: 32px;
+        font-size: 2rem; } }
   h2.dark,
   .h2.dark {
     color: #363636; }
@@ -2851,8 +2856,8 @@ a,
         max-width: 100%; } }
     @media (max-width: 750px) {
       .hero__title {
-        font-size: 43px;
-        font-size: 2.6875rem; } }
+        font-size: 53px;
+        font-size: 3.3125rem; } }
 
 .btn {
   border: 2px solid #fed710;
@@ -2875,7 +2880,9 @@ a,
     align-items: center; }
     .btn--arrow svg {
       margin-bottom: -2px;
-      margin-left: 10px; }
+      margin-left: 10px;
+      width: 36px;
+      height: 20px; }
 
 .box-row {
   position: absolute;
@@ -2890,7 +2897,7 @@ a,
       transform: translate(-50%, 10%); } }
 
 @media (min-width: 751px) {
-  .box-section-after {
+  .pt-box-section {
     padding-top: 175px; } }
 
 .box {
@@ -2918,6 +2925,13 @@ a,
     font-size: 2.5rem;
     letter-spacing: 0.05em;
     text-transform: uppercase; }
+    @media (max-width: 500px) {
+      .box__text {
+        font-size: 30px;
+        font-size: 1.875rem; } }
+  .box svg {
+    width: 40px;
+    height: 22px; }
 
 .video-container {
   position: relative;
@@ -2944,10 +2958,6 @@ a,
   width: 500px;
   object-fit: cover; }
 
-.i-arrow {
-  width: 36px;
-  height: 20px; }
-
 .insta-img {
   height: 169px;
   width: 169px;
@@ -2956,15 +2966,6 @@ a,
 .press-img {
   max-width: 150px;
   max-height: 40px; }
-
-.rachael-img {
-  max-width: 340px; }
-  @media (max-width: 950px) {
-    .rachael-img {
-      max-width: 100%; } }
-
-.rachael-two-img {
-  max-width: 250px; }
 
 .app-img {
   max-width: 60%; }
@@ -2975,9 +2976,6 @@ a,
   transition: opacity 250ms ease-in-out; }
   .app-download-img:hover {
     opacity: 0.75; }
-
-.grey-logo-img {
-  width: 180px; }
 
 .banner {
   box-sizing: border-box;
@@ -3038,8 +3036,10 @@ a,
   .footer__logo {
     width: 200px;
     height: 50px;
-    transform: translate(-5%, -20%);
-    filter: grayscale(100%); }
+    transform: translate(-5%, -20%); }
+    @media (max-width: 750px) {
+      .footer__logo {
+        transform: translate(0, 0); } }
   .footer__headline {
     font-size: 18px;
     font-size: 1.125rem;

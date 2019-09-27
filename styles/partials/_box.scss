@@ -12,7 +12,7 @@
   transition: transform $duration;
 }
 
-.box-section-after {
+.pt-box-section {
   @include minWidth($breakpoint-md + 1) {
     padding-top: 175px;
   }
@@ -45,9 +45,18 @@
   }
 
   &__text {
+    @include maxWidth($breakpoint-sm) {
+      @include fontSize(30px);
+    }
+
     @include fontSize(40px);
 
     letter-spacing: 0.05em;
     text-transform: uppercase;
+  }
+
+  svg {
+    width: 40px;
+    height: 22px;
   }
 }

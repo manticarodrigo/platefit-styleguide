@@ -1,8 +1,3 @@
-.i-arrow {
-  width: 36px;
-  height: 20px;
-}
-
 .insta-img {
   height: 169px;
   width: 169px;
@@ -12,18 +7,6 @@
 .press-img {
   max-width: 150px;
   max-height: 40px;
-}
-
-.rachael-img {
-  @include maxWidth($breakpoint-lg) {
-    max-width: 100%;
-  }
-
-  max-width: 340px;
-}
-
-.rachael-two-img {
-  max-width: 250px;
 }
 
 .app-img {
@@ -38,8 +21,4 @@
   &:hover {
     opacity: 0.75;
   }
-}
-
-.grey-logo-img {
-  width: 180px;
 }

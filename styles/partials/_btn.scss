@@ -3,7 +3,7 @@
 // A button with an option arrow modifier.
 //
 // Markup:
-// <a class="btn btn--arrow">Button <svg class="i-arrow"><use href="#arrow" /></svg></a>
+// <a class="btn btn--arrow">Button <svg><use href="#arrow" /></svg></a>
 //
 // Styleguide Components.button
 
@@ -37,6 +37,8 @@
     svg {
       margin-bottom: -2px;
       margin-left: $spacing / 2;
+      width: 36px;
+      height: 20px;
     }
   }
 }

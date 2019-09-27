@@ -54,7 +54,11 @@ h2,
   font-family: $font-light;
   font-weight: 100;
 
-  &--sm {
+  &-sm {
+    @include maxWidth($breakpoint-sm) {
+      @include fontSize(32px);
+    }
+
     @include fontSize(40px);
 
     font-family: $font-book;

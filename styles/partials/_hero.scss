@@ -30,7 +30,7 @@
     }
 
     @include maxWidth($breakpoint-md) {
-      @include fontSize(43px);
+      @include fontSize(53px);
     }
     
     @include fontSize(148px);

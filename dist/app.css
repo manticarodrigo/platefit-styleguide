@@ -424,21 +424,6 @@ a,
   .link:hover {
     color: #f3cc4b; }
 
-.z-index-n1 {
-  z-index: -1; }
-
-.z-index-0 {
-  z-index: 0; }
-
-.z-index-1 {
-  z-index: 1; }
-
-.z-index-2 {
-  z-index: 2; }
-
-.z-index-3 {
-  z-index: 3; }
-
 .display-none {
   display: none; }
 

@@ -4,15 +4,13 @@
 //
 // Markup:
 // <div class="row nowrap">
-//   <div class="quote__img">
-//     <img class="shadow" src="../assets/jennifer-p.png">
-//   </div>
-//   <div class="quote__container">
-//     <p class="quote__text">
+//   <img class="quote-img shadow" src="../assets/jennifer-p.png">
+//   <div>
+//     <p class="quote-text">
 //       Love love love PLATEFIT! This is hands down my favorite workout in LA. It's fast, challenging, and the
 //       instructors don't waste a second... you are moving the entire 30 minutes.
 //     </p>
-//     <h4 class="text-uppercase quote__text--small">
+//     <h4 class="text-uppercase quote-author">
 //       / Jennifer P
 //     </h4>
 //   </div>
@@ -21,32 +19,43 @@
 // Styleguide Components.quote
 
 .quote {
-  display: flex;
-  justify-content: center;
 
-  &__container {
-    max-width: 400px;
+  &-img {
+    margin: 20px 10px 0 0;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    box-shadow: $box-shadow-quote;
   }
 
-  &__img {
+  &-text {
+    @include fontSize(17px);
 
-    img {
-      margin: 20px 10px 0 0;
-      border-radius: 50%;
-      width: 60px;
-      box-shadow: $box-shadow-quote;
-    }
-  }
-
-  &__text {
+    display: inline-block;
+    position: relative;
     font-family: $font-quote;
-    text-align: left;
-    font-size: 17px;
-    color: #bababa;
+    color: $color-quote;
 
-    &--small {
-      font-size: 12px;
-      font-family: $font-bold;
+    &::before {
+      display: block;
+      position: absolute;
+      top: -20px;
+      right: -10px;
+      width: 80px;
+      height: 60px;
+      background-image: url('../assets/svgs/quote.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center center;
+      content: '';
     }
+
+  }
+
+  &-author {
+    @include fontSize(12px);
+
+    font-family: $font-bold;
   }
 }

@@ -402,8 +402,8 @@ h3,
 
 h6,
 .h6 {
-  font-size: 12px;
-  font-size: 0.75rem;
+  font-size: 14px;
+  font-size: 0.875rem;
   color: #333333;
   font-family: "MaisonNeue-Book", sans-serif; }
 
@@ -416,6 +416,9 @@ a,
   color: #fed710;
   text-decoration: none;
   transition: color 250ms ease-in-out; }
+  a.dark,
+  .link.dark {
+    color: #333333; }
   a:focus, a:hover,
   .link:focus,
   .link:hover {
@@ -2730,8 +2733,6 @@ a,
       text-decoration: none;
       letter-spacing: .02em; }
       @media (min-width: 951px) {
-        .navbar__menu li a.active {
-          color: #333333; }
         .navbar__menu li a:focus, .navbar__menu li a:hover {
           color: #f3cc4b; } }
       @media (max-width: 950px) {
@@ -3006,24 +3007,38 @@ a,
         font-size: 65px;
         font-size: 4.0625rem; } }
 
-.quote {
-  display: flex;
-  justify-content: center; }
-  .quote__container {
-    max-width: 400px; }
-  .quote__img img {
-    margin: 20px 10px 0 0;
-    border-radius: 50%;
-    width: 60px;
-    box-shadow: 0 12px 20px -10px rgba(0, 0, 0, 0.5); }
-  .quote__text {
-    font-family: "MuseoSlab-300", sans-serif;
-    text-align: left;
-    font-size: 17px;
-    color: #bababa; }
-    .quote__text--small {
-      font-size: 12px;
-      font-family: "MaisonNeue-Bold", sans-serif; }
+.quote-img {
+  margin: 20px 10px 0 0;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  box-shadow: 0 12px 20px -10px rgba(0, 0, 0, 0.5); }
+
+.quote-text {
+  font-size: 17px;
+  font-size: 1.0625rem;
+  display: inline-block;
+  position: relative;
+  font-family: "MuseoSlab-300", sans-serif;
+  color: #bababa; }
+  .quote-text::before {
+    display: block;
+    position: absolute;
+    top: -20px;
+    right: -10px;
+    width: 80px;
+    height: 60px;
+    background-image: url("../assets/svgs/quote.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    content: ''; }
+
+.quote-author {
+  font-size: 12px;
+  font-size: 0.75rem;
+  font-family: "MaisonNeue-Bold", sans-serif; }
 
 .footer {
   background-color: #fff; }
@@ -3179,9 +3194,9 @@ a,
     @media (max-width: 950px) {
       .trainers__single__img {
         max-width: 100%; } }
-    .trainers__single__img__container {
-      height: 650px;
-      width: 577px; }
+
+.trainer__image {
+  width: 100%; }
 
 .locations {
   justify-content: space-evenly;

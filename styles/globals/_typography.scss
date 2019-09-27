@@ -84,7 +84,7 @@ h3,
 
 h6,
 .h6 {
-  @include fontSize(12px);
+  @include fontSize(14px);
 
   color: $color-dark;
   font-family: $font-book;
@@ -101,8 +101,11 @@ a,
   text-decoration: none;
   transition: color $duration;
 
+  &.dark { color: $color-dark; }
+
   &:focus,
   &:hover {
     color: $color-primary-alt;
   }
+
 }

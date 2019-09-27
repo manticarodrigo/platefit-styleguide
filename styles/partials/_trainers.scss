@@ -85,11 +85,13 @@
 
     @include maxWidth($breakpoint-lg) {
       max-width: 100%;
-    }    
-
-    &__container {
-      height: 650px;
-      width: 577px;
     }
+  }
+}
+
+.trainer {
+
+  &__image {
+    width: 100%;
   }
 }

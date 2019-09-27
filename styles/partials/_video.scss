@@ -3,11 +3,14 @@
 // A video component with custom controls.
 //
 // Markup:
-// <div class="video-container">
-//   <video class="video shadow" preload="none" poster="../assets/poster.jpg">
+// <div class="video-container" tabindex="0">
+//   <video class="shadow" preload="none" poster="../assets/poster.jpg">
 //     <source src="../assets/platefit.mp4" type="video/mp4">
 //     Video Not Supported
 //   </video>
+//   <div class="video-controls">
+//     <svg><use href="#play"></use></svg>
+//   </div>
 // </div>
 //
 // Styleguide Components.video
@@ -15,32 +18,64 @@
 .video-container {
   position: relative;
   display: inline-flex;
-
-  &::after {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('../assets/play-btn.png');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 100px;
-    opacity: 1;
-    transition: opacity $duration;
-    content: '';
-  }
+  cursor: pointer;
 
   &.is-playing {
-    &::after {
+    .video-controls {
       opacity: 0;
+    }
+  }
+
+
+  &:focus,
+  &:hover,
+  &:active {
+    .video-controls {
+      background-color: $color-white;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    .video-controls {
+      color: $color-black;
+    }
+  }
+
+  &:active {
+    .video-controls {
+      color: $color-primary;
     }
   }
 }
 
-.video {
+.video-controls {
+  z-index: 10;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  color: $color-white;
+  background-color: $color-primary;
+  box-shadow: $box-shadow-round;
+  opacity: 1;
+  transition: opacity $duration, color $duration, background-color $duration;
+
+  svg {
+    width: 17px;
+    height: 24px;
+    margin-right: -7px;
+    margin-bottom: -7px;
+  }
+}
+
+video {
   max-width: 100%;
-  width: 500px;
   object-fit: cover;
 }

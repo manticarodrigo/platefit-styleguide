@@ -1,8 +1,8 @@
 const onDomReady = () => {
-  const video = document.querySelector('.video');
+  const video = document.querySelector('video');
   const videoContainer = document.querySelector('.video-container');
   
-  function playOrPauseVideo() {
+  const toggleVideo = () => {
     if (video.paused === true) {
       video.play();
       videoContainer.classList.add('is-playing');
@@ -12,8 +12,15 @@ const onDomReady = () => {
     }
   };
 
-  if (videoContainer) {
-    videoContainer.addEventListener('click', playOrPauseVideo);
+  const onKeyUp = (e) => {
+    if (e && event.keyCode !== 13) return;
+
+    toggleVideo();
+  }
+
+  if (video && videoContainer) {
+    videoContainer.addEventListener('click', toggleVideo);
+    videoContainer.addEventListener('keyup', onKeyUp);
   }
 };
 

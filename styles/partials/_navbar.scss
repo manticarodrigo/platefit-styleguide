@@ -57,7 +57,7 @@
       transform-origin: 0% 0%;
       transform: translate(100%, 0);
       transition: transform 0.5s ease-in-out;
-      box-shadow: $box-shadow-quote;
+      box-shadow: $box-shadow-blurred;
     }
 
     font-family: $font-book;

@@ -26,7 +26,8 @@ $color-headline-dark: #363636;
 $color-text: #909090;
 $color-quote: #bababa;
 $color-overlay-white: rgba(255,255,255,.75);
-$color-overlay-white-light: rgba(255,255,255,.25);
+$color-overlay-white-opaque: rgba(255,255,255,.85);
+$color-overlay-white-clear: rgba(255,255,255,.25);
 $color-overlay-primary: rgba(254,215,16,.75);
 
 $spacing: 20px;

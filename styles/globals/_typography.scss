@@ -34,6 +34,10 @@ h1,
 .h1 {
   @include fontSize(50px);
 
+  @include maxWidth($breakpoint-sm) {
+    @include fontSize(46px);
+  }
+
   color: $color-dark;
   font-family: $font-knockout;
 }
@@ -41,6 +45,10 @@ h1,
 h2,
 .h2 {
   @include fontSize(48px);
+
+  @include maxWidth($breakpoint-sm) {
+    @include fontSize(42px);
+  }
 
   color: $color-headline;
   font-family: $font-light;
@@ -51,11 +59,19 @@ h2,
 
     font-family: $font-book;
   }
+
+  &.dark {
+    color: $color-headline-dark;
+  }
 }
 
 h3,
 .h3 {
   @include fontSize(48px);
+
+  @include maxWidth($breakpoint-sm) {
+    @include fontSize(42px);
+  }
 
   color: $color-dark;
   font-family: $font-knockout-light;

@@ -39,6 +39,7 @@ $breakpoint-xl: 1280px;
 $breakpoint-lg: 950px;
 $breakpoint-md: 750px;
 $breakpoint-sm: 500px;
+$breakpoint-xs: 375px;
 
 @mixin maxWidth($breakpoint) {
   @media (max-width: $breakpoint) { @content; }
@@ -54,6 +55,7 @@ $breakpoint-map: (
   'lg': $breakpoint-lg,
   'md': $breakpoint-md,
   'sm': $breakpoint-sm,
+  'xs': $breakpoint-xs,
 );
 
 $box-shadow: 0 30px 10px -20px rgba(0,0,0,.3);

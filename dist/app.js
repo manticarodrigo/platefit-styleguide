@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("var map = {\n\t\"./arrow.svg\": \"./assets/svgs/arrow.svg\",\n\t\"./facebook.svg\": \"./assets/svgs/facebook.svg\",\n\t\"./instagram.svg\": \"./assets/svgs/instagram.svg\",\n\t\"./plate-white.svg\": \"./assets/svgs/plate-white.svg\",\n\t\"./twitter.svg\": \"./assets/svgs/twitter.svg\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./assets/svgs sync recursive \\\\.svg$\";\n\n//# sourceURL=webpack:///./assets/svgs_sync_\\.svg$?");
+eval("var map = {\n\t\"./arrow.svg\": \"./assets/svgs/arrow.svg\",\n\t\"./facebook.svg\": \"./assets/svgs/facebook.svg\",\n\t\"./instagram.svg\": \"./assets/svgs/instagram.svg\",\n\t\"./logo-grey.svg\": \"./assets/svgs/logo-grey.svg\",\n\t\"./logo.svg\": \"./assets/svgs/logo.svg\",\n\t\"./plate-white.svg\": \"./assets/svgs/plate-white.svg\",\n\t\"./twitter.svg\": \"./assets/svgs/twitter.svg\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./assets/svgs sync recursive \\\\.svg$\";\n\n//# sourceURL=webpack:///./assets/svgs_sync_\\.svg$?");
 
 /***/ }),
 
@@ -130,6 +130,30 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n      id: \"instagram-usage\",\n      viewBox: \"0 0 21.312 21.312\",\n      url: __webpack_require__.p + \"./app.svg#instagram\",\n      toString: function () {\n        return this.url;\n      }\n    });\n\n//# sourceURL=webpack:///./assets/svgs/instagram.svg?");
+
+/***/ }),
+
+/***/ "./assets/svgs/logo-grey.svg":
+/*!***********************************!*\
+  !*** ./assets/svgs/logo-grey.svg ***!
+  \***********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n      id: \"logo-grey-usage\",\n      viewBox: \"0 0 477.19 97.14\",\n      url: __webpack_require__.p + \"./app.svg#logo-grey\",\n      toString: function () {\n        return this.url;\n      }\n    });\n\n//# sourceURL=webpack:///./assets/svgs/logo-grey.svg?");
+
+/***/ }),
+
+/***/ "./assets/svgs/logo.svg":
+/*!******************************!*\
+  !*** ./assets/svgs/logo.svg ***!
+  \******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n      id: \"logo-usage\",\n      viewBox: \"0 0 477.19 97.14\",\n      url: __webpack_require__.p + \"./app.svg#logo\",\n      toString: function () {\n        return this.url;\n      }\n    });\n\n//# sourceURL=webpack:///./assets/svgs/logo.svg?");
 
 /***/ }),
 
@@ -290,7 +314,7 @@ eval("var g;\n\n// This works in non-strict mode\ng = (function() {\n\treturn th
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var jarallax__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jarallax */ \"./node_modules/jarallax/index.js\");\n/* harmony import */ var jarallax__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jarallax__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _partials_navbar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./partials/navbar */ \"./scripts/partials/navbar.js\");\n/* harmony import */ var _partials_video__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./partials/video */ \"./scripts/partials/video.js\");\n/* harmony import */ var _partials_scroll_top__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./partials/scroll-top */ \"./scripts/partials/scroll-top.js\");\n/* harmony import */ var _partials_sprites__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./partials/sprites */ \"./scripts/partials/sprites.js\");\n/* harmony import */ var _partials_sprites__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_partials_sprites__WEBPACK_IMPORTED_MODULE_4__);\n\n\n\n\n\n\n\nconst onScroll = () => {\n  _partials_navbar__WEBPACK_IMPORTED_MODULE_1__[\"default\"].onScroll();\n  BackToTop.onScroll();\n};\n\nconst onDomReady = () => {\n  _partials_navbar__WEBPACK_IMPORTED_MODULE_1__[\"default\"].onDomReady();\n  _partials_video__WEBPACK_IMPORTED_MODULE_2__[\"default\"].onDomReady();\n  _partials_scroll_top__WEBPACK_IMPORTED_MODULE_3__[\"default\"].onDomReady();\n\n  Object(jarallax__WEBPACK_IMPORTED_MODULE_0__[\"jarallax\"])(document.querySelectorAll('.bg-cover'), { speed: 0.5 });\n};\n\ndocument.addEventListener('DOMContentLoaded', onDomReady);\nwindow.addEventListener('scroll', onScroll);\n\n\n//# sourceURL=webpack:///./scripts/app.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var jarallax__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jarallax */ \"./node_modules/jarallax/index.js\");\n/* harmony import */ var jarallax__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jarallax__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _partials_navbar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./partials/navbar */ \"./scripts/partials/navbar.js\");\n/* harmony import */ var _partials_video__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./partials/video */ \"./scripts/partials/video.js\");\n/* harmony import */ var _partials_scroll_top__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./partials/scroll-top */ \"./scripts/partials/scroll-top.js\");\n/* harmony import */ var _partials_sprites__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./partials/sprites */ \"./scripts/partials/sprites.js\");\n/* harmony import */ var _partials_sprites__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_partials_sprites__WEBPACK_IMPORTED_MODULE_4__);\n\n\n\n\n\n\n\nconst onScroll = () => {\n  _partials_navbar__WEBPACK_IMPORTED_MODULE_1__[\"default\"].onScroll();\n  _partials_scroll_top__WEBPACK_IMPORTED_MODULE_3__[\"default\"].onScroll();\n};\n\nconst onDomReady = () => {\n  _partials_navbar__WEBPACK_IMPORTED_MODULE_1__[\"default\"].onDomReady();\n  _partials_video__WEBPACK_IMPORTED_MODULE_2__[\"default\"].onDomReady();\n  _partials_scroll_top__WEBPACK_IMPORTED_MODULE_3__[\"default\"].onDomReady();\n\n  Object(jarallax__WEBPACK_IMPORTED_MODULE_0__[\"jarallax\"])(document.querySelectorAll('.bg-cover'), { speed: 0.5 });\n};\n\ndocument.addEventListener('DOMContentLoaded', onDomReady);\nwindow.addEventListener('scroll', onScroll);\n\n\n//# sourceURL=webpack:///./scripts/app.js?");
 
 /***/ }),
 
@@ -314,7 +338,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _globals_utility__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../globals/utility */ \"./scripts/globals/utility.js\");\n\n\nlet navbar;\n\nconst onDomReady = () => {\n  navbar = document.querySelector('[data-component=\"navbar\"]');\n\n  const setOpacity = (entering) => {\n    if (!Object(_globals_utility__WEBPACK_IMPORTED_MODULE_0__[\"getIsScrolled\"])()) return;\n\n    navbar.style.opacity = entering ? 1 : 0.75;\n  };\n\n  if (navbar) {\n    navbar.onmouseenter = () => setOpacity(true);\n    navbar.onmouseleave = () => setOpacity(false);\n  }\n};\n\nconst onScroll = () => {\n  navbar.style.opacity = Object(_globals_utility__WEBPACK_IMPORTED_MODULE_0__[\"getIsScrolled\"])() ? 0.75 : 1;\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  onDomReady,\n  onScroll,\n});\n\n\n//# sourceURL=webpack:///./scripts/partials/navbar.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _globals_utility__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../globals/utility */ \"./scripts/globals/utility.js\");\n\n\nlet navbar;\n\nconst onDomReady = () => {\n  navbar = document.querySelector('[data-component=\"navbar\"]');\n\n  const setOpacity = (entering) => {\n    if (!Object(_globals_utility__WEBPACK_IMPORTED_MODULE_0__[\"getIsScrolled\"])()) return;\n\n    navbar.style.opacity = entering ? 1 : 0.5;\n  };\n\n  if (navbar) {\n    navbar.onmouseenter = () => setOpacity(true);\n    navbar.onmouseleave = () => setOpacity(false);\n  }\n};\n\nconst onScroll = () => {\n  navbar.style.opacity = Object(_globals_utility__WEBPACK_IMPORTED_MODULE_0__[\"getIsScrolled\"])() ? 0.5 : 1;\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  onDomReady,\n  onScroll,\n});\n\n\n//# sourceURL=webpack:///./scripts/partials/navbar.js?");
 
 /***/ }),
 

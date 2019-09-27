@@ -9,6 +9,13 @@
     line-height: 1.8;
   }
 
+  &__logo {
+    width: 200px;
+    height: 50px;
+    transform: translate(-5%, -20%);
+    filter: grayscale(100%);
+  }
+
   
   &__headline {
     @include fontSize(18px);

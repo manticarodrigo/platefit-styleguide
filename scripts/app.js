@@ -7,7 +7,7 @@ import './partials/sprites';
 
 const onScroll = () => {
   Navbar.onScroll();
-  BackToTop.onScroll();
+  ScrollTop.onScroll();
 };
 
 const onDomReady = () => {

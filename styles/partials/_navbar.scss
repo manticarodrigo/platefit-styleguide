@@ -1,3 +1,8 @@
+.pt-navbar {
+  /* Account for the navbar height */
+  padding-top: 70px;
+}
+
 .navbar {
   z-index: 999;
   position: fixed;
@@ -14,16 +19,23 @@
   }
 
   &__logo {
+    @include maxWidth($breakpoint-lg) {
+      transform: translateY(0);
 
-    img {
-      @include maxWidth($breakpoint-lg) {
-        transform: translateY(0);
+      svg {
+        width: 220px;
+        width: 60px;
       }
+    }
 
-      width: 200px;
+    background-color: $color-white;
+    transform: translateY(50%);
+    
+    svg {
+      box-sizing: border-box;
       padding: 10px;
-      background-color: $color-white;
-      transform: translateY(50%);
+      width: 230px;
+      height: 70px;
     }
   }
 

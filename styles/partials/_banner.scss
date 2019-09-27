@@ -31,13 +31,13 @@
   }
 
   &__title {
-    @include minWidth($breakpoint-lg + 1) {
-      @include fontSize(92px);
+    @include fontSize(92px);
 
-      max-width: 800px;
+    @include maxWidth($breakpoint-sm) {
+      @include fontSize(65px);
     }
     
-    max-width: 100%;
+    max-width: 800px;
     word-wrap: break-word;
   }
 }

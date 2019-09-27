@@ -8,7 +8,7 @@ const onDomReady = () => {
   const setOpacity = (entering) => {
     if (!getIsScrolled()) return;
 
-    navbar.style.opacity = entering ? 1 : 0.75;
+    navbar.style.opacity = entering ? 1 : 0.5;
   };
 
   if (navbar) {
@@ -18,7 +18,7 @@ const onDomReady = () => {
 };
 
 const onScroll = () => {
-  navbar.style.opacity = getIsScrolled() ? 0.75 : 1;
+  navbar.style.opacity = getIsScrolled() ? 0.5 : 1;
 }
 
 export default {

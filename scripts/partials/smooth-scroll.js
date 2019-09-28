@@ -8,7 +8,7 @@ let scrollTop;
 const onDomReady = () => {
   scrollTop = document.querySelector('[data-component="scroll-top"]');
 
-  _watchBackToTopClock();
+  _watchBackToTopClick();
   _watchFragmentClick();
 }
 
@@ -18,10 +18,11 @@ const onScroll = () => {
   }
 };
 
-const _watchBackToTopClock = () => {
+const _watchBackToTopClick = () => {
   const _scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
+
   if (scrollTop) {
     scrollTop.addEventListener('click', _scrollToTop);
   }
@@ -32,7 +33,11 @@ const _watchFragmentClick = () => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
   
-        const link = document.querySelector(this.getAttribute('href'));
+        const href = this.getAttribute('href');
+
+        if (!href || href === '#') return;
+
+        const link = document.querySelector();
 
         if (!link) return;
 

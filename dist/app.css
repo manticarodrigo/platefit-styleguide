@@ -306,6 +306,9 @@ template {
 a {
   text-decoration: none; }
 
+input {
+  border-radius: 0; }
+
 @font-face {
   font-family: Knockout-HTF49-Liteweight;
   src: url("../assets/fonts/Knockout-HTF49-Liteweight.otf");
@@ -3146,7 +3149,7 @@ h6,
           width: 220px; } }
       @media (max-width: 500px) {
         .navbar__logo svg {
-          width: 150px; } }
+          width: 180px; } }
   .navbar__menu {
     font-size: 13px;
     font-size: 0.8125rem;
@@ -3524,17 +3527,10 @@ video {
     .glide__track:after {
       background-image: none; } }
 
-.glide__slides {
-  overflow: visible; }
-
 .glide__slide {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  flex-direction: column; }
+  height: auto; }
   .glide__slide img {
-    max-width: 100%;
-    box-shadow: 0 12px 20px -10px rgba(0, 0, 0, 0.5); }
+    width: 100%; }
 
 .glide__arrows {
   text-align: center;
@@ -3549,7 +3545,7 @@ video {
   .btn-slider:focus, .btn-slider:hover {
     color: #fed710; }
   .btn-slider svg {
-    margin-bottom: -6px;
+    margin-bottom: -5px;
     width: 40px;
     height: 22px; }
   .btn-slider--left {

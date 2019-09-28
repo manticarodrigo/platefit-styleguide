@@ -424,6 +424,10 @@ a,
   .link:hover {
     color: #f3cc4b; }
 
+@media (max-width: 1280px) {
+  .hidden-xl {
+    display: none; } }
+
 .display-none {
   display: none; }
 
@@ -3431,11 +3435,11 @@ video {
   max-width: 60%; }
 
 .app-download-img {
-  max-width: 140px;
-  background-color: #fed710;
   transition: opacity 250ms ease-in-out; }
   .app-download-img:hover {
     opacity: 0.75; }
+  .app-download-img img {
+    max-width: 140px; }
 
 .banner {
   box-sizing: border-box;

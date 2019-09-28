@@ -19,11 +19,13 @@
 }
 
 .app-download-img {
-  max-width: 140px;
-  background-color: $color-primary;
   transition: opacity $duration;
 
   &:hover {
     opacity: 0.75;
+  }
+
+  img {
+    max-width: 140px;
   }
 }

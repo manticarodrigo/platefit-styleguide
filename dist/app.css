@@ -3515,7 +3515,7 @@ video {
   right: 0;
   top: 0;
   bottom: 0;
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0) 100px), linear-gradient(to left, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0) 100px);
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0) 100px), linear-gradient(to left, rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0) 100px);
   pointer-events: none; }
 
 .glide__slides {

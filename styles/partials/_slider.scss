@@ -2,6 +2,19 @@
 
 .glide {
 
+  &__track {
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0; right: 0;
+      top: 0; bottom: 0;
+      background-image:
+        linear-gradient(to right, rgba(255,255,255,0.25), rgba(255,255,255,0) 100px),
+        linear-gradient(to left , rgba(255,255,255,0.25), rgba(255,255,255,0) 100px);
+      pointer-events: none;
+    }
+  }
+
   &__slides {
     overflow: visible;
   }

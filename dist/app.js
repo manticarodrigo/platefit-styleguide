@@ -381,11 +381,11 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _par
 /*!************************************!*\
   !*** ./scripts/globals/utility.js ***!
   \************************************/
-/*! exports provided: getIsScrolled, getIsMobile */
+/*! exports provided: getIsScrolled, getIsBreakpoint */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"getIsScrolled\", function() { return getIsScrolled; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"getIsMobile\", function() { return getIsMobile; });\nconst getIsScrolled = () => window.pageYOffset > 61;\nconst getIsMobile = () => window.innerWidth > 950;\n\n\n//# sourceURL=webpack:///./scripts/globals/utility.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"getIsScrolled\", function() { return getIsScrolled; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"getIsBreakpoint\", function() { return getIsBreakpoint; });\nconst getIsScrolled = () => window.pageYOffset > 61;\n\nconst getIsBreakpoint = (breakpoint) => {\n  switch (breakpoint) {\n    case 'xl':\n      return window.innerWidth <= 1280;\n    case 'lg':\n      return window.innerWidth <= 950;\n    case 'md':\n      return window.innerWidth <= 750;\n    case 'sm':\n      return window.innerWidth <= 500;\n    case 'xs':\n      return window.innerWidth <= 375;\n    default:\n      return null;\n  }\n}\n\n\n//# sourceURL=webpack:///./scripts/globals/utility.js?");
 
 /***/ }),
 
@@ -420,7 +420,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _glo
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var jarallax__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jarallax */ \"./node_modules/jarallax/index.js\");\n/* harmony import */ var jarallax__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jarallax__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _globals_utility__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../globals/utility */ \"./scripts/globals/utility.js\");\n\n\n\nconst onDomReady = () => {\n  const coverElements = document.querySelectorAll('[data-parallax=\"cover\"]');\n  const containElements = document.querySelectorAll('[data-parallax=\"contain\"]');\n\n  Object(jarallax__WEBPACK_IMPORTED_MODULE_0__[\"jarallax\"])(coverElements, { speed: 0.5 });\n  Object(jarallax__WEBPACK_IMPORTED_MODULE_0__[\"jarallax\"])(containElements, { speed: 0.8, imgSize: Object(_globals_utility__WEBPACK_IMPORTED_MODULE_1__[\"getIsMobile\"])() ? '60%' : '90%' });\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  onDomReady,\n});\n\n\n//# sourceURL=webpack:///./scripts/partials/parallax.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var jarallax__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jarallax */ \"./node_modules/jarallax/index.js\");\n/* harmony import */ var jarallax__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jarallax__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _globals_utility__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../globals/utility */ \"./scripts/globals/utility.js\");\n\n\n\nconst onDomReady = () => {\n  const coverElements = document.querySelectorAll('[data-parallax=\"cover\"]');\n  const containElements = document.querySelectorAll('[data-parallax=\"contain\"]');\n\n  Object(jarallax__WEBPACK_IMPORTED_MODULE_0__[\"jarallax\"])(coverElements, { speed: 0.5 });\n  Object(jarallax__WEBPACK_IMPORTED_MODULE_0__[\"jarallax\"])(containElements, { speed: 0.8, imgSize: Object(_globals_utility__WEBPACK_IMPORTED_MODULE_1__[\"getIsBreakpoint\"])('lg') ? '90%' : '60%' });\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  onDomReady,\n});\n\n\n//# sourceURL=webpack:///./scripts/partials/parallax.js?");
 
 /***/ }),
 
@@ -432,7 +432,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var jara
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _glidejs_glide__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @glidejs/glide */ \"./node_modules/@glidejs/glide/dist/glide.esm.js\");\n\n\nconst onDomReady = () => {\n  const slider = new _glidejs_glide__WEBPACK_IMPORTED_MODULE_0__[\"default\"]('[data-component=\"slider\"]', {\n    type: 'carousel',\n    perView: 1,\n    peek: 150,\n  });\n\n  slider.mount();\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  onDomReady,\n});\n\n\n//# sourceURL=webpack:///./scripts/partials/sliders.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _glidejs_glide__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @glidejs/glide */ \"./node_modules/@glidejs/glide/dist/glide.esm.js\");\n/* harmony import */ var _globals_utility__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../globals/utility */ \"./scripts/globals/utility.js\");\n\n\n\nconst onDomReady = () => {\n  const slider = new _glidejs_glide__WEBPACK_IMPORTED_MODULE_0__[\"default\"]('[data-component=\"slider\"]', {\n    type: 'carousel',\n    perView: 1,\n    peek: Object(_globals_utility__WEBPACK_IMPORTED_MODULE_1__[\"getIsBreakpoint\"])('lg') ? 50 : 250,\n  });\n\n  slider.mount();\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  onDomReady,\n});\n\n\n//# sourceURL=webpack:///./scripts/partials/sliders.js?");
 
 /***/ }),
 

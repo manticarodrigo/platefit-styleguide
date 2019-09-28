@@ -37,7 +37,7 @@ const _watchFragmentClick = () => {
 
         if (!href || href === '#') return;
 
-        const link = document.querySelector();
+        const link = document.querySelector(href);
 
         if (!link) return;
 

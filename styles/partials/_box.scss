@@ -31,13 +31,18 @@
   padding: $spacing;
   height: 190px;
   width: 190px;
-  background-color: $color-secondary;
   text-align: center;
-  transition: background-color $duration;
+  color: $color-dark;
+  background-color: $color-secondary;
+  box-shadow: $box-shadow;
+  transition: background-color $duration, box-shadow $duration, transform $duration;
   cursor: pointer;
 
+  &:focus,
   &:hover {
-    background-color: #fff;
+    background-color: $color-white;
+    box-shadow: $box-shadow-blurred;
+    transform: translateY(-.5rem);
   }
 
   &--yellow {

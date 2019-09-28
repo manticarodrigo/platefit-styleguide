@@ -95,7 +95,6 @@ h6,
   line-height: 1.8;
 }
 
-a,
 .link {
   color: $color-primary;
   text-decoration: none;
@@ -110,9 +109,12 @@ a,
     border-bottom: 2px solid $color-primary;
   }
 
+  &.inline-block {
+    display: inline-block;
+  }
+
   &:focus,
   &:hover {
     color: $color-primary-alt;
   }
-
 }

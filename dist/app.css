@@ -419,6 +419,9 @@ a,
   a.dark,
   .link.dark {
     color: #333333; }
+  a.underline,
+  .link.underline {
+    border-bottom: 2px solid #fed710; }
   a:focus, a:hover,
   .link:focus,
   .link:hover {

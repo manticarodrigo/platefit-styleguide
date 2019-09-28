@@ -101,7 +101,14 @@ a,
   text-decoration: none;
   transition: color $duration;
 
-  &.dark { color: $color-dark; }
+  &.dark {
+    color: $color-dark;
+
+  }
+
+  &.underline {
+    border-bottom: 2px solid $color-primary;
+  }
 
   &:focus,
   &:hover {

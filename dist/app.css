@@ -3226,7 +3226,8 @@ a,
       .navbar input {
         display: block; } }
     .navbar input:checked ~ .navbar__mobile-backdrop {
-      opacity: 1; }
+      opacity: 1;
+      pointer-events: auto; }
     .navbar input:checked ~ .navbar__mobile-icon {
       border-color: transparent; }
       .navbar input:checked ~ .navbar__mobile-icon span {
@@ -3255,7 +3256,7 @@ a,
     background-color: rgba(0, 0, 0, 0.75);
     transition: opacity 250ms ease-in-out;
     transition-delay: 150ms;
-    user-select: none; }
+    pointer-events: none; }
   .navbar__mobile-icon {
     display: none;
     box-sizing: border-box;

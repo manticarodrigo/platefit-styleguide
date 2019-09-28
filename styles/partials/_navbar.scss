@@ -135,6 +135,7 @@
     */
     &:checked ~ .navbar__mobile-backdrop {
       opacity: 1;
+      pointer-events: auto;
     }
 
     /*
@@ -183,7 +184,7 @@
     background-color: $color-overlay-black;
     transition: opacity $duration;
     transition-delay: $delay;
-    user-select: none;
+    pointer-events: none;
   }
 
   &__mobile-icon {

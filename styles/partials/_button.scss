@@ -42,3 +42,16 @@
     }
   }
 }
+
+.btn-img {
+  display: inline-block;
+  transition: opacity $duration;
+
+  &:hover {
+    opacity: 0.75;
+  }
+
+  img {
+    max-width: 140px;
+  }
+}

@@ -3350,6 +3350,14 @@ a,
       width: 36px;
       height: 20px; }
 
+.btn-img {
+  display: inline-block;
+  transition: opacity 250ms ease-in-out; }
+  .btn-img:hover {
+    opacity: 0.75; }
+  .btn-img img {
+    max-width: 140px; }
+
 .box-row {
   position: absolute;
   bottom: 0;
@@ -3454,13 +3462,6 @@ video {
 
 .app-img {
   max-width: 60%; }
-
-.app-download-img {
-  transition: opacity 250ms ease-in-out; }
-  .app-download-img:hover {
-    opacity: 0.75; }
-  .app-download-img img {
-    max-width: 140px; }
 
 .banner {
   box-sizing: border-box;

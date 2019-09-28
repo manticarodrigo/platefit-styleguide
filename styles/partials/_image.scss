@@ -17,15 +17,3 @@
 .app-img {
   max-width: 60%;
 }
-
-.app-download-img {
-  transition: opacity $duration;
-
-  &:hover {
-    opacity: 0.75;
-  }
-
-  img {
-    max-width: 140px;
-  }
-}

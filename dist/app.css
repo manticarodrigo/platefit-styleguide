@@ -3749,13 +3749,14 @@ video {
     bottom: 0;
     left: 0;
     padding: 1rem;
+    color: #333333;
     background-color: #fed710;
     font-family: "MaisonNeue-Bold", sans-serif;
     line-height: 0;
     opacity: 0;
     transition: opacity 250ms ease-in-out;
     content: 'View Profile';
-    color: #333333; }
+    pointer-events: none; }
 
 .trainers__name {
   font-size: 32px;
@@ -3797,26 +3798,26 @@ video {
   padding-bottom: 100%;
   background-color: #bababa; }
 
-.press__box {
+.press__img {
+  display: block;
   position: relative;
+  width: 100%;
+  height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   box-shadow: 0 12px 20px -10px rgba(0, 0, 0, 0.5);
   transition: border 250ms ease-in-out, box-shadow 250ms ease-in-out, transform 250ms ease-in-out; }
-  .press__box::after {
+  .press__img::after {
     display: block;
     border: 3px solid #fed710;
     padding-bottom: 100%;
     opacity: 0;
     transition: opacity 250ms ease-in-out;
     content: ''; }
-  .press__box:focus, .press__box:hover {
+  .press__img:focus, .press__img:hover {
     box-shadow: 0 30px 20px -20px rgba(0, 0, 0, 0.5);
     transform: translateY(-0.5rem); }
-    .press__box:focus::after, .press__box:hover::after {
+    .press__img:focus::after, .press__img:hover::after {
       opacity: 1; }
-
-.press__img {
-  display: inline-block; }
 

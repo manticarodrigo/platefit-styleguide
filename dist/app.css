@@ -455,6 +455,9 @@ h6,
 .height-full {
   height: 100%; }
 
+.max-height-full {
+  max-height: 100%; }
+
 .list-unstyled {
   list-style: none; }
 

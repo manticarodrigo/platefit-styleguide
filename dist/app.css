@@ -3455,13 +3455,12 @@ video {
     .insta-img {
       height: 150px;
       width: 150px; } }
+  .insta-img--4col {
+    min-width: 25%; }
 
 .press-img {
   max-width: 150px;
   max-height: 40px; }
-
-.app-img {
-  max-width: 60%; }
 
 .glide {
   position: relative;
@@ -3517,6 +3516,9 @@ video {
   bottom: 0;
   background-image: linear-gradient(to right, rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0) 100px), linear-gradient(to left, rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0) 100px);
   pointer-events: none; }
+  @media (max-width: 500px) {
+    .glide__track:after {
+      background-image: none; } }
 
 .glide__slides {
   overflow: visible; }
@@ -3524,7 +3526,8 @@ video {
 .glide__slide {
   position: relative;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  flex-direction: column; }
   .glide__slide img {
     max-width: 100%;
     box-shadow: 0 12px 20px -10px rgba(0, 0, 0, 0.5); }

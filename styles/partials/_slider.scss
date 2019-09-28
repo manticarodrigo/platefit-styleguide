@@ -3,7 +3,12 @@
 .glide {
 
   &__track {
+
     &:after {
+      @include maxWidth($breakpoint-sm) {
+        background-image: none;
+      }
+
       content: '';
       position: absolute;
       left: 0; right: 0;
@@ -23,6 +28,7 @@
     position: relative;
     display: flex;
     justify-content: center;
+    flex-direction: column;
 
     img {
       max-width: 100%;

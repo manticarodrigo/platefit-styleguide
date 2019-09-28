@@ -7,13 +7,13 @@
   height: 169px;
   width: 169px;
   background-size: cover;
+
+  &--4col {
+    min-width: 25%;
+  }
 }
 
 .press-img {
   max-width: 150px;
   max-height: 40px;
-}
-
-.app-img {
-  max-width: 60%;
 }

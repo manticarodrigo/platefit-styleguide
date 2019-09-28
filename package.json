@@ -30,6 +30,7 @@
     "webpack-cli": "^3.3.6"
   },
   "dependencies": {
-    "jarallax": "^1.11.1"
+    "jarallax": "^1.11.1",
+    "smoothscroll-polyfill": "^0.4.4"
   }
 }

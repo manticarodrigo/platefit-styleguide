@@ -1,21 +1,20 @@
-import { jarallax } from 'jarallax';
-
 import Navbar from './partials/navbar';
 import Video from './partials/video';
-import ScrollTop from './partials/scroll-top';
+import SmoothScroll from './partials/smooth-scroll';
+import Parallax from './partials/parallax';
+import './partials/maps';
 import './partials/sprites';
 
 const onScroll = () => {
   Navbar.onScroll();
-  ScrollTop.onScroll();
+  SmoothScroll.onScroll();
 };
 
 const onDomReady = () => {
   Navbar.onDomReady();
   Video.onDomReady();
-  ScrollTop.onDomReady();
-
-  jarallax(document.querySelectorAll('.bg-cover'), { speed: 0.5 });
+  SmoothScroll.onDomReady();
+  Parallax.onDomReady();
 };
 
 document.addEventListener('DOMContentLoaded', onDomReady);

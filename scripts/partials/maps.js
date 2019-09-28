@@ -164,7 +164,6 @@ window.initMap = () => {
 
   [].forEach.call(mapElements, (element) => {
     const { lat = 34.050850, lng = -118.459271 } = element.dataset;
-    console.log(lat, lng);
     // the position of the location
     const position = { lat: parseFloat(lat), lng: parseFloat(lng) };
     // the map, centered at the position

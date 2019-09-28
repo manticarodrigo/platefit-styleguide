@@ -1,9 +1,9 @@
 import { getIsScrolled } from '../globals/utility';
 
-let backToTop;
+let scrollTop;
 
 const onDomReady = () => {
-  backToTop = document.querySelector('[data-component="scroll-top"]');
+  scrollTop = document.querySelector('[data-component="scroll-top"]');
 
   let container;
   let timeOut;
@@ -40,13 +40,15 @@ const onDomReady = () => {
     }
   }
 
-  if (backToTop) {
-    backToTop.addEventListener('click', scrollToTop);
+  if (scrollTop) {
+    scrollTop.addEventListener('click', scrollToTop);
   }
 };
 
 const onScroll = () => {
-  backToTop.style.opacity = getIsScrolled() ? 1 : 0;
+  if (scrollTop) {
+    scrollTop.style.opacity = getIsScrolled() ? 1 : 0;
+  }
 };
 
 export default {

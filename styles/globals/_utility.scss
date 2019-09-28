@@ -65,6 +65,10 @@
 }
 
 .letter-spacing {
+  @include maxWidth($breakpoint-sm) {
+    letter-spacing: 0;
+  }
+
   letter-spacing: .25em;
 
   &-sm {
@@ -75,6 +79,8 @@
 .color {
 
   &-primary { color: $color-primary; }
+  &-text-dark { color: $color-text-dark; }
+  &-headline { color: $color-headline; }
 }
 
 .bg-color {

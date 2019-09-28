@@ -30,6 +30,7 @@
     "webpack-cli": "^3.3.6"
   },
   "dependencies": {
+    "@glidejs/glide": "^3.4.1",
     "jarallax": "^1.11.1",
     "smoothscroll-polyfill": "^0.4.4"
   }

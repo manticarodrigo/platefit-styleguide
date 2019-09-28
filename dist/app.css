@@ -3122,6 +3122,7 @@ a,
   width: 100%;
   transition: opacity 250ms ease-in-out; }
   .navbar__container {
+    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -3212,6 +3213,9 @@ a,
     /* and place it over the hamburger */
     -webkit-touch-callout: none;
     /*
+    * fade in the backdrop
+    */
+    /*
     * transform all the slices of hamburger
     * into a crossmark.
     */
@@ -3221,6 +3225,8 @@ a,
     @media (max-width: 950px) {
       .navbar input {
         display: block; } }
+    .navbar input:checked ~ .navbar__mobile-backdrop {
+      opacity: 1; }
     .navbar input:checked ~ .navbar__mobile-icon {
       border-color: transparent; }
       .navbar input:checked ~ .navbar__mobile-icon span {
@@ -3239,6 +3245,17 @@ a,
           transform: rotate(-45deg) translate(2px, -3px); }
     .navbar input:checked ~ ul {
       transform: none; }
+  .navbar__mobile-backdrop {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.75);
+    transition: opacity 250ms ease-in-out;
+    transition-delay: 150ms;
+    user-select: none; }
   .navbar__mobile-icon {
     display: none;
     box-sizing: border-box;

@@ -12,6 +12,7 @@
   transition: opacity $duration;
 
   &__container {
+    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -130,6 +131,13 @@
     -webkit-touch-callout: none;
 
     /*
+    * fade in the backdrop
+    */
+    &:checked ~ .navbar__mobile-backdrop {
+      opacity: 1;
+    }
+
+    /*
     * transform all the slices of hamburger
     * into a crossmark.
     */
@@ -163,6 +171,19 @@
     &:checked ~ ul {
       transform: none;
     }
+  }
+
+  &__mobile-backdrop {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: $color-overlay-black;
+    transition: opacity $duration;
+    transition-delay: $delay;
+    user-select: none;
   }
 
   &__mobile-icon {

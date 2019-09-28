@@ -18,19 +18,23 @@
 
     <header class="navbar" data-component="navbar">
 
-      <nav class="px-4 px-3-lg px-2-md container navbar__container" data-component="navbar-container">
+      <nav class="px-4 px-3-md px-2-sm container navbar__container" data-component="navbar-container">
 
-        <!-- nav logo -->
+        <!-- logo -->
 
         <a class="navbar__logo" href="home.html">
           <svg><use href="#logo"></use></svg>
         </a>
 
-        <!-- mobile toggle -->
+        <!-- toggle (mobile) -->
+        
+        <input type="checkbox" data-component="navbar-toggle" />
+        
+        <!-- backdrop (mobile) -->
 
-        <input id="mobile-toggle" type="checkbox" />
+        <div class="navbar__mobile-backdrop" data-component="navbar-backdrop"></div>
 
-        <!-- hamburger icon -->
+        <!-- icon (mobile) -->
 
         <div class="navbar__mobile-icon">
           <span></span>
@@ -38,7 +42,7 @@
           <span></span>
         </div>
 
-        <!-- nav menu -->
+        <!-- menu -->
 
         <ul class="pl-0 list-unstyled row between navbar__menu">
           <li><a href="../styleguide/index.html">Style Guide</a></li>

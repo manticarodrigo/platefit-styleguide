@@ -8,8 +8,8 @@ let scrollTop;
 const onDomReady = () => {
   scrollTop = document.querySelector('[data-component="scroll-top"]');
 
-  _onClickBackToTop();
-  _initScrollToId();
+  _watchBackToTopClock();
+  _watchFragmentClick();
 }
 
 const onScroll = () => {
@@ -18,7 +18,7 @@ const onScroll = () => {
   }
 };
 
-const _onClickBackToTop = () => {
+const _watchBackToTopClock = () => {
   const _scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
@@ -27,19 +27,21 @@ const _onClickBackToTop = () => {
   }
 };
 
-const _initScrollToId = () => {
+const _watchFragmentClick = () => {
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
   
         const link = document.querySelector(this.getAttribute('href'));
 
+        if (!link) return;
+
         const yCoordinate = link.getBoundingClientRect().top + window.pageYOffset;
         const yOffset = -100; 
 
         window.scrollTo({
-            top: yCoordinate + yOffset,
-            behavior: 'smooth'
+          top: yCoordinate + yOffset,
+          behavior: 'smooth'
         });
     });
   });

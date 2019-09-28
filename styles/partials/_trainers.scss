@@ -12,21 +12,22 @@
   }
 
   &__img {
+    box-sizing: border-box;
     position: relative;
     padding-bottom: 100%;
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    transition: box-shadow $duration, transform $duration, filter $duration;
-    box-shadow: $box-shadow;
+    background-clip: padding-box;
+    box-shadow: $box-shadow-round;
+    transition: box-shadow $duration, transform $duration;
 
     &:focus,
     &:hover {
       box-shadow: $box-shadow-blurred;
-      transition-delay: 0;
       transform: translateY(-.5rem);
-  
+      
       &::before,
       &::after {
         opacity: 1;
@@ -34,16 +35,17 @@
     }
 
     &::before {
+      box-sizing: border-box;
       position: absolute;
       top: 0;
       left: 0;
+      border: 3px solid $color-primary;
       width: 100%;
       height: 100%;
       background-color: $color-overlay-white-clear;
       content: '';
       opacity: 0;
-      transition: opacity $duration;
-      transition-delay: $delay
+      transition: border $duration, opacity $duration;
     }
   
     &::after {
@@ -59,7 +61,6 @@
       line-height: 0;
       opacity: 0;
       transition: opacity $duration;
-      transition-delay: $delay;
       content: 'View Profile';
       color: $color-dark;
     }
@@ -76,15 +77,6 @@
 
   &__social {
     color: $color-text;
-  }
-
-  &__single__img {
-    height: 100%;
-    object-fit: cover;
-
-    @include maxWidth($breakpoint-lg) {
-      max-width: 100%;
-    }
   }
 }
 

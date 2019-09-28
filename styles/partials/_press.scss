@@ -1,0 +1,34 @@
+.press {
+
+  &__box {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    box-shadow: $box-shadow-round;
+    transition: border $duration, box-shadow $duration, transform $duration;
+
+    &::after {
+      display: block;
+      border: 3px solid $color-primary;
+      padding-bottom: 100%;
+      opacity: 0;
+      transition: opacity $duration;
+      content: '';
+    }
+
+    &:focus,
+    &:hover {
+      box-shadow: $box-shadow-blurred;
+      transform: translateY(-.5rem);
+  
+      &::after {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__img {
+    display: inline-block;
+  }
+}

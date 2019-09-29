@@ -6,8 +6,10 @@ const config = {
 };
 
 const onDomReady = () => {
-  MicroModal.init(config);
-  MicroModal.show('newsletter-modal', config);
+  if (document.querySelector('newsletter-modal')) {
+    MicroModal.init(config);
+    MicroModal.show('newsletter-modal', config);
+  }
 };
 
 export default {

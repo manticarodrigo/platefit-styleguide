@@ -12,6 +12,7 @@
   transition: opacity $duration;
 
   &__container {
+    position: relative;
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
@@ -60,7 +61,7 @@
       -webkit-font-smoothing: antialiased; /* to stop flickering of text in safari */
       transform-origin: 0% 0%;
       transform: translate(100%, 0);
-      transition: transform 0.5s ease-in-out;
+      transition: transform 0.5s;
       box-shadow: $box-shadow-blurred;
     }
 
@@ -120,8 +121,10 @@
 
     display: none;
     position: absolute;
+    box-sizing: content-box;
     top: 50%;
-    right: 33px;
+    right: 0;
+    padding: inherit;
     width: 45px;
     height: 45px;
     transform: translateY(-50%);

@@ -3131,6 +3131,7 @@ h6,
   width: 100%;
   transition: opacity 250ms ease-in-out; }
   .navbar__container {
+    position: relative;
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
@@ -3174,7 +3175,7 @@ h6,
         /* to stop flickering of text in safari */
         transform-origin: 0% 0%;
         transform: translate(100%, 0);
-        transition: transform 0.5s ease-in-out;
+        transition: transform 0.5s;
         box-shadow: 0 30px 20px -20px rgba(0, 0, 0, 0.5); } }
     @media (max-width: 950px) {
       .navbar__menu li {
@@ -3210,8 +3211,10 @@ h6,
   .navbar input {
     display: none;
     position: absolute;
+    box-sizing: content-box;
     top: 50%;
-    right: 33px;
+    right: 0;
+    padding: inherit;
     width: 45px;
     height: 45px;
     transform: translateY(-50%);

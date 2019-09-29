@@ -334,6 +334,38 @@
       </div>
     </footer>
 
+    <!-- newsletter modal -->
+
+    <aside class="modal modal-slide" id="newsletter-modal" aria-hidden="true">
+      <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+        <div class="px-4 px-2-sm modal__container bg-plate bg-modal" role="dialog" aria-modal="true" aria-labelledby="newsletter-modal-title">
+          <header class="py-4 modal__header">
+            <button class="modal__close" aria-label="Close dialog" data-micromodal-close></button>
+          </header>
+          <main class="modal__content" id="modal-1-content">
+            <h2 class="mt-0 text-uppercase letter-spacing" id="newsletter-modal-title">
+              Join the Community
+            </h2>
+            <p class="h3 h3--bold h3--sm line-height-none">
+              We'll send you exclusive studio offers, upcoming events and more!
+            </p>
+            <form class="row modal__form" action="#mailchimp">
+              <input class="" type="email" name="email" placeholder="Your Email">
+              <button class="modal__form__submit" type="submit" name="submit">
+                Subscribe&nbsp;
+                <svg><use href="#arrow" /></svg>
+              </button>
+            </form>
+          </main>
+          <footer class="py-4 modal__footer">
+            <button class="link dark underline" data-micromodal-close aria-label="Close this newsletter dialog window">
+              No thanks.
+            </button>
+          </footer>
+        </div>
+      </div>
+    </aside>
+
     <!-- scroll to top -->
 
     <a href="#" class="scroll-top" data-component="scroll-top">

@@ -1,7 +1,6 @@
 a {
   color: inherit;
   text-decoration: none;
-  transition: color $duration, background-color $duration;
 }
 
 input {
@@ -9,6 +8,17 @@ input {
 }
 
 a,
+button {
+  transition: color $duration, background-color $duration;
+}
+
+button {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+a,
+button,
 input,
 [tabindex="0"] {
 

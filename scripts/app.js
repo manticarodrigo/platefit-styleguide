@@ -2,6 +2,7 @@ import Navbar from './partials/navbar';
 import Video from './partials/video';
 import SmoothScroll from './partials/smooth-scroll';
 import Parallax from './partials/parallax';
+import Modals from './partials/modals';
 import Sliders from './partials/sliders';
 import './partials/maps';
 import './partials/sprites';
@@ -16,6 +17,7 @@ const onDomReady = () => {
   Video.onDomReady();
   SmoothScroll.onDomReady();
   Parallax.onDomReady();
+  Modals.onDomReady();
   Sliders.onDomReady();
 };
 

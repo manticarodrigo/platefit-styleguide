@@ -80,6 +80,19 @@ h3,
   color: $color-dark;
   font-family: $font-knockout-light;
   font-weight: 700;
+
+  &--bold {
+    font-family: $font-bold;
+    line-height: 1.25em;
+  }
+
+  &--sm {
+    @include fontSize(44px);
+
+    @include maxWidth($breakpoint-sm) {
+      @include fontSize(32px);
+    }
+  }
 }
 
 h6,

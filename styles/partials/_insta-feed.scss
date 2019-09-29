@@ -1,3 +1,15 @@
+.insta-feed {
+  margin: auto;
+
+  &--3col {
+    max-width: 507px;
+  }
+
+  &--4col {
+    max-width: 676px;
+  }
+}
+
 .insta-img {
   @include maxWidth($breakpoint-sm) {
     height: 150px;
@@ -11,9 +23,4 @@
   &--4col {
     min-width: 25%;
   }
-}
-
-.press-img {
-  max-width: 150px;
-  max-height: 40px;
 }

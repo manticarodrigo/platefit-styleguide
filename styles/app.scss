@@ -1,8 +1,8 @@
 
 // globals
 @import 'globals/normalize';
-@import 'globals/base';
 @import 'globals/variables';
+@import 'globals/base';
 @import 'globals/fonts';
 @import 'globals/typography';
 @import 'globals/utility';
@@ -16,7 +16,6 @@
 @import 'partials/button';
 @import 'partials/box';
 @import 'partials/video';
-@import 'partials/image';
 @import 'partials/slider';
 @import 'partials/banner';
 @import 'partials/quote';
@@ -25,3 +24,4 @@
 @import 'partials/trainers';
 @import 'partials/locations';
 @import 'partials/press';
+@import 'partials/insta-feed';

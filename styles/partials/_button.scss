@@ -32,6 +32,7 @@
 
   &--arrow {
     display: inline-flex;
+    justify-content: space-between;
     align-items: center;
 
     svg {
@@ -39,6 +40,16 @@
       margin-left: $spacing / 2;
       width: 36px;
       height: 20px;
+    }
+  }
+
+  &--full {
+
+    &-lg {
+
+      @include maxWidth($breakpoint-lg) {
+        width: 100%;
+      }
     }
   }
 }

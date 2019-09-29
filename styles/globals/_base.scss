@@ -7,3 +7,14 @@ a {
 input {
   border-radius: 0;
 }
+
+a,
+input,
+[tabindex="0"] {
+
+  &:focus {
+    outline: 2px solid $color-overlay-primary;
+    outline-offset: 2px;
+    z-index: 2;
+  }
+}

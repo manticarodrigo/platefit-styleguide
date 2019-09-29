@@ -311,6 +311,13 @@ a {
 input {
   border-radius: 0; }
 
+a:focus,
+input:focus,
+[tabindex="0"]:focus {
+  outline: 2px solid rgba(254, 215, 16, 0.75);
+  outline-offset: 2px;
+  z-index: 2; }
+
 @font-face {
   font-family: Knockout-HTF49-Liteweight;
   src: url("../assets/fonts/Knockout-HTF49-Liteweight.otf");
@@ -3654,8 +3661,6 @@ video {
     justify-content: center;
     align-items: center;
     margin-right: 15px;
-    max-width: 30px;
-    max-height: 20px;
     color: #b7b7b7; }
     @media (max-width: 950px) {
       .footer__social-icon {

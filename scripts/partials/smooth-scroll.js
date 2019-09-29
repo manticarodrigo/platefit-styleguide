@@ -4,28 +4,31 @@ import { getIsScrolled } from '../globals/utility';
 smoothscroll.polyfill();
 
 let scrollTop;
+let navbarLogo;
 
 const onDomReady = () => {
   scrollTop = document.querySelector('[data-component="scroll-top"]');
+  navbarLogo = document.querySelector('[data-component="navbar-logo"]');
 
   _watchBackToTopClick();
   _watchFragmentClick();
 }
 
 const onScroll = () => {
-  if (scrollTop) {
-    scrollTop.style.opacity = getIsScrolled() ? 1 : 0;
-  }
+  if (!scrollTop) return;
+
+  scrollTop.style.opacity = getIsScrolled() ? 1 : 0;
 };
 
 const _watchBackToTopClick = () => {
   const _scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
+    navbarLogo.focus();
   }
 
-  if (scrollTop) {
-    scrollTop.addEventListener('click', _scrollToTop);
-  }
+  if (!scrollTop) return;
+
+  scrollTop.addEventListener('click', _scrollToTop);
 };
 
 const _watchFragmentClick = () => {

@@ -6,7 +6,7 @@ const config = {
 };
 
 const onDomReady = () => {
-  if (document.querySelector('newsletter-modal')) {
+  if (document.querySelector('#newsletter-modal')) {
     MicroModal.init(config);
     MicroModal.show('newsletter-modal', config);
   }

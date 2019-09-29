@@ -444,7 +444,7 @@ eval("const styles = [\n  {\n    \"elementType\": \"geometry\",\n    \"stylers\"
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var micromodal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! micromodal */ \"./node_modules/micromodal/dist/micromodal.es.js\");\n\n\nconst config = {\n  awaitOpenAnimation: true,\n  awaitCloseAnimation: true,\n};\n\nconst onDomReady = () => {\n  if (document.querySelector('newsletter-modal')) {\n    micromodal__WEBPACK_IMPORTED_MODULE_0__[\"default\"].init(config);\n    micromodal__WEBPACK_IMPORTED_MODULE_0__[\"default\"].show('newsletter-modal', config);\n  }\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  onDomReady,\n});\n\n\n//# sourceURL=webpack:///./scripts/partials/modals.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var micromodal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! micromodal */ \"./node_modules/micromodal/dist/micromodal.es.js\");\n\n\nconst config = {\n  awaitOpenAnimation: true,\n  awaitCloseAnimation: true,\n};\n\nconst onDomReady = () => {\n  if (document.querySelector('#newsletter-modal')) {\n    micromodal__WEBPACK_IMPORTED_MODULE_0__[\"default\"].init(config);\n    micromodal__WEBPACK_IMPORTED_MODULE_0__[\"default\"].show('newsletter-modal', config);\n  }\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  onDomReady,\n});\n\n\n//# sourceURL=webpack:///./scripts/partials/modals.js?");
 
 /***/ }),
 

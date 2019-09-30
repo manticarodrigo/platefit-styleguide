@@ -4,9 +4,12 @@ const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const SpriteLoaderPlugin = require('svg-sprite-loader/plugin');
 
 module.exports = {
-  entry: ['./scripts/app.js', './styles/app.scss'],
+  entry: {
+    app: ['./scripts/app.js', './styles/app.scss'],
+    sprites: './scripts/sprites.js',
+  },
   output: {
-    filename: 'app.js',
+    filename: '[name].js',
     path: path.resolve(__dirname, 'dist'),
   },
   module: {

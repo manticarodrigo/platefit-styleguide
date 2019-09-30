@@ -5,7 +5,6 @@ import Parallax from './partials/parallax';
 import Modals from './partials/modals';
 import Sliders from './partials/sliders';
 import './partials/maps';
-import './partials/sprites';
 
 const onScroll = () => {
   Navbar.onScroll();

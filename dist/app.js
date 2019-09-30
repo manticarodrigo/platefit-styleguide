@@ -86,161 +86,6 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./assets/svgs sync recursive \\.svg$":
-/*!*********************************!*\
-  !*** ./assets/svgs sync \.svg$ ***!
-  \*********************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("var map = {\n\t\"./arrow.svg\": \"./assets/svgs/arrow.svg\",\n\t\"./facebook.svg\": \"./assets/svgs/facebook.svg\",\n\t\"./instagram.svg\": \"./assets/svgs/instagram.svg\",\n\t\"./logo-grey.svg\": \"./assets/svgs/logo-grey.svg\",\n\t\"./logo.svg\": \"./assets/svgs/logo.svg\",\n\t\"./marker.svg\": \"./assets/svgs/marker.svg\",\n\t\"./plate-white.svg\": \"./assets/svgs/plate-white.svg\",\n\t\"./plate.svg\": \"./assets/svgs/plate.svg\",\n\t\"./plates.svg\": \"./assets/svgs/plates.svg\",\n\t\"./play.svg\": \"./assets/svgs/play.svg\",\n\t\"./quote.svg\": \"./assets/svgs/quote.svg\",\n\t\"./twitter.svg\": \"./assets/svgs/twitter.svg\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./assets/svgs sync recursive \\\\.svg$\";\n\n//# sourceURL=webpack:///./assets/svgs_sync_\\.svg$?");
-
-/***/ }),
-
-/***/ "./assets/svgs/arrow.svg":
-/*!*******************************!*\
-  !*** ./assets/svgs/arrow.svg ***!
-  \*******************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n      id: \"arrow-usage\",\n      viewBox: \"0 0 26.688 14.688\",\n      url: __webpack_require__.p + \"./app.svg#arrow\",\n      toString: function () {\n        return this.url;\n      }\n    });\n\n//# sourceURL=webpack:///./assets/svgs/arrow.svg?");
-
-/***/ }),
-
-/***/ "./assets/svgs/facebook.svg":
-/*!**********************************!*\
-  !*** ./assets/svgs/facebook.svg ***!
-  \**********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n      id: \"facebook-usage\",\n      viewBox: \"0 0 12 24\",\n      url: __webpack_require__.p + \"./app.svg#facebook\",\n      toString: function () {\n        return this.url;\n      }\n    });\n\n//# sourceURL=webpack:///./assets/svgs/facebook.svg?");
-
-/***/ }),
-
-/***/ "./assets/svgs/instagram.svg":
-/*!***********************************!*\
-  !*** ./assets/svgs/instagram.svg ***!
-  \***********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n      id: \"instagram-usage\",\n      viewBox: \"0 0 21.312 21.312\",\n      url: __webpack_require__.p + \"./app.svg#instagram\",\n      toString: function () {\n        return this.url;\n      }\n    });\n\n//# sourceURL=webpack:///./assets/svgs/instagram.svg?");
-
-/***/ }),
-
-/***/ "./assets/svgs/logo-grey.svg":
-/*!***********************************!*\
-  !*** ./assets/svgs/logo-grey.svg ***!
-  \***********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n      id: \"logo-grey-usage\",\n      viewBox: \"0 0 477.19 97.14\",\n      url: __webpack_require__.p + \"./app.svg#logo-grey\",\n      toString: function () {\n        return this.url;\n      }\n    });\n\n//# sourceURL=webpack:///./assets/svgs/logo-grey.svg?");
-
-/***/ }),
-
-/***/ "./assets/svgs/logo.svg":
-/*!******************************!*\
-  !*** ./assets/svgs/logo.svg ***!
-  \******************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n      id: \"logo-usage\",\n      viewBox: \"0 0 477.19 97.14\",\n      url: __webpack_require__.p + \"./app.svg#logo\",\n      toString: function () {\n        return this.url;\n      }\n    });\n\n//# sourceURL=webpack:///./assets/svgs/logo.svg?");
-
-/***/ }),
-
-/***/ "./assets/svgs/marker.svg":
-/*!********************************!*\
-  !*** ./assets/svgs/marker.svg ***!
-  \********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n      id: \"marker-usage\",\n      viewBox: \"0 0 33.312 46.656\",\n      url: __webpack_require__.p + \"./app.svg#marker\",\n      toString: function () {\n        return this.url;\n      }\n    });\n\n//# sourceURL=webpack:///./assets/svgs/marker.svg?");
-
-/***/ }),
-
-/***/ "./assets/svgs/plate-white.svg":
-/*!*************************************!*\
-  !*** ./assets/svgs/plate-white.svg ***!
-  \*************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n      id: \"plate-white-usage\",\n      viewBox: \"0 0 102.18 97.14\",\n      url: __webpack_require__.p + \"./app.svg#plate-white\",\n      toString: function () {\n        return this.url;\n      }\n    });\n\n//# sourceURL=webpack:///./assets/svgs/plate-white.svg?");
-
-/***/ }),
-
-/***/ "./assets/svgs/plate.svg":
-/*!*******************************!*\
-  !*** ./assets/svgs/plate.svg ***!
-  \*******************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n      id: \"plate-usage\",\n      viewBox: \"0 0 102.18 97.14\",\n      url: __webpack_require__.p + \"./app.svg#plate\",\n      toString: function () {\n        return this.url;\n      }\n    });\n\n//# sourceURL=webpack:///./assets/svgs/plate.svg?");
-
-/***/ }),
-
-/***/ "./assets/svgs/plates.svg":
-/*!********************************!*\
-  !*** ./assets/svgs/plates.svg ***!
-  \********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n      id: \"plates-usage\",\n      viewBox: \"0 0 269.69 171.39\",\n      url: __webpack_require__.p + \"./app.svg#plates\",\n      toString: function () {\n        return this.url;\n      }\n    });\n\n//# sourceURL=webpack:///./assets/svgs/plates.svg?");
-
-/***/ }),
-
-/***/ "./assets/svgs/play.svg":
-/*!******************************!*\
-  !*** ./assets/svgs/play.svg ***!
-  \******************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n      id: \"play-usage\",\n      viewBox: \"0 0 17.376 24\",\n      url: __webpack_require__.p + \"./app.svg#play\",\n      toString: function () {\n        return this.url;\n      }\n    });\n\n//# sourceURL=webpack:///./assets/svgs/play.svg?");
-
-/***/ }),
-
-/***/ "./assets/svgs/quote.svg":
-/*!*******************************!*\
-  !*** ./assets/svgs/quote.svg ***!
-  \*******************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n      id: \"quote-usage\",\n      viewBox: \"0 0 79.12 58.88\",\n      url: __webpack_require__.p + \"./app.svg#quote\",\n      toString: function () {\n        return this.url;\n      }\n    });\n\n//# sourceURL=webpack:///./assets/svgs/quote.svg?");
-
-/***/ }),
-
-/***/ "./assets/svgs/twitter.svg":
-/*!*********************************!*\
-  !*** ./assets/svgs/twitter.svg ***!
-  \*********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n      id: \"twitter-usage\",\n      viewBox: \"0 0 21.312 17.376\",\n      url: __webpack_require__.p + \"./app.svg#twitter\",\n      toString: function () {\n        return this.url;\n      }\n    });\n\n//# sourceURL=webpack:///./assets/svgs/twitter.svg?");
-
-/***/ }),
-
 /***/ "./node_modules/@glidejs/glide/dist/glide.esm.js":
 /*!*******************************************************!*\
   !*** ./node_modules/@glidejs/glide/dist/glide.esm.js ***!
@@ -409,7 +254,7 @@ eval("var g;\n\n// This works in non-strict mode\ng = (function() {\n\treturn th
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _partials_navbar__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./partials/navbar */ \"./scripts/partials/navbar.js\");\n/* harmony import */ var _partials_video__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./partials/video */ \"./scripts/partials/video.js\");\n/* harmony import */ var _partials_smooth_scroll__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./partials/smooth-scroll */ \"./scripts/partials/smooth-scroll.js\");\n/* harmony import */ var _partials_parallax__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./partials/parallax */ \"./scripts/partials/parallax.js\");\n/* harmony import */ var _partials_modals__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./partials/modals */ \"./scripts/partials/modals.js\");\n/* harmony import */ var _partials_sliders__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./partials/sliders */ \"./scripts/partials/sliders.js\");\n/* harmony import */ var _partials_maps__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./partials/maps */ \"./scripts/partials/maps.js\");\n/* harmony import */ var _partials_maps__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_partials_maps__WEBPACK_IMPORTED_MODULE_6__);\n/* harmony import */ var _partials_sprites__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./partials/sprites */ \"./scripts/partials/sprites.js\");\n/* harmony import */ var _partials_sprites__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_partials_sprites__WEBPACK_IMPORTED_MODULE_7__);\n\n\n\n\n\n\n\n\n\nconst onScroll = () => {\n  _partials_navbar__WEBPACK_IMPORTED_MODULE_0__[\"default\"].onScroll();\n  _partials_smooth_scroll__WEBPACK_IMPORTED_MODULE_2__[\"default\"].onScroll();\n};\n\nconst onDomReady = () => {\n  _partials_navbar__WEBPACK_IMPORTED_MODULE_0__[\"default\"].onDomReady();\n  _partials_video__WEBPACK_IMPORTED_MODULE_1__[\"default\"].onDomReady();\n  _partials_smooth_scroll__WEBPACK_IMPORTED_MODULE_2__[\"default\"].onDomReady();\n  _partials_parallax__WEBPACK_IMPORTED_MODULE_3__[\"default\"].onDomReady();\n  _partials_modals__WEBPACK_IMPORTED_MODULE_4__[\"default\"].onDomReady();\n  _partials_sliders__WEBPACK_IMPORTED_MODULE_5__[\"default\"].onDomReady();\n};\n\ndocument.addEventListener('DOMContentLoaded', onDomReady);\nwindow.addEventListener('scroll', onScroll);\n\n\n//# sourceURL=webpack:///./scripts/app.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _partials_navbar__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./partials/navbar */ \"./scripts/partials/navbar.js\");\n/* harmony import */ var _partials_video__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./partials/video */ \"./scripts/partials/video.js\");\n/* harmony import */ var _partials_smooth_scroll__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./partials/smooth-scroll */ \"./scripts/partials/smooth-scroll.js\");\n/* harmony import */ var _partials_parallax__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./partials/parallax */ \"./scripts/partials/parallax.js\");\n/* harmony import */ var _partials_modals__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./partials/modals */ \"./scripts/partials/modals.js\");\n/* harmony import */ var _partials_sliders__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./partials/sliders */ \"./scripts/partials/sliders.js\");\n/* harmony import */ var _partials_maps__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./partials/maps */ \"./scripts/partials/maps.js\");\n/* harmony import */ var _partials_maps__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_partials_maps__WEBPACK_IMPORTED_MODULE_6__);\n\n\n\n\n\n\n\n\nconst onScroll = () => {\n  _partials_navbar__WEBPACK_IMPORTED_MODULE_0__[\"default\"].onScroll();\n  _partials_smooth_scroll__WEBPACK_IMPORTED_MODULE_2__[\"default\"].onScroll();\n};\n\nconst onDomReady = () => {\n  _partials_navbar__WEBPACK_IMPORTED_MODULE_0__[\"default\"].onDomReady();\n  _partials_video__WEBPACK_IMPORTED_MODULE_1__[\"default\"].onDomReady();\n  _partials_smooth_scroll__WEBPACK_IMPORTED_MODULE_2__[\"default\"].onDomReady();\n  _partials_parallax__WEBPACK_IMPORTED_MODULE_3__[\"default\"].onDomReady();\n  _partials_modals__WEBPACK_IMPORTED_MODULE_4__[\"default\"].onDomReady();\n  _partials_sliders__WEBPACK_IMPORTED_MODULE_5__[\"default\"].onDomReady();\n};\n\ndocument.addEventListener('DOMContentLoaded', onDomReady);\nwindow.addEventListener('scroll', onScroll);\n\n\n//# sourceURL=webpack:///./scripts/app.js?");
 
 /***/ }),
 
@@ -493,17 +338,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _gli
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var smoothscroll_polyfill__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! smoothscroll-polyfill */ \"./node_modules/smoothscroll-polyfill/dist/smoothscroll.js\");\n/* harmony import */ var smoothscroll_polyfill__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(smoothscroll_polyfill__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _globals_utility__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../globals/utility */ \"./scripts/globals/utility.js\");\n\n\n\nsmoothscroll_polyfill__WEBPACK_IMPORTED_MODULE_0___default.a.polyfill();\n\nlet scrollTop;\nlet navbarLogo;\n\nconst onDomReady = () => {\n  scrollTop = document.querySelector('[data-component=\"scroll-top\"]');\n  navbarLogo = document.querySelector('[data-component=\"navbar-logo\"]');\n\n  _watchBackToTopClick();\n  _watchFragmentClick();\n}\n\nconst onScroll = () => {\n  if (!scrollTop) return;\n\n  scrollTop.style.opacity = Object(_globals_utility__WEBPACK_IMPORTED_MODULE_1__[\"getIsScrolled\"])() ? 1 : 0;\n};\n\nconst _watchBackToTopClick = () => {\n  const _scrollToTop = () => {\n    window.scrollTo({ top: 0, behavior: 'smooth' });\n    navbarLogo.focus();\n  }\n\n  if (!scrollTop) return;\n\n  scrollTop.addEventListener('click', _scrollToTop);\n};\n\nconst _watchFragmentClick = () => {\n  document.querySelectorAll('a[href^=\"#\"]').forEach(anchor => {\n    anchor.addEventListener('click', function (e) {\n        e.preventDefault();\n  \n        const href = this.getAttribute('href');\n\n        if (!href || href === '#') return;\n\n        const link = document.querySelector(href);\n\n        if (!link) return;\n\n        const yCoordinate = link.getBoundingClientRect().top + window.pageYOffset;\n        const yOffset = -100; \n\n        window.scrollTo({\n          top: yCoordinate + yOffset,\n          behavior: 'smooth'\n        });\n    });\n  });\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  onDomReady,\n  onScroll,\n});\n\n\n//# sourceURL=webpack:///./scripts/partials/smooth-scroll.js?");
-
-/***/ }),
-
-/***/ "./scripts/partials/sprites.js":
-/*!*************************************!*\
-  !*** ./scripts/partials/sprites.js ***!
-  \*************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("const requireAll = (r) => r.keys().forEach(r);\n\nrequireAll(__webpack_require__(\"./assets/svgs sync recursive \\\\.svg$\"));\n\n\n//# sourceURL=webpack:///./scripts/partials/sprites.js?");
 
 /***/ }),
 
